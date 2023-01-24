@@ -1,11 +1,11 @@
 GCC = gcc
 LIBS = -lcurl
 
-mycurlapp: mycurlapp.o
+ace_webscrape: ace_webscrape.o
 		$(GCC) -g -o $@ $< $(LIBS)
 
-mycurlapp.o: mycurlapp.cpp
+ace_webscrape.o: ace_webscrape.cpp
 		$(GCC) -g -c $<
 
 clean:
-		rm -f mycurlapp.o mycurlapp
+		rm -f ace_webscrape.o ace_webscrape
