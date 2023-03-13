@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+                    
+        <meta charset="utf-8">
+        <!-- META DATA -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Top late stage VCs in Brazil | OpenVC</title>
+    <meta name="description" content="Find the best investors for your startup among thousands of verified VC firms worldwide.">
+    <meta name="twitter:title" content="Top late stage VCs in Brazil | OpenVC">
+    <meta name="twitter:description" content="Find the best investors for your startup among thousands of verified VC firms worldwide.">
+    <meta name="twitter:image" content="https://www.openvc.app/images/twitter_card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="title" property="og:title" content="Top late stage VCs in Brazil | OpenVC">
+    <meta name="image" property="og:image" content="https://www.openvc.app/images/twitter_card.png">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Lucas Roquilly and Steph Nass">
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <!-- FIN FAVICONS -->
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Overpass:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.4/dist/css/autoComplete.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+    new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+    "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,"script","dataLayer","GTM-W97MZBW");</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>    </head>
+    <body>
+        <nav id="mainNavbar" class="sticky-top navbar navbar-expand-md navbar-light bg-light">
+  <div class="container">
+  <script>
+      //Check Dark theme
+      //console.log('debut check theme')
+      if(localStorage.getItem('enableDarkMode')=='true'){
+          //console.log('true - '+localStorage.getItem('enableDarkMode'));
+          let nav = document.getElementsByTagName("nav")[0];
+          let body = document.getElementsByTagName("body")[0];
+          nav.classList.add("bg-dark");
+          nav.classList.add("navbar-dark");
+          nav.classList.remove("bg-light");
+          nav.classList.remove("navbar-light");
+          body.classList.add("darkTheme");
+      }
+      else if(localStorage.getItem('enableDarkMode')==null){
+          //console.log('null');
+          localStorage.setItem('enableDarkMode', false);
+      }
+      else if(localStorage.getItem('enableDarkMode')=='false'){
+          //console.log('false');
+      }
+      else{
+          //console.log('else - '+localStorage.getItem('enableDarkMode'));
+      }
+  </script>
+
+  <a class="navbar-brand" href="./">
+      <img src="img/android-icon-192x192.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="" loading="lazy">
+      OpenVC
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse text-right mt-2" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto">
+            <li id="homeLink" class="nav-item">
+                <a class="nav-link btn mr-3 text-right text-pink font-weight-bold" id="" href="./">Home</a>
+            </li>            
+            <li id="dealflowLink" class="nav-item d-none">
+                <a class="nav-link btn mr-3 text-right " href="my-dealflow">My flow </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn mr-3 text-right " id="" href="perks">Perks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn mr-3 text-right " id="" href="experts">Experts</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resources
+                </a>
+                <ul id="topbar_dropdown" style="width: max-content;" class="ml-auto p-2 dropdown-menu text-center dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <li>
+                        <div class="row p-2">
+                            <ul class="list-unstyled col-6 text-left">
+                                <li style="width: max-content;"><a href="blog">📚 Blog</a></li>
+                            </ul>
+                            <ul class="list-unstyled col-6 text-left">
+                                <li style="width: max-content;"><a href="newsletter">💌 Newsletter</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="row p-2" >
+                            <ul class="list-unstyled col-6 text-left">
+                                <li style="width: max-content;"><a href="map">🌍 OpenMap</a></li>
+                                <li class="mt-2" style="width: max-content;"><a target="_blank" href="lp-list">💰 LP List </a></li>
+                            </ul>
+                            <ul class="list-unstyled col-6 text-left">
+                                <li style="width: max-content;"><a href="opendeck">🖼 OpenDeck</a></li>
+                                <li class="mt-2" style="width: max-content;"><a href="domains">🤓 Domains</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="row p-2">
+                            <ul class="list-unstyled col-6 text-left">
+                                <li style="width: max-content;"><a href="love">💖 Wall of love</a></li>
+                                <li class="mt-2" style="width: max-content;"><a  href="https://ko-fi.com/openvc/" target="_blank">🤘 Support us</a></li>
+                            </ul>
+                            <ul class="list-unstyled col-6 text-left">
+                                <li style="width: max-content;"><a href="open">🔓 Open</a></li>
+                                <li class="mt-2" style="width: max-content;"><a href="about">📝 About</a></li>
+                            </ul>
+                        </div>
+                    </li>                    
+                </ul>
+          </li>
+                      <li class="nav-item">
+                <button class="btn ml-3" id="signupBtn" target="_blank">Sign up</button>
+            </li>
+            <li class="ml-3 nav-item dropdown">
+                <button class="btn nav-link mr-3 ml-auto loginBtn" id="loginBtn" target="_blank">Log in</button>
+                <a class="nav-link mr-3 p-0 dropdown-toggle d-none" id="loggedUserBtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                <div id="topbar_dropdown" class="dropdown-menu text-center" aria-labelledby="loggedUserBtn">
+                        <h6 id="usernameCont" class="dropdown-header text-left"></h6>
+                        <a id="navProfileCont" class="profileCont d-none btn text-left dropdown-item">My profile</a>
+                        <a id="navVClink" class="VClink d-none btn text-left dropdown-item">My firm</a>
+                        <button id="logoutBtn" class="btn text-left dropdown-item">Log out</button>
+                </div>
+            </li>
+                    <li class="nav-item d-md-none d-lg-none">
+            <button class="ml-auto mt-2 btn btn-outline-primary a2hs">Add to home screen</button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+                <div id="fullscreenCont" class="py-5 container">
+            <div id="mainCont" class="container-fluid md-form mt-0">
+                <form id="searchForm" class="pb-5" action="search" method="get">
+                    <!-- Search Bar -->
+<script>const searchBox_ph = [,"enterprise, SaaS","fintech, black founder","B2B, ecommerce","woman-led, cleantech","life science tools","Search investors by any vertical ;-)"];</script>
+        <div id="searchBox_cont" class="input-group justify-content-center mt-5 w-100 d-flex flex-nowrap">
+  <input autocomplete="off" type="text" class="form-control" name="s" id="searchBox" placeholder="SaaS, fintech, Sequoia, woman-led..." value="" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+      <button id="searchBtn" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+<div class="d-flex flex-wrap justify-content-center">
+    <div class="mt-3 px-2" id="countCont">
+        <select multiple data-col="3" class="btn-filter form-control d-none" name="countries[]" id="countFilter">
+            <option value='Afghanistan'>AF$$Afghanistan</option><option value='Albania'>AL$$Albania</option><option value='Algeria'>DZ$$Algeria</option><option value='Andorra'>AD$$Andorra</option><option value='Angola'>AO$$Angola</option><option value='Antigua and Barbuda'>AG$$Antigua and Barbuda</option><option value='Argentina'>AR$$Argentina</option><option value='Australia'>AU$$Australia</option><option value='Austria'>AT$$Austria</option><option value='Azerbaijan'>AZ$$Azerbaijan</option><option value='Bahamas'>BS$$Bahamas</option><option value='Bahrain'>BH$$Bahrain</option><option value='Bangladesh'>BD$$Bangladesh</option><option value='Barbados'>BB$$Barbados</option><option value='Belarus'>BY$$Belarus</option><option value='Belgium'>BE$$Belgium</option><option value='Belize'>BZ$$Belize</option><option value='Benin'>BJ$$Benin</option><option value='Bhutan'>BT$$Bhutan</option><option value='Bolivia'>BO$$Bolivia</option><option value='Bosnia-H'>BA$$Bosnia-H</option><option value='Botswana'>BW$$Botswana</option><option selected value='Brazil'>BR$$Brazil</option><option value='Bulgaria'>BG$$Bulgaria</option><option value='Burkina Faso'>BF$$Burkina Faso</option><option value='Burundi'>BI$$Burundi</option><option value='Cabo Verde'>CV$$Cabo Verde</option><option value='Cambodia'>KH$$Cambodia</option><option value='Cameroon'>CM$$Cameroon</option><option value='Canada'>CA$$Canada</option><option value='Central African Republic'>CF$$Central African Republic</option><option value='Chad'>TD$$Chad</option><option value='Chile'>CL$$Chile</option><option value='China'>CN$$China</option><option value='Colombia'>CO$$Colombia</option><option value='Comoros'>KM$$Comoros</option><option value='Congo (Congo-Brazzaville)'>CG$$Congo (Congo-Brazzaville)</option><option value='Democratic Republic of the Congo'>CD$$Democratic Republic of the Congo</option><option value='Costa Rica'>CR$$Costa Rica</option><option value='Côte d'Ivoire'>CI$$Côte d'Ivoire</option><option value='Croatia'>HR$$Croatia</option><option value='Cuba'>CU$$Cuba</option><option value='Cyprus'>CY$$Cyprus</option><option value='Czech Republic'>CZ$$Czech Republic</option><option value='Denmark'>DK$$Denmark</option><option value='Djibouti'>DJ$$Djibouti</option><option value='Dominica'>DM$$Dominica</option><option value='Dominican Republic'>DO$$Dominican Republic</option><option value='Ecuador'>EC$$Ecuador</option><option value='Egypt'>EG$$Egypt</option><option value='El Salvador'>SV$$El Salvador</option><option value='Equatorial Guinea'>GQ$$Equatorial Guinea</option><option value='Eritrea'>ER$$Eritrea</option><option value='Estonia'>EE$$Estonia</option><option value='Ethiopia'>ET$$Ethiopia</option><option value='Fiji'>FJ$$Fiji</option><option value='Finland'>FI$$Finland</option><option value='France'>FR$$France</option><option value='Gabon'>GA$$Gabon</option><option value='Gambia'>GM$$Gambia</option><option value='Georgia'>GE$$Georgia</option><option value='Germany'>DE$$Germany</option><option value='Ghana'>GH$$Ghana</option><option value='Greece'>GR$$Greece</option><option value='Grenada'>GD$$Grenada</option><option value='Guatemala'>GT$$Guatemala</option><option value='Guinea'>GN$$Guinea</option><option value='Guinea-Bissau'>GW$$Guinea-Bissau</option><option value='Guyana'>GY$$Guyana</option><option value='Haiti'>HT$$Haiti</option><option value='Holy See'>VA$$Holy See</option><option value='Honduras'>HN$$Honduras</option><option value='Hong Kong'>HK$$Hong Kong</option><option value='Hungary'>HU$$Hungary</option><option value='Iceland'>IS$$Iceland</option><option value='India'>IN$$India</option><option value='Indonesia'>ID$$Indonesia</option><option value='Iran'>IR$$Iran</option><option value='Iraq'>IQ$$Iraq</option><option value='Ireland'>IE$$Ireland</option><option value='Israel'>IL$$Israel</option><option value='Italy'>IT$$Italy</option><option value='Jamaica'>JM$$Jamaica</option><option value='Japan'>JP$$Japan</option><option value='Jordan'>JO$$Jordan</option><option value='Kazakhstan'>KZ$$Kazakhstan</option><option value='Kenya'>KE$$Kenya</option><option value='Kiribati'>KI$$Kiribati</option><option value='Kuwait'>KW$$Kuwait</option><option value='Kyrgyzstan'>KG$$Kyrgyzstan</option><option value='Laos'>LA$$Laos</option><option value='Latvia'>LV$$Latvia</option><option value='Lebanon'>LB$$Lebanon</option><option value='Lesotho'>LS$$Lesotho</option><option value='Liberia'>LR$$Liberia</option><option value='Lybia'>LY$$Lybia</option><option value='Liechtenstein'>LI$$Liechtenstein</option><option value='Lithuania'>LT$$Lithuania</option><option value='Luxembourg'>LU$$Luxembourg</option><option value='Madagascar'>MG$$Madagascar</option><option value='Malawi'>MW$$Malawi</option><option value='Malaysia'>MY$$Malaysia</option><option value='Maldives'>MV$$Maldives</option><option value='Mali'>ML$$Mali</option><option value='Malta'>MT$$Malta</option><option value='Marshall Islands'>MH$$Marshall Islands</option><option value='Mauritania'>MR$$Mauritania</option><option value='Mauritius'>MU$$Mauritius</option><option value='Mexico'>MX$$Mexico</option><option value='Micronesia'>FM$$Micronesia</option><option value='Moldova'>MD$$Moldova</option><option value='Monaco'>MC$$Monaco</option><option value='Mongolia'>MN$$Mongolia</option><option value='Montenegro'>ME$$Montenegro</option><option value='Morocco'>MA$$Morocco</option><option value='Mozambique'>MZ$$Mozambique</option><option value='Myanmar'>MM$$Myanmar</option><option value='Namibia'>NA$$Namibia</option><option value='Nepal'>NP$$Nepal</option><option value='Netherlands'>NL$$Netherlands</option><option value='New Zealand'>NZ$$New Zealand</option><option value='Nicaragua'>NI$$Nicaragua</option><option value='Niger'>NE$$Niger</option><option value='Nigeria'>NG$$Nigeria</option><option value='North Macedonia'>MK$$North Macedonia</option><option value='Norway'>NO$$Norway</option><option value='Oman'>OM$$Oman</option><option value='Pakistan'>PK$$Pakistan</option><option value='Palau'>PW$$Palau</option><option value='Palestine'>PS$$Palestine</option><option value='Panama'>PA$$Panama</option><option value='Papua New Guinea'>PG$$Papua New Guinea</option><option value='Paraguay'>PY$$Paraguay</option><option value='Peru'>PE$$Peru</option><option value='Philippines'>PH$$Philippines</option><option value='Poland'>PL$$Poland</option><option value='Portugal'>PT$$Portugal</option><option value='Qatar'>QA$$Qatar</option><option value='Romania'>RO$$Romania</option><option value='Russia'>RU$$Russia</option><option value='Rwanda'>RW$$Rwanda</option><option value='Sant Kitts and Nevis'>KN$$Sant Kitts and Nevis</option><option value='Sant Lucia'>LC$$Sant Lucia</option><option value='Saint Vincent and the Grenadines'>VC$$Saint Vincent and the Grenadines</option><option value='Samoa'>WS$$Samoa</option><option value='San Marino'>SM$$San Marino</option><option value='Sao Tome and Principe'>ST$$Sao Tome and Principe</option><option value='Saudi Arabia'>SA$$Saudi Arabia</option><option value='Senegal'>SN$$Senegal</option><option value='Serbia'>RS$$Serbia</option><option value='Seychelles'>SC$$Seychelles</option><option value='Sierra Leone'>SL$$Sierra Leone</option><option value='Singapore'>SG$$Singapore</option><option value='Slovakia'>SK$$Slovakia</option><option value='Slovenia'>SI$$Slovenia</option><option value='Solomon Islands'>SB$$Solomon Islands</option><option value='Somalia'>SO$$Somalia</option><option value='South Africa'>ZA$$South Africa</option><option value='South Korea'>KR$$South Korea</option><option value='Spain'>ES$$Spain</option><option value='Sri Lanka'>LK$$Sri Lanka</option><option value='Sudan'>SD$$Sudan</option><option value='Suriname'>SR$$Suriname</option><option value='Sweden'>SE$$Sweden</option><option value='Switzerland'>CH$$Switzerland</option><option value='Syria'>SY$$Syria</option><option value='Taiwan'>TW$$Taiwan</option><option value='Tajikistan'>TJ$$Tajikistan</option><option value='Tanzania'>TZ$$Tanzania</option><option value='Thailand'>TH$$Thailand</option><option value='Timor-Leste'>TL$$Timor-Leste</option><option value='Togo'>TG$$Togo</option><option value='Tonga'>TO$$Tonga</option><option value='Trinidad and Tobago'>TT$$Trinidad and Tobago</option><option value='Tunisia'>TN$$Tunisia</option><option value='Turkey'>TR$$Turkey</option><option value='Turkmenistan'>TM$$Turkmenistan</option><option value='Tuvalu'>TV$$Tuvalu</option><option value='UAE'>AE$$UAE</option><option value='UK'>GB$$UK</option><option value='USA'>US$$USA</option><option value='Uganda'>UG$$Uganda</option><option value='Ukraine'>UA$$Ukraine</option><option value='Uruguay'>UY$$Uruguay</option><option value='Uzbekistan'>UZ$$Uzbekistan</option><option value='Vanuatu'>VU$$Vanuatu</option><option value='Venezuela'>VE$$Venezuela</option><option value='Vietnam'>VN$$Vietnam</option><option value='Yemen'>YE$$Yemen</option><option value='Zambia'>ZM$$Zambia</option><option value='Zimbabwe'>ZW$$Zimbabwe</option>        </select>
+    </div>
+    <div class="mt-3 px-2" id="stageCont">
+    <select multiple data-col="3" class="btn-filter form-control d-none" name="stages[]" id="stageFilter">
+        <option value='1. Idea or Patent'>1. Idea or Patent</option><option value='2. Prototype'>2. Prototype</option><option value='3. Early Revenue'>3. Early Revenue</option><option selected value='4. Scaling'>4. Scaling</option><option selected value='5. Growth'>5. Growth</option><option value='6. Pre-IPO'>6. Pre-IPO</option>    </select>
+    </div>
+    <div class="mt-3 px-2 d-none" id="cheqCont" class="d-none dropdown">
+                    <button class="btn btn-default multiselect dropdown-toggle dropdown-toggle" type="button" id="cheqFilterDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        First cheque
+                    </button>
+                    <div class="multiselect-container dropdown-menu" aria-labelledby="cheqFilterDD">
+                        <span class="dropdown-header">Select min. and/or max. value</span>
+                        <div class="pl-3 pr-2">
+                        <input disabled onclick="event.stopPropagation();" name="cheque_size" id="cheqFilter" class="form-control"
+                                data-slider-ticks="[0,1000,5000,10000,25000,50000,100000,200000,300000,400000,500000,600000,700000,800000,900000,1000000,2000000,3000000,4000000,5000000,6000000,7000000,8000000,9000000,10000000,12000000,14000000,16000000,18000000,20000000,21000000]"
+                                data-slider-id='ex2Slider' type="text" data-slider-value="
+                                [3000000,21000000]                                "/>
+                        </div>
+                    </div>
+    </div>
+</div>
+                </form>
+                                                <div id="results_mobile" class="w-100">
+                    <span class="float-left">
+                        45&nbsp;result(s)&nbsp;                        <button data-toggle="modal" data-target="#settingsModal" class="btn p-0 settingsBtn"><i class="fas fa-cog"></i></button>
+                    </span>
+                    <a href="https://share.hsforms.com/1mQt9Mob_T-e9Yl2M0u1bqQ4affn" class="float-right downloadAllBtn" target="_blank">Download all</a>
+                </div>
+                <div id="tableCont" class="mt-5 table-responsive">
+                    <table id="results_tb" class="table display hover dataTable no-footer table-bordered">
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th>Target<br>countries</th>
+                            <th>First<br>cheque</th>
+                            <th>Funding<br>stages</th>
+                            <th>Funding<br>requirements</th>
+                            <!--<th></th>-->
+                            <!--<th></th>-->
+                            <th id="nbResults">
+                                45&nbsp;result(s)&nbsp;                                <button data-toggle="modal" data-target="#settingsModal" class="btn p-0 settingsBtn"><i class="fas fa-cog"></i></button>
+                                
+                               
+                                <br>
+                                                                    <a href="#" class="downloadAllBtn mr-2" data-toggle="modal" data-target="#embedModal" target="_blank">Embed</a>
+                                                                    <a class="downloadAllBtn" href="https://share.hsforms.com/1mQt9Mob_T-e9Yl2M0u1bqQ4affn" target="_blank">Download</a>
+                                
+                            </th>
+                        </thead>
+                        <tbody>
+                        <tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Paris%20Ventures" target="_blank"><img loading="lazy" src="./images/funds/rec4q8zQFhsCV6Ssi.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Paris%20Ventures" target="_blank">Paris Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Mexico" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/mx.png"> Mexico</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Paris%20Ventures" target="_blank">+ 8 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in and support entrepreneurs transforming the built world. In addition to the investment, Paris Ventures supports portfolio companies through consultation on manufacturing and metallurgy, ma... <span class="badge"><a href="fund/Paris%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Paris%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Paris%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Alpha%20Partners" target="_blank"><img loading="lazy" src="./images/funds/rec0e8ghPZRqanr1p.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Alpha%20Partners" target="_blank">Alpha Partners</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Canada" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ca.png"> Canada</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Alpha%20Partners" target="_blank">+ 2 more</a></span></td><td data-label="First cheque">$3M&nbsp;to $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in early-stage tech companies, preferably with over $5 million in annual revenue.
+
+Alpha Partners is a next-generation growth equity firm that focuses on accelerating private technology comp... <span class="badge"><a href="fund/Alpha%20Partners" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Alpha%20Partners" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Alpha%20Partners" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Point72%20Ventures" target="_blank"><img loading="lazy" src="./images/funds/rec87Qh0oJHpT6ZXA.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Point72%20Ventures" target="_blank">Point72 Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Point72%20Ventures" target="_blank">+ 3 more</a></span></td><td data-label="First cheque">$1M&nbsp;to $75M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge text-nowrap"><a class="VClink" href="fund/Point72%20Ventures" target="_blank">+ 2 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest primarily in fintech, AI, and enterprise companies across all stages of growth, from idea to IPO. We do deep research behind our investments and look for founders looking to transform indust... <span class="badge"><a href="fund/Point72%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/point72-ventures/" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/Point72%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified badge-partner" data-original-title="This investor is non-dilusive and verified"><i class="fas fa-thumbs-up mr-1"></i>Non-dilutive</button>
+                                <a class="VClink" href="fund/Element%20Finance" target="_blank"><img loading="lazy" src="./images/funds/recYD9mSKzjindEow.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Element%20Finance" target="_blank">Element Finance</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Antigua%20and%20Barbuda" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ag.png"> Antigua and Barbuda</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Element%20Finance" target="_blank">+ 76 more</a></span></td><td data-label="First cheque">$200k&nbsp;to $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span></td><td data-label='Funding requirement' class='criteriaCell'>We finance and can lend up to $10M to recurring-revenue-based companies with a good plan, a track record for growth, low customer concentration and churn, and a clean balance sheet.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" target="_blank" href="https://www.elementfinance.com/openvc" data-dsubmit="true"><i class="fas fa-external-link-alt"></i> Apply now</a><a href="fund/Element%20Finance" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Thomson%20Reuters%20Ventures" target="_blank"><img loading="lazy" src="./images/funds/rec8F748KfjgaBXlt.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Thomson%20Reuters%20Ventures" target="_blank">Thomson Reuters Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Thomson%20Reuters%20Ventures" target="_blank">+ 4 more</a></span></td><td data-label="First cheque">$2M&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in data startups.
+
+-	We are a $100M enterprise technology fund with the backing and resources of Thomson Reuters at our disposal. When we invest, we are seeking to accelerate the growth of t... <span class="badge"><a href="fund/Thomson%20Reuters%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Thomson%20Reuters%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Thomson%20Reuters%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr>    <tr class="sponsorRow adType_3">
+                <td colspan="7">
+                    <a href="https://vauban.io?utm_source=openvc&utm_medium=search" class="text-white" target="_blank" rel="nofollow">
+                        <div class="row d-flex justify-content-around align-items-center m-0">
+                            <div class="sponsorList text-center px-4 py-2 col-sm-12 col-md-12 col-lg-3">
+                                <img class="img-fluid" style="max-width:190px" src="https://assets.website-files.com/5ebe9ac00bb8ee01c0aa44a6/6318d895ffc5544416830bdc_62bf148d730d3456881977a6_VAUBAN%20from%20Carta%20Logo-cropped.svg">
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 m-0">
+                                <p class="pl-4 h4">Easiest way to launch your funds & SPVs</p>
+                                <p class="pl-4 mb-0 h5 font-weight-normal">Built for Angels & VCs</p>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-3 m-0">
+                                <div class="d-flex flex-column">
+                                    <span class="h6 mb-0"><strong>Recommended by <span class="text-nowrap"><img src="img/apple-icon-57x57.png" class="mr-1" width="27px">OpenVC</span></strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+    </tr>
+    <tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Ethos%20VC" target="_blank"><img loading="lazy" src="./images/funds/recQcBQ2juMY7prsC.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Ethos%20VC" target="_blank">Ethos VC</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Mexico" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/mx.png"> Mexico</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Ethos%20VC" target="_blank">+ 6 more</a></span></td><td data-label="First cheque">$250k&nbsp;to $3M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in businesses across numerous industries in the US and emerging markets (most notably LATAM and Africa). We particularly focus on Fintech and general SaaS and look for companies with at leas... <span class="badge"><a href="fund/Ethos%20VC" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Ethos%20VC" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Ethos%20VC" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Olimp%20Capital%20Partners" target="_blank"><img loading="lazy" src="./images/funds/recqJHUv8LBwxFgxB.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Olimp%20Capital%20Partners" target="_blank">Olimp Capital Partners</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><a href="country/Australia" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/au.png"> Australia</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Olimp%20Capital%20Partners" target="_blank">+ 8 more</a></span></td><td data-label="First cheque">$2M&nbsp;to $25M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in the global Internet, hardware and financial technology industries.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Olimp%20Capital%20Partners" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Olimp%20Capital%20Partners" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/The%20Net%20Street%20Capital" target="_blank"><img loading="lazy" src="./images/funds/recJBKlBr66V9m2ln.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/The%20Net%20Street%20Capital" target="_blank">The Net Street Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/France" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/fr.png"> France</span></a><a href="country/Spain" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/es.png"> Spain</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/The%20Net%20Street%20Capital" target="_blank">+ 9 more</a></span></td><td data-label="First cheque">$2M&nbsp;to $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in SAAS B2B insurtech and fintech founders</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/The%20Net%20Street%20Capital" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/The%20Net%20Street%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/M12%20-%20Microsoft%27s%20Venture%20Fund" target="_blank"><img loading="lazy" src="./images/funds/rec0LNS2u4fWZOSuB.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/M12%20-%20Microsoft%27s%20Venture%20Fund" target="_blank">M12 - Microsoft's Venture Fund</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/France" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/fr.png"> France</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/M12%20-%20Microsoft%27s%20Venture%20Fund" target="_blank">+ 11 more</a></span></td><td data-label="First cheque">$1M&nbsp;to $20M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in early-stage software companies disrupting the enterprise.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/m12vc/" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/M12%20-%20Microsoft%27s%20Venture%20Fund" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class=""><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/30N%20Ventures" target="_blank"><img loading="lazy" src="./images/funds/recZaMUsO57nQCzh8.jpg" class="lazy logo" width=75></a></td><td data-label="Investor name" ><a class="VClink" href="fund/30N%20Ventures" target="_blank">30N Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Kenya" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ke.png"> Kenya</span></a><a href="country/Nigeria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ng.png"> Nigeria</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/30N%20Ventures" target="_blank">+ 12 more</a></span></td><td data-label="First cheque">$600k&nbsp;to $3M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in underserved emerging economies through top-tier entrepreneurs across LatAm, Southeast Asia, and Africa.
+- Industries: Fintech, Foodtech, and Retail.
+- Sweet spot: Late seed, Series A.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/30N%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/30N%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Ischyros%20New%20York" target="_blank"><img loading="lazy" data-src="./images/funds/recQKiVSPXwiY5aM7.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Ischyros%20New%20York" target="_blank">Ischyros New York</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><a href="country/Austria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/at.png"> Austria</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Ischyros%20New%20York" target="_blank">+ 12 more</a></span></td><td data-label="First cheque">$250k&nbsp;to $3M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge text-nowrap"><a class="VClink" href="fund/Ischyros%20New%20York" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in all sectors and stages.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Ischyros%20New%20York" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Ischyros%20New%20York" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Flucas%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/recONvzErSatgR7S3.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Flucas%20Ventures" target="_blank">Flucas Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Nigeria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ng.png"> Nigeria</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Flucas%20Ventures" target="_blank">+ 12 more</a></span></td><td data-label="First cheque">$100k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge text-nowrap"><a class="VClink" href="fund/Flucas%20Ventures" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in all geographies, sectors and stages, but have an emphasis on fintech and marketplaces. </td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Flucas%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Flucas%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/TheVentureCity" target="_blank"><img loading="lazy" data-src="./images/funds/recKXqAQoq4wkFkPA.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/TheVentureCity" target="_blank">TheVentureCity</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Canada" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ca.png"> Canada</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/TheVentureCity" target="_blank">+ 13 more</a></span></td><td data-label="First cheque">$100k&nbsp;to $4M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge text-nowrap"><a class="VClink" href="fund/TheVentureCity" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in First Tickets:
+- We give you your first ticket, minimum of $100K, and depending on performance follow-on so that you can get your product to market and keep building your team. We also pr... <span class="badge"><a href="fund/TheVentureCity" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/theventurecity/" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/TheVentureCity" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Radian%20Capital" target="_blank"><img loading="lazy" data-src="./images/funds/rec97BtfFBRVKJqJH.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Radian%20Capital" target="_blank">Radian Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Venezuela" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ve.png"> Venezuela</span></a><a href="country/Albania" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/al.png"> Albania</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Radian%20Capital" target="_blank">+ 13 more</a></span></td><td data-label="First cheque">$15M&nbsp;to $100M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in software and tech-enabled services globally with $5m+ ARR</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Radian%20Capital" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Radian%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Sixty%20Degree%20Capital" target="_blank"><img loading="lazy" data-src="./images/funds/rec3VoiTWvD3HHxq4.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Sixty%20Degree%20Capital" target="_blank">Sixty Degree Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Canada" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ca.png"> Canada</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Sixty%20Degree%20Capital" target="_blank">+ 14 more</a></span></td><td data-label="First cheque">$1M&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge text-nowrap"><a class="VClink" href="fund/Sixty%20Degree%20Capital" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in Technology and Healthcare; on technology, we invest in innovative software and digital infrastructure.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Sixty%20Degree%20Capital" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Sixty%20Degree%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/GSV%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/recIZ0tT81XEb3VNm.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/GSV%20Ventures" target="_blank">GSV Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/India" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/in.png"> India</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/GSV%20Ventures" target="_blank">+ 18 more</a></span></td><td data-label="First cheque">$250k&nbsp;to $15M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in education technology companies only.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/GSV%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/GSV%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Capgemini%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/recnBLCZB680hwUft.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Capgemini%20Ventures" target="_blank">Capgemini Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Australia" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/au.png"> Australia</span></a><a href="country/Austria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/at.png"> Austria</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Capgemini%20Ventures" target="_blank">+ 21 more</a></span></td><td data-label="First cheque">$1M&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in ready-to-scale B2B startups with €1M+ ARR, that enrich Capgemini's offer portfolio of tech and engineering services (focus on Entreprise SaaS) in NA, Europe and APAC. We act as a strate... <span class="badge"><a href="fund/Capgemini%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Capgemini%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Capgemini%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Mouro%20Capital" target="_blank"><img loading="lazy" data-src="./images/funds/recAvkhKRLcGDOfpC.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Mouro%20Capital" target="_blank">Mouro Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><a href="country/Canada" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ca.png"> Canada</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Mouro%20Capital" target="_blank">+ 24 more</a></span></td><td data-label="First cheque">$1M&nbsp;to $15M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in fintech, taking a broad view to the future of financial services, looking even beyond today’s industry boundaries. We focus on: better processes, alternate delivery (via API), new clien... <span class="badge"><a href="fund/Mouro%20Capital" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Mouro%20Capital" data-dsubmit="true" target="_blank"><i class="fas fa-external-link-alt"></i> Submit deck</a><a href="fund/Mouro%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Great%20Eagle%20Holdings" target="_blank"><img loading="lazy" data-src="./images/funds/recGT8AOWOMM0I6gx.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Great%20Eagle%20Holdings" target="_blank">Great Eagle Holdings</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><a href="country/Canada" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ca.png"> Canada</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Great%20Eagle%20Holdings" target="_blank">+ 35 more</a></span></td><td data-label="First cheque">$1M&nbsp;to $4M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge text-nowrap"><a class="VClink" href="fund/Great%20Eagle%20Holdings" target="_blank">+ 3 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest invest in early stage Seed to Series B.
+
+We are sector agnostic, for example we invest in Deep Tech, Semiconductors, Hard Tech, Robotics, Biotech, Life Sciences, Fintech, Software & Internet... <span class="badge"><a href="fund/Great%20Eagle%20Holdings" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Great%20Eagle%20Holdings" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Great%20Eagle%20Holdings" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/RPS%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/rec0Tlo7NiloPmTxe.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/RPS%20Ventures" target="_blank">RPS Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><a href="country/Australia" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/au.png"> Australia</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/RPS%20Ventures" target="_blank">+ 36 more</a></span></td><td data-label="First cheque">$5M&nbsp;to $20M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in high-growth (50%+) software startups with $5-10M+ ARR, proven product-market fit, and scalable business models.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/RPS%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/RPS%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/CIG" target="_blank"><img loading="lazy" data-src="./images/funds/recW6e9j5EtfO3Jld.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/CIG" target="_blank">CIG</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Austria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/at.png"> Austria</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/CIG" target="_blank">+ 37 more</a></span></td><td data-label="First cheque">$200k&nbsp;to $3M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge text-nowrap"><a class="VClink" href="fund/CIG" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in startups with strong teams and good traction (preferably at least $20K MRR) across a wide range of tech sectors. We prefer sectors such as Enterprise Software, Consumer Tech, Blockchain. ... <span class="badge"><a href="fund/CIG" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/CIG" data-dsubmit="true" target="_blank"><i class="fas fa-external-link-alt"></i> Submit deck</a><a href="fund/CIG" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/GPO%20Fund" target="_blank"><img loading="lazy" data-src="./images/funds/recg5T5Qma8MnD4w4.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/GPO%20Fund" target="_blank">GPO Fund</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Canada" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ca.png"> Canada</span></a><a href="country/Chile" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/cl.png"> Chile</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/GPO%20Fund" target="_blank">+ 37 more</a></span></td><td data-label="First cheque">$5M&nbsp;to $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in tech-driven, founder-led, global companies that can harness global public capital markets to achieve growth, business expansion, and market leadership.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/global-public-offering-fund/" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/GPO%20Fund" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Five%20Elms%20Capital" target="_blank"><img loading="lazy" data-src="./images/funds/rec63x802mU1kZ0IL.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Five%20Elms%20Capital" target="_blank">Five Elms Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><a href="country/Australia" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/au.png"> Australia</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Five%20Elms%20Capital" target="_blank">+ 38 more</a></span></td><td data-label="First cheque">$5M&nbsp;to $50M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest $5-50M into B2B software companies in the US or international with $2-20 million in revenues. Minority or majority investments and growth capital or liquidity for founders and early investor... <span class="badge"><a href="fund/Five%20Elms%20Capital" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Five%20Elms%20Capital" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Five%20Elms%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Palindrome%20Capital" target="_blank"><img loading="lazy" data-src="./images/funds/rec2K0YJuxWYKz4WY.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Palindrome%20Capital" target="_blank">Palindrome Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Australia" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/au.png"> Australia</span></a><a href="country/Austria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/at.png"> Austria</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Palindrome%20Capital" target="_blank">+ 41 more</a></span></td><td data-label="First cheque">$100k&nbsp;to $20M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge text-nowrap"><a class="VClink" href="fund/Palindrome%20Capital" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in post-revenue technology startups. 
+Sector agnostic but a sweet-spot for B2B & Saas models.
+Geography preferred: Middle-income to high-income countries.
+Minimum US$10K MRR and need to see ... <span class="badge"><a href="fund/Palindrome%20Capital" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Palindrome%20Capital" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Palindrome%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/GPI%20Global%20Partners%20Investments" target="_blank"><img loading="lazy" data-src="./images/funds/recrJeIt0uA3sY06Z.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/GPI%20Global%20Partners%20Investments" target="_blank">GPI Global Partners Investments</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Algeria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/dz.png"> Algeria</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/GPI%20Global%20Partners%20Investments" target="_blank">+ 54 more</a></span></td><td data-label="First cheque">$5k&nbsp;to $30M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge text-nowrap"><a class="VClink" href="fund/GPI%20Global%20Partners%20Investments" target="_blank">+ 3 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in startups and established businesses in a sector-agnostic mandate and bring it under our strict due diligence to our pool of sovereigns, institutional, funds, and individual investors. Tic... <span class="badge"><a href="fund/GPI%20Global%20Partners%20Investments" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/GPI%20Global%20Partners%20Investments" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/GPI%20Global%20Partners%20Investments" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/HubSpot%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/rec92NNx7DJAWVhm9.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/HubSpot%20Ventures" target="_blank">HubSpot Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/HubSpot%20Ventures" target="_blank">+ 68 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $3M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge text-nowrap"><a class="VClink" href="fund/HubSpot%20Ventures" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in "seed plus" and later companies aligned with our mission of helping millions of organizations grow better.
+
+Prospective investments must, among other criteria:
+- Align with our mission to... <span class="badge"><a href="fund/HubSpot%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/hubspot-ventures/" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/HubSpot%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Forster%20Chase%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/reczfKstFMhsczm4J.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Forster%20Chase%20Ventures" target="_blank">Forster Chase Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Afghanistan" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/af.png"> Afghanistan</span></a><a href="country/Albania" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/al.png"> Albania</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Forster%20Chase%20Ventures" target="_blank">+ 194 more</a></span></td><td data-label="First cheque">$100k&nbsp;to $4M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge text-nowrap"><a class="VClink" href="fund/Forster%20Chase%20Ventures" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in businesses with three things: the right strategy, capital and talent. As such we have put together an all-encompassing one-stop shop where businesses can be nurtured and fostered towards ... <span class="badge"><a href="fund/Forster%20Chase%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Forster%20Chase%20Ventures" data-dsubmit="true" target="_blank"><i class="fas fa-external-link-alt"></i> Submit deck</a><a href="fund/Forster%20Chase%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Aperitivo" target="_blank"><img loading="lazy" data-src="./images/funds/reckdUrHoKMWtyScV.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Aperitivo" target="_blank">Aperitivo</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Afghanistan" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/af.png"> Afghanistan</span></a><a href="country/Albania" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/al.png"> Albania</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Aperitivo" target="_blank">+ 194 more</a></span></td><td data-label="First cheque">$50k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge text-nowrap"><a class="VClink" href="fund/Aperitivo" target="_blank">+ 3 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in Worldwide startups from 0 to 1. Sector Agnostic.</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Aperitivo" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Aperitivo" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Volpe%20Capital" target="_blank"><img loading="lazy" data-src="./images/funds/reciYScZsQcgcZaJt.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Volpe%20Capital" target="_blank">Volpe Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Colombia" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/co.png"> Colombia</span></a><a href="country/Mexico" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/mx.png"> Mexico</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Volpe%20Capital" target="_blank">+ 4 more</a></span></td><td data-label='First cheque'><em>N/A</em></td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge text-nowrap"><a class="VClink" href="fund/Volpe%20Capital" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in technology companies based in Latin America</td><td class='text-center p-1' ><small style='color:#21a172'><strong>100% match!</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/volpe-capital/" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/Volpe%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Astella%20Investimentos" target="_blank"><img loading="lazy" data-src="./images/funds/recBNkV59UrQtVJQm.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Astella%20Investimentos" target="_blank">Astella Investimentos</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a></td><td data-label="First cheque">$500k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in Brazil-based entrepreneurs building technology startups.  </td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Astella%20Investimentos" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Astella%20Investimentos" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Propel%20Venture%20Partners" target="_blank"><img loading="lazy" data-src="./images/funds/recNQHe82vpeTqE1W.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Propel%20Venture%20Partners" target="_blank">Propel Venture Partners</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Mexico" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/mx.png"> Mexico</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Propel%20Venture%20Partners" target="_blank">+ 2 more</a></span></td><td data-label="First cheque">$250k&nbsp;to $5.5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge text-nowrap"><a class="VClink" href="fund/Propel%20Venture%20Partners" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in companies that are relevant to financial services (e.g. fintech, insuretech, crypto, digital transformation, etc.)</td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/propelvc" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/Propel%20Venture%20Partners" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/FEMSA%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/rechTkvWcC95bjQBy.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/FEMSA%20Ventures" target="_blank">FEMSA Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Mexico" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/mx.png"> Mexico</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/FEMSA%20Ventures" target="_blank">+ 4 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in companies that can clearly benefit from leveraging collaboration opportunities with our business platforms and other portfolio companies.
+
+FEMSA Ventures is a Venture Capital fund backed ... <span class="badge"><a href="fund/FEMSA%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/FEMSA%20Ventures" data-dsubmit="true" target="_blank"><i class="fas fa-external-link-alt"></i> Submit deck</a><a href="fund/FEMSA%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Capital%20Lab%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/recF9kLvN8Juj58FX.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Capital%20Lab%20Ventures" target="_blank">Capital Lab Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><a href="country/France" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/fr.png"> France</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Capital%20Lab%20Ventures" target="_blank">+ 4 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $3M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in deeptech Latam and Europe-based companies that will reshape the world in increasingly digital societies. </td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Capital%20Lab%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Capital%20Lab%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Canaan" target="_blank"><img loading="lazy" data-src="./images/funds/rechOAGqPQOs4Reiq.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Canaan" target="_blank">Canaan</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Canada" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ca.png"> Canada</span></a><a href="country/France" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/fr.png"> France</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Canaan" target="_blank">+ 4 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $20M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in early-stage startups across multiple sectors:  Enterprise, Consumer, Fintech & Frontier from seed to Series B.</td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/canaan-partners/" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/Canaan" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Petri" target="_blank"><img loading="lazy" data-src="./images/funds/recmgDEy3M7Ax5fty.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Petri" target="_blank">Petri</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Petri" target="_blank">+ 7 more</a></span></td><td data-label="First cheque">$100k&nbsp;to $6M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge text-nowrap"><a class="VClink" href="fund/Petri" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in startups at the intersection of biology and tech, applied to planetary and human health.</td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Petri" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Petri" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Eos%20Venture%20Partners" target="_blank"><img loading="lazy" data-src="./images/funds/rec16LtoJLE9Y7qvL.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Eos%20Venture%20Partners" target="_blank">Eos Venture Partners</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Australia" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/au.png"> Australia</span></a><a href="country/Austria" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/at.png"> Austria</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Eos%20Venture%20Partners" target="_blank">+ 10 more</a></span></td><td data-label="First cheque">$3M&nbsp;to $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in InsurTech at Series A</td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Eos%20Venture%20Partners" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Eos%20Venture%20Partners" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Hummingbird%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/rec4FJGrkY1SfQcRV.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Hummingbird%20Ventures" target="_blank">Hummingbird Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><a href="country/India" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/in.png"> India</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Hummingbird%20Ventures" target="_blank">+ 12 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge text-nowrap"><a class="VClink" href="fund/Hummingbird%20Ventures" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in entrepreneurial genius globally at early-stage.</td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Hummingbird%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Hummingbird%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Yaya%20Capital" target="_blank"><img loading="lazy" data-src="./images/funds/recd1L4opSFt7kkMw.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Yaya%20Capital" target="_blank">Yaya Capital</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Yaya%20Capital" target="_blank">+ 13 more</a></span></td><td data-label="First cheque">$300k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in Digital Health, Healthtechs, Medical Devices, Medtech, Biotech, Techbio, Diagnostics and other healthcare startups. They need to either reduce healthcare costs or improve clinical outcome... <span class="badge"><a href="fund/Yaya%20Capital" class="VClink">See more</a></span></td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Yaya%20Capital" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Yaya%20Capital" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Pear%20VC" target="_blank"><img loading="lazy" data-src="./images/funds/rechDTq19RaK0ivjO.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Pear%20VC" target="_blank">Pear VC</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Pear%20VC" target="_blank">+ 15 more</a></span></td><td data-label="First cheque">$150k&nbsp;to $4M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge text-nowrap"><a class="VClink" href="fund/Pear%20VC" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in pre-seed, seed, and series A companies across industries. </td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Pear%20VC" data-dsubmit="true" target="_blank"><i class="fas fa-external-link-alt"></i> Submit deck</a><a href="fund/Pear%20VC" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Buoyant%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/recRjMenHUf93VOxo.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Buoyant%20Ventures" target="_blank">Buoyant Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Buoyant%20Ventures" target="_blank">+ 20 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in digital solutions for climate. 
+- DIGITAL TECHNOLGIES, this includes software, analytics, sensors, platforms, etc.
+- SEED & SERIES A, but we also like to build relationships with companie... <span class="badge"><a href="fund/Buoyant%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Buoyant%20Ventures" data-dsubmit="true" target="_blank"><i class="fas fa-external-link-alt"></i> Submit deck</a><a href="fund/Buoyant%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/SCOR%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/recSpFgPx84Onu6zu.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/SCOR%20Ventures" target="_blank">SCOR Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/UK" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/gb.png"> UK</span></a><a href="country/France" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/fr.png"> France</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/SCOR%20Ventures" target="_blank">+ 22 more</a></span></td><td data-label="First cheque">$1M&nbsp;to $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in: (1) the ‘Insurers of the Future’: tech-driven underwriting companies (MGAs, carriers) that offer multiple points of digital and business model differentiation. (2) any type of softwa... <span class="badge"><a href="fund/SCOR%20Ventures" class="VClink">See more</a></span></td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/SCOR%20Ventures" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/SCOR%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/DH%20Ventures%20%28Delivery%20Hero%20Ventures%29" target="_blank"><img loading="lazy" data-src="./images/funds/rec990rHJQRxdLt9f.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/DH%20Ventures%20%28Delivery%20Hero%20Ventures%29" target="_blank">DH Ventures (Delivery Hero Ventures)</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/Argentina" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/ar.png"> Argentina</span></a><a href="country/Vietnam" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/vn.png"> Vietnam</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/DH%20Ventures%20%28Delivery%20Hero%20Ventures%29" target="_blank">+ 27 more</a></span></td><td data-label="First cheque">$500k&nbsp;to $5M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in ambitious founders disrupting the global food and retail ecosystem and adjacent markets. Our areas of specialization include internet (e-commerce, marketplaces, direct to consumer), B2B (... <span class="badge"><a href="fund/DH%20Ventures%20%28Delivery%20Hero%20Ventures%29" class="VClink">See more</a></span></td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/DH%20Ventures%20%28Delivery%20Hero%20Ventures%29" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/DH%20Ventures%20%28Delivery%20Hero%20Ventures%29" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                    <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-verified" data-original-title="This investor is verified"><i class="fas fa-check mr-1"></i>Verified</button>
+                                    <a class="VClink" href="fund/Vine%20Ventures" target="_blank"><img loading="lazy" data-src="./images/funds/recvMxFPTj0mP9N09.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Vine%20Ventures" target="_blank">Vine Ventures</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/Israel" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/il.png"> Israel</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Vine%20Ventures" target="_blank">+ 2 more</a></span></td><td data-label="First cheque">max. $10M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">1. Idea or Patent</span><span class="badge badge-primary mr-1 mb-1">3. Early Revenue</span><span class="badge badge-primary mr-1 mb-1">2. Prototype</span><span class="badge text-nowrap"><a class="VClink" href="fund/Vine%20Ventures" target="_blank">+ 1 more</a></span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in the earliest stages of software companies in US, LatAm, and Israel </td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" href="https://www.linkedin.com/company/vine-ventures-l-p?original_referer=" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/Vine%20Ventures" title="Edit this entry" class="w-100 btn btn-primary editBtn VClink text-nowrap"><i class="fa fa-eye"></i>&nbsp;View details</a></td></tr><tr class="d-none"><td class="logoCell">                                <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-unverified" data-original-title="This investor is not verified"><i class="fas fa-check mr-1"></i>Non-verified</button>
+                                    <a class="VClink" href="fund/Eurazeo" target="_blank"><img loading="lazy" data-src="./images/funds/recP2FXtrvC35ddoi.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Eurazeo" target="_blank">Eurazeo</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/China" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/cn.png"> China</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Eurazeo" target="_blank">+ 1 more</a></span></td><td data-label="First cheque">min. $15M</td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">4. Scaling</span></td><td data-label='Funding requirement'></td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn text-nowrap" rel="nofollow" href="https://bothsidesofthetable.com/getting-access-to-the-old-boys-club-how-to-approach-a-vc-71927fa0111e" target="_blank" data-toggle="tooltip" data-placement="top" title="This fund prefers warm intros" rel="nofollow"><i class="fa fa-handshake"></i> Intros preferred</a><a href="fund/Eurazeo" title="Edit this entry" data-dedit="true" class="w-100 btn VClink editBtn text-nowrap"><i class="fa fa-edit"></i>&nbsp;Edit this page</a></td></tr><tr class="d-none"><td class="logoCell">                                <button data-toggle="tooltip" title="" class="btn btn-success btn-circle badge-unverified" data-original-title="This investor is not verified"><i class="fas fa-check mr-1"></i>Non-verified</button>
+                                    <a class="VClink" href="fund/Exome%20Asset%20Management" target="_blank"><img loading="lazy" data-src="./images/funds/recejGlcjU8Y1ocVM.jpg" class="mr-3 lazy logo" width=75 src="images/spinner.gif"></a></td><td data-label="Investor name" ><a class="VClink" href="fund/Exome%20Asset%20Management" target="_blank">Exome Asset Management</td><td data-label='Target countries'><a href="country/Brazil" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/br.png"> Brazil</span></a><a href="country/USA" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/us.png"> USA</span></a><a href="country/China" target="_blank"><span class="badge badge-primary mr-1 mb-1"><img loading="lazy" src="https://www.openvc.app/images/flags/cn.png"> China</span></a><span class="badge text-nowrap"><a class="VClink" href="fund/Exome%20Asset%20Management" target="_blank">+ 6 more</a></span></td><td data-label='First cheque'><em>N/A</em></td><td data-label="Funding stages" class=""><span class="badge badge-primary mr-1 mb-1">5. Growth</span><span class="badge badge-primary mr-1 mb-1">6. Pre-IPO</span></td><td data-label='Funding requirement' class='criteriaCell'>We invest in global healthcare companies </td><td class='text-center p-1' ><small><strong>75% match</strong><i data-toggle='tooltip' data-placement='top' title='Only reach out to funds with high match. Use more filters to increase accuracy. (% is indicative, may be inaccurate)' class='ml-1 text-muted cursor-pointer fas fa-info-circle'></i></small><br><a class="text-white btn mb-1 w-100 btn-primary submitDeckBtn VClink text-nowrap" href="fund/Exome%20Asset%20Management" data-dsubmit="true"><i class="fas fa-envelope"></i> Submit deck</a><a href="fund/Exome%20Asset%20Management" title="Edit this entry" data-dedit="true" class="w-100 btn VClink editBtn text-nowrap"><i class="fa fa-edit"></i>&nbsp;Edit this page</a></td></tr>                        </tbody>
+                    </table>
+                                    <nav aria-label="Page navigation" class="mt-3">
+                    <ul class="justify-content-end pagination">
+                        <li id="pageFirst" class="d-none page-item">
+                            <button  data-page="1" class="page-link">1</button>
+                        </li>
+                        <li class="page-item">
+                            <button id="pagePrev" data-page="0" class="page-link d-none" aria-label="Previous">
+                                0
+                            </button>
+                        </li>
+                        <li class="page-item">
+                            <button id="current_page" class="current page-link">1</button>
+                        </li>
+                        <li class="page-item">
+                            <button id="pageNext" data-page="2" class="page-link" aria-label="Next">
+                                2
+                            </button>
+                        </li>
+                        <li id="pageDot" class="page-item">
+                            ...
+                        </li>
+                        <li id="pageLast" class="page-item">
+                            <button id="" data-page="5" class="page-link">5</button>
+                        </li>
+                    </ul>
+                </nav>
+                        </div>
+        </div>
+        <div class="mt-5 card container" id="ressourcesCont">
+    <h2 id="partners" class="text-center mt-5">Meet our partner</h2>
+    <div id="vaubanBlock" class="row">
+        <div class="col-sm-12 col-md-5 py-5 d-flex flex-column justify-content-center align-items-center">
+            <img src="https://assets.website-files.com/5ebe9ac00bb8ee487aaa44b8/62c31a289187413c11269ca7_Vauban%20Carta%20Black%20on%20White.png" style="max-width:250px" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-7 py-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">For founders</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">For investors</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active pt-4" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h5>Supercharge your funding round</h5>
+                    <p class="mt-3">With <a class="text-primary" href="https://vauban.io/founders-spv?utm_source=openvc&utm_medium=partner_block_fou_txt">VAUBAN</a>, you turn stakeholders into shareholders. Clean up your cap table by bundling up small investors — partners, angels and even customers — into one SPV.</p>
+                    <h5>By founders for founders</h5>
+                    <p class="mt-3"><a class="text-primary" href="https://vauban.io/founders-spv?utm_source=openvc&utm_medium=partner_block_fou_txt">VAUBAN</a> is the easiest way to fuse shareholder value with stakeholder value, create mass evangelisation and increase brand loyalty by letting stakeholders join the mission.</p>
+                    <div class="d-flex mt-4">
+                        <div class="text-center"><a href="https://structurer.vauban.io/?utm_source=openvc&utm_medium=partner_block_fou_btn" class="btn btn-dark text-white">Get started now</a></div>
+                        <div class="text-center"><a href="https://vauban.io/contacts?utm_source=openvc&utm_medium=partner_block_fou_btn" class="btn btn-link">Got questions ? Get in touch</a></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade pt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h5>Co-invest in startups</h5>
+                    <p class="mt-3"><a class="text-primary" href="https://vauban.io?utm_source=openvc&utm_medium=partner_block_inv_txt">VAUBAN</a> makes it easy for you to raise capital from your network to invest in private companies. From structuring to investor reporting, it is an end-to-end platform for all your investment projects.</p>
+                    <h5>Run your VC fund online</h5>
+                    <p class="mt-3"><a class="text-primary" href="https://vauban.io?utm_source=openvc&utm_medium=partner_block_inv_txt">VAUBAN</a> is the fastest way to launch your VC : everything is sorted in one beautiful fully-integrated platform to give you and your investors the experience you deserve so you can focus on investing in great companies.</p>
+                    <div class="d-flex mt-2">
+                        <div class="text-center"><a href="https://structurer.vauban.io/?utm_source=openvc&utm_medium=partner_block_inv_btn" class="btn btn-dark text-white">Get started now</a></div>
+                        <div class="text-center"><a href="https://vauban.io/contacts?utm_source=openvc&utm_medium=partner_block_inv_btn" class="btn btn-link">Got questions ? Get in touch</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <div id="blogCont" class="mt-5 pb-5 card">
+    <h2 id="articles" class="text-center mt-5">Latest insights</h2>
+    <div class="mt-3 row">
+            <div class="p-0 card col-12 col-lg-4">
+                <a target="_blank" href=" https://www.openvc.app/blog/how-to-raise-funds-with-openvc " class="text-black">
+                        <img class="px-4 mt-4 card-img-top" src="https://d1pnnwteuly8z3.cloudfront.net/images/177302d9-3657-45b7-ac9d-acf801d83a74/82b26701-6cdd-4c22-8667-26da1897ec01.png" alt="How to raise funds with OpenVC">
+                        <div class="card-body px-4">
+                            <h5 class="card-title mb-2">How to raise funds with OpenVC</h5>
+                            <small>By Stéphane Nasser | Thu, Feb 16, 2023</small>
+                            <p class="mt-3 card-text"> New on OpenVC? In 5 min, you will know exactly how to use OpenVC to raise funds for your startup. If you have questions, the answer is probably here. </p>
+                        <span class="badge badge-primary mr-2">Fundraising</span>                        </div>
+                </a>
+            </div>
+                        <div class="p-0 card col-12 col-lg-4">
+                <a target="_blank" href=" https://www.openvc.app/blog/rule-506b " class="text-black">
+                        <img class="px-4 mt-4 card-img-top" src="https://d1pnnwteuly8z3.cloudfront.net/images/177302d9-3657-45b7-ac9d-acf801d83a74/f13de2c1-95c5-4e92-8401-95dc54608f7f.png" alt="Raise funds under Reg D, Rule 506(b)">
+                        <div class="card-body px-4">
+                            <h5 class="card-title mb-2">Raise funds under Reg D, Rule 506(b)</h5>
+                            <small>By Côme Laffay | Mon, Feb 13, 202</small>
+                            <p class="mt-3 card-text"> Rule 506(b) is a popular exemption from registration, as it allows startups to raise an unlimited amount of money from accredited investors and up to 35 non-accredited investors. </p>
+                        <span class="badge badge-primary mr-2">Legal</span>                        </div>
+                </a>
+            </div>
+                        <div class="p-0 card col-12 col-lg-4">
+                <a target="_blank" href=" https://www.openvc.app/blog/section-4a2 " class="text-black">
+                        <img class="px-4 mt-4 card-img-top" src="https://d1pnnwteuly8z3.cloudfront.net/images/177302d9-3657-45b7-ac9d-acf801d83a74/6ef50b3f-7da1-4e7b-b013-71d9c4b949fc.png" alt="How to raise funds under Section 4(a)(2)">
+                        <div class="card-body px-4">
+                            <h5 class="card-title mb-2">How to raise funds under Section 4(a)(2)</h5>
+                            <small>By Côme Laffay | Mon, Feb 6, 202</small>
+                            <p class="mt-3 card-text"> Section 4(a)(2) allows a company to raise funds from its founding team. This post breaks down the legal aspects of this SEC exemption for startup founders. </p>
+                        <span class="badge badge-primary mr-2">Legal</span>                        </div>
+                </a>
+            </div>
+                </div>
+</div>        <div class="card container newsletterCont">
+       <h2 id="newsletter" class="text-center mt-5">Newsletter</h2>
+       <p class="p-5 text-center">Subscribe to our newsletter to receive news about our future updates and new features</p>
+       <div class="row">
+           <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+               <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+               <script>
+                   hbspt.forms.create({    portalId: "7205027",    formId: "c2302610-bdb9-431d-a77b-e0521ae8785a" });
+               </script>
+           </div>
+       </div>
+</div>                <div id="faqCont" class="mt-5 mb-5 card container">
+                <h2 id="FAQ" class="text-center mt-5">Frequently Asked Questions</h2>
+                <div class="p-5">
+                    <div class="accordion" id="accordionExample">
+                        
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                What is OpenVC ?
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>OpenVC is an open platform that allows tech founders to connect with investors. </p>
+
+<p>We provide founders with an investor list, a fundraising CRM, and a deck hosting solution for free - no commission, no subscription. </p>
+
+<p>We also offer a Premium membership for the founders who want fundraising superpowers. 😁</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                I'm a founder. How does that work?
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>It's simple: create an account and search for the right investors. Each investor is different: some accept cold emails while other prefer online forms or warm intros. </p>
+
+<p>To learn how to use OpenVC read <a href="https://openvc.app/blog/how-to-raise-funds-with-openvc">the 5-min tutorial</a>.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                I'm an investor. How does that work? 
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>OpenVC is 100% free for investors - no subscription, no commission.</p>
+
+<p>Just click "Sign up" and follow the instructions. Make sure to give a detailed description of your thesis, so you receive qualified deal flow. </p>
+
+<p>Please note that it takes ~24 hours to get your profile approved. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                What about founders spamming VCs?
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    All deal flow on OpenVC is screened for quality and thesis fit. As an investor on OpenVC, you can expect to receive ~1 outreach per week. 
+When a submission is not a good fit, we send a rejection email to the founder with actionable feedback and helpful links to help them succeed. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Who is behind OpenVC ?
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>Hi there! We are <a href="https://twitter.com/StephNass">Stephane</a> and <a href="https://www.lucasroquilly.com/">Lucas</a>, the makers of OpenVC.
+We put a lot of heart and work into it. 
+We hope you'll like it. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                Is OpenVC really free ?
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>OpenVC is free to use for both sides. Similar to Linkedin, anyone can sign up and connect with investors via OpenVC, and we also offer a Premium membership for founders who want superpowers to raise funds.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                How can I get in touch ?
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>Just email steph [at] openvc [dot] app. I always reply, except when I don't 😳</p>
+
+                                </div>
+                            </div>
+                        </div>                    </div>
+                </div>
+        </div>        <div class="modal" tabindex="-1" id="VCmodal" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="
+            padding:0;
+            display:block;
+            border: none;
+            float: right;">
+            </div>
+            <div data-offset="0" id="vcModalBody" class="modal-body p-0">
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="profileModal" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="
+            background-color: #e84393;
+            display:block;
+            border: none;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body p-0"></div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="loginModal" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header pb-0" style="border:none;">
+                <h5 class="modal-title text-center"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" data-backdrop="static" tabindex="-1" id="signupModal" data-keyboard="false" role="dialog">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered" role="document" style="min-width: min-content;">
+        <div class="modal-content">
+            <div class="modal-header" style="
+            padding:0;
+            display:block;
+            border: none;
+            float: right;">
+                <h2 class="modal-title text-center text-white pb-3 pt-5 h1" style="background-color:#e84393;">Sign up to OpenVC</h2>
+                <button type="button" style="position:absolute;right:0.5em;top:0.5em;" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="" aria-hidden="true">&times;</span>
+                </button>
+                <div class="mb-2" id="fundBg" style="
+                background-image: url(images/fund_bg.svg);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                width:100%;
+                height:50px;
+                background-position-y: -19px;
+                z-index:1;">
+            </div>
+            </div>
+            <div class="modal-body">
+               
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="settingsModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div style="border:none" class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body pb-5">
+                <div class="container">
+                    <h4 class="mb-3">Settings</h4>
+                    <div class="float-right custom-control w-100 custom-switch"><input type="checkbox" onchange="toggleTheme()" class="custom-control-input" id="customSwitch1"><label class="custom-control-label cursor-pointer" for="customSwitch1">Dark mode</label></div>
+                    <div class="mb-3 float-right custom-control w-100 custom-switch"><input type="checkbox" class="custom-control-input" id="playlistSwitch"><label class="custom-control-label cursor-pointer" for="playlistSwitch">Swag mode</label></div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <h4 class="mb-3">Columns</h4>
+                            <div class="float-right custom-control w-100 custom-switch"><input checked="" type="checkbox" onchange="toggleColumn(1)" class="custom-control-input" id="colvis1"><label class="custom-control-label cursor-pointer" for="colvis1">Logo</label></div>
+                            <div class="float-right custom-control w-100 custom-switch"><input checked="" type="checkbox" onchange="toggleColumn(2)" class="custom-control-input" id="colvis2"><label class="custom-control-label cursor-pointer" for="colvis2">Investor name</label></div>
+                            <div class="float-right custom-control w-100 custom-switch"><input checked="" type="checkbox" onchange="toggleColumn(3)" class="custom-control-input" id="colvis3"><label class="custom-control-label cursor-pointer" for="colvis3">Countries of investment</label></div>
+                            <div class="float-right custom-control w-100 custom-switch"><input checked="" type="checkbox" onchange="toggleColumn(4)" class="custom-control-input" id="colvis4"><label class="custom-control-label cursor-pointer" for="colvis4">First cheque</label></div>
+                            <div class="float-right custom-control w-100 custom-switch"><input checked="" type="checkbox" onchange="toggleColumn(5)" class="custom-control-input" id="colvis5"><label class="custom-control-label cursor-pointer" for="colvis5">Stage of investment</label></div>
+                            <div class="float-right custom-control w-100 custom-switch"><input checked="" type="checkbox" onchange="toggleColumn(6)" class="custom-control-input" id="colvis6"><label class="custom-control-label cursor-pointer" for="colvis6">Investment thesis</label></div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>        
+<div class="modal" tabindex="-1" id="embedModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div style="border:none" class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body pb-5">
+                <div class="container">
+                    <h4 class="mb-3">Embed this list</h4>
+                    Copy and paste the following HTML code to embed this list on any web page :
+                    <br>
+                                        <textarea class="form-control mt-3 w-100"><iframe src="https://www.openvc.app/embedList?s=&countries%5B%5D=Brazil&stages%5B%5D=4.+Scaling&stages%5B%5D=5.+Growth&cheque_size=3000000%2C21000000" width="100%" height="500" style="border:none;"></iframe></textarea>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>        <footer class="container text-muted pt-5 pb-5">
+    <div class="row">
+        <div class="col-12 col-md-4">
+        <span class="navbar-brand" href="#">
+            <a href="./">
+            <img src="img/android-icon-192x192.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="" loading="lazy">
+            OpenVC
+             </a>
+        </span>
+        <p class="pt-2">
+            An Open project by <a href="https://www.stephnass.com/" target="_blank">Steph</a> and <a href="https://www.lucasroquilly.com" target="_blank">Lucas</a>
+        </p>
+        <p>
+            <a class="btn btn-primary" href="https://ko-fi.com/openvc/" target="_blank">Support us</a>
+        </p>
+        </div>
+        <div class="col-6 col-md-4">
+            <ul class="list-unstyled">
+                <li class="">
+                    <a href="about">About</a>
+                </li>
+                <li class="">
+                    <a href="all-funds">All funds A-Z</a>
+                </li>
+                <li class="">
+                    <a class="scrollToFAQ" href="#FAQ ">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6 col-md-4">
+            <ul class="list-unstyled">
+                
+                <li>
+                    <a  href="https://drive.google.com/drive/folders/1CJ82HtjjoY7MiZKf_aA9uqci6reZJLPS?usp=sharing" target="_blank">Media</a>
+                </li>
+                <li>
+                    <a  href="legal">Legal</a>
+                </li>
+                <li>
+                    <a  href="https://www.openvc.app/blog/startup-financial-model" target="_blank">Best financial models</a>
+                </li>
+                <li>
+                    <a  href="https://openvc.app/blog/pitch-deck-template" target="_blank">Best pitch deck templates</a>
+                </li>
+                <li>
+                    <a  href="https://www.opendeck.app" target="_blank">Pitch deck inspiration</a>
+                </li>
+                
+            
+            </ul>
+        </div>
+      </div>
+</footer>
+    <script>(function(){var js = "window['__CF$cv$params']={r:'79d5a1c90ca9a030',m:'HM0CzMwaFN4vPczJKGR5p0wWGi2qfskBh636EXh5HG8-1677046996-0-Ac1vR1RmlZ0ovO3/UfTUu9hKg7aZAB/bMpXsBIUUxg0FoOETxmi8HybTP0+6OAW8AkZAqbWjxnFtqKo7RaAYDPkfPe5Q5Wi7W5X1nnLcQ9j4+VFTSNjxJFkVjwa3zx8r6EAj4pmwQj6aTc7LzSnBM811kPzxP/2UX9Xzo15+kvQkHHY31qvpjca3sv12qSiIa4TQVkYV5ggviDw8a/DxE9wWoOZO0ZP1jvXjPIfju2yTUiSGK6geUlOUeQ0guK6j+Q==',s:[0x17b1c4a39f,0xce2b689e99],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+    <script>
+    //GTM DL PUSH
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                'event': 'search_terms',
+                'name' : ''})
+    </script>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+        <script type="text/javascript" src="js/jquery.highlight-within-textarea.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet.markercluster@1.1.0/dist/leaflet.markercluster.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.4/dist/autoComplete.min.js"></script>
+        <script>
+        var windowObjectReference = null;
+        $('#playlistSwitch').on('change', function(e){
+            if(e.target.checked){
+                if(windowObjectReference == null || windowObjectReference.closed)
+                {
+                windowObjectReference = window.open("https://open.spotify.com/embed/playlist/5pwpbADP0G1QWPQMc1QJOG",
+                "OpenVCPlaylist", "popup,left=100,top=100,width=320,height=450");
+                }
+                else
+                {
+                windowObjectReference.focus();
+                };
+            } 
+            else{
+                if(windowObjectReference == null || windowObjectReference.closed)
+                {
+                return
+                }
+                else
+                {
+                windowObjectReference.close();
+                };
+            }
+        })
+        </script>
+        <!-- Start of HubSpot Embed Code  -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7205027.js"></script>
+        <!--  End of HubSpot Embed Code -->        <script>
+        if($(window).width() <= 992 ){
+        $( "#searchBox" ).focusin(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#searchBox").offset().top - 100
+            }, 0);
+        })
+    }
+    $( document ).ready(function() {
+        var search_autoComplete_init = false;
+        $.ajax({
+            type: 'get',
+            url: 'components/autocomplete/get_synonyms.php',
+            complete: function (data) {
+                resp = JSON.parse(data.responseText);
+                if (typeof search_autoComplete == "undefined"){
+                    
+                    const search_autoComplete = new autoComplete({
+                        selector: "#searchBox",
+                        cache : true,
+                        data: {
+                            src: resp,
+                            keys: ['tags']
+                        },
+                        trigger: (query) => {
+                            return true
+                        },
+                        resultItem: {
+                            element: (item, data) => {
+                                const input = search_autoComplete.input;
+                                if(data.value.cat !== null){
+                                    let str = data.value.cat;
+                                    if(typeof data.value.disp !== "undefined"){
+                                        var index = data.value.disp.indexOf(input.value);
+                                        if (index >= 0) { 
+                                            let innerHTML = (data.value.disp).substring(0,index) + "<mark class='autoComplete_highlight'>" + (data.value.disp).substring(index,index+(input.value).length) + "</mark>" + (data.value.disp).substring(index + (input.value).length);
+                                            str += `<p class="m-0"><small class="text-wrap">Includes: <em>${innerHTML}</em></small></p>`;
+                                        }
+                                        else
+                                            str+= `<p class="m-0"><small class="text-wrap">Includes: <em>${data.value.disp}</em></small></p>`;
+                                    }
+                                    if(typeof data.value.prio !== "undefined")
+                                        $(item).attr('data-position',"1")
+                                    else
+                                        $(item).attr('data-position',"2")
+                                    $(item).html(str);
+                                }
+                                else $(item).remove();
+                            },
+                            highlight: "autoComplete_highlight",
+                            selected: "autoComplete_selected"
+                        },
+                        resultsList: {
+                            render : false,
+                            maxResults:99999,
+                            element: (list, data) => {
+                                if (data.results.length && data.results.length < 150) {
+                                    function sort_li(a, b){
+                                        var content_a, content_b;
+                                        try{
+                                            content_a = $(a).contents().get(0).nodeValue;
+                                            content_b = $(b).contents().get(0).nodeValue;
+                                        }
+                                        catch(e){
+                                            content_b = b.value.cat; 
+                                            content_a = a.value.cat; 
+                                        }
+                                        if(content_a != null&content_b != null){
+                                            if(content_a.includes(search_string)&&!content_b.includes(search_string)) return -1;
+                                            else return 1
+                                        }
+                                        
+                                    }
+                                    search_string = $('#searchBox').val().trim().split(',')[0].trim();
+                                    data.results.sort(sort_li)
+                                    if(search_string==''){
+                                        search_autoComplete.resultsList.maxResults = 99999;
+                                        return data.results
+                                    }
+                                    let fund_list = '';
+                                    let funds_toDisplay = false;
+                                    let keywords_toDisplay = false;
+                                    for(var i = 0; i < data.results.length; i++) {
+                                        if (data.results[i].value.cat == null && search_autoComplete_init){
+                                            funds_toDisplay = true;
+                                            fund_list += `<a href="fund/${encodeURIComponent(data.results[i].value.tags)}" class="VClink"><div class="text-center mx-2 small"><img class="autosuggestFundImg rounded-circle shadow-sm mb-2" src="${data.results[i].value.img}" width="33" height="33"><br>${data.results[i].value.tags}</div></a>`;
+                                        }
+                                        else 
+                                            keywords_toDisplay = true;
+                                    }
+                                    if(keywords_toDisplay){
+                                        const message = document.createElement("div");
+                                        message.innerHTML = '<div class="pl-3 mt-3 small text-muted">Themes</div>';
+                                        list.insertBefore(message,list.firstChild);
+                                        if(funds_toDisplay){
+                                            const messageFunds = document.createElement("div");
+                                            messageFunds.classList.add('autosuggestFundCont');
+                                            messageFunds.innerHTML = '<hr><div class="pl-3 small mt-3 text-muted">Funds</div><div class="d-flex p-2">'+fund_list+'</div>';
+                                            list.appendChild(messageFunds)
+                                        }
+                                    }
+                                    else if(funds_toDisplay){
+                                        fund_list = '<div class="pl-3 small mt-3 text-muted">Funds</div><div class="d-flex p-2">'+fund_list+'</div>';
+                                        const message = document.createElement("div");
+                                        message.innerHTML = ''+fund_list;
+                                        list.insertBefore(message,list.firstChild);
+                                    }
+                                    $($(list).find('li')).sort(sort_li) 
+                                                    .insertAfter($(list).find('div:eq(0)'));
+                                    return data.results
+                                }
+                                search_autoComplete_init = true;
+                                search_autoComplete.resultsList.maxResults = 5;
+                            },
+                            noResults: true,
+                        },
+                        query: (query) => {
+                            const querySplit = query.split(",");
+                            const lastQuery = querySplit.length - 1;
+                            const newQuery = querySplit[lastQuery].trim();
+                            return newQuery;
+                        },
+                        events: {
+                            input: {
+                                selection(event) {
+                                    const input = search_autoComplete.input;
+                                    const selection = event.detail.selection.value.cat.trim();
+                                    const query = input.value.split(",").map(item => item.trim());
+                                    query.pop();
+                                    query.push(selection);
+                                    input.value = query.join(", ")+(', ')
+                                    return
+                                    
+                                },
+                                focus: (event) => {
+                                    search_autoComplete.start();
+                                },
+                                
+                                keydown(event) {
+                                        switch (event.keyCode) {
+                                            case 40:
+                                            case 38:
+                                                event.preventDefault();
+                                                event.keyCode === 40 ? search_autoComplete.next() : search_autoComplete.previous();
+                                                break;
+                                            // Enter
+                                            case 13:
+                                                //if (!search_autoComplete.submit) event.preventDefault();
+                                                if (search_autoComplete.cursor >= 0){
+                                                    //console.log(event)
+                                                    search_autoComplete.select();
+                                                    event.preventDefault();
+                                                } 
+                                                break;
+                                        }
+                                    }
+                            }
+                        }
+                    });
+                }
+
+            }
+        });
+    });
+</script>
+    </html>
