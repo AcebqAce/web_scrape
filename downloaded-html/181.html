@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+
+  <title>Virtual Home of Thomas Duebendorfer | Virtual Home of Thomas Duebendorfer</title>
+
+  <!-- optional -->
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="pingback" href="https://thomas.duebendorfer.ch/xmlrpc.php">
+  <!-- end of optional -->
+
+  <script>
+    document.createElement('picture');
+  </script>
+
+  <script>
+    document.querySelector('html').classList.remove('no-js');
+  </script>
+
+  <title>Virtual Home of Thomas Duebendorfer &#8211; Virtual Home of Thomas Duebendorfer</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Virtual Home of Thomas Duebendorfer &raquo; Feed" href="https://thomas.duebendorfer.ch/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Virtual Home of Thomas Duebendorfer &raquo; Comments Feed" href="https://thomas.duebendorfer.ch/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.14.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-160838547-1"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.14.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-160838547-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+							
+														parameters.send_to = monsterinsights_frontend.ua;
+							__gtagDataLayer(type, name, parameters);
+													} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+															__gtagTracker('config', 'UA-160838547-1', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<link rel='stylesheet' id='wp-block-library-css'  href='https://thomas.duebendorfer.ch/wp-includes/css/dist/block-library/style.min.css?ver=5.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='safe-svg-block-frontend-css'  href='https://thomas.duebendorfer.ch/wp-content/plugins/safe-svg//dist/safe-svg-block-frontend.css?ver=2.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='x5-style-css'  href='https://thomas.duebendorfer.ch/wp-content/themes/x5/style.css?ver=5.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='x5-main-css'  href='https://thomas.duebendorfer.ch/wp-content/themes/x5/css/main.css?ver=5.7.8' type='text/css' media='all' />
+<script type='text/javascript' src='https://thomas.duebendorfer.ch/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.14.0' id='monsterinsights-frontend-script-js'></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/thomas.duebendorfer.ch","hash_tracking":"false","ua":"UA-160838547-1","v4_id":""};/* ]]> */
+</script>
+<script type='text/javascript' src='https://thomas.duebendorfer.ch/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://thomas.duebendorfer.ch/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thomas.duebendorfer.ch/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thomas.duebendorfer.ch/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.8" />
+<link rel="canonical" href="https://thomas.duebendorfer.ch/" />
+<link rel='shortlink' href='https://thomas.duebendorfer.ch/' />
+<link rel="alternate" type="application/json+oembed" href="https://thomas.duebendorfer.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthomas.duebendorfer.ch%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://thomas.duebendorfer.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthomas.duebendorfer.ch%2F&#038;format=xml" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135747109-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135747109-2');
+</script>
+	<style>
+
+		
+			.page-home .c-intro {
+			  background: transparent url('https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/bg_intro-1.png') center 100% no-repeat;
+			  background-size: 390px auto;
+			}
+
+			@media screen and (min-width: 768px) {
+			  .page-home .c-intro {
+			    background-size: 459px auto;
+			  }
+			}
+
+			@media screen and (min-width: 992px) {
+			  .page-home .c-intro {
+			    background-position: 99% 100%;
+			    background-size: 514px auto;
+			  }
+			}
+
+			@media screen and (min-width: 1200px) {
+			  .page-home .c-intro {
+			    background-position: 105% 100%;
+			    background-size: auto;
+			  }
+			}
+
+						.page-home .c-background .details [class^="col-"]:nth-child(1) .info {
+  				background: white url(https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/icon_achievements.png) 33px 19px no-repeat;
+				}
+								.page-home .c-background .details [class^="col-"]:nth-child(2) .info {
+  				background: white url(https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/icon_expertise.png) 35px 23px no-repeat;
+				}
+								.page-home .c-background .details [class^="col-"]:nth-child(3) .info {
+  				background: white url(https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/icon_scale.png) 36px 20px no-repeat;
+				}
+								.page-home .c-background .details [class^="col-"]:nth-child(4) .info {
+  				background: white url(https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/icon_academia.png) 35px 20px no-repeat;
+				}
+				
+	</style>
+
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style>
+</head>
+
+<body
+  class="home page-template page-template-page-home page-template-page-home-php page page-id-116 page-home">
+
+  <header class="c-header fixed-top">
+
+    <div class="container">
+
+      <div class="row justify-content-between">
+        <div class="col-md-8">
+
+          <div class="c-nav js-nav">
+
+            <div class="c-nav__btn js-nav__btn"></div>
+
+            <nav class="c-nav__menu js-nav__menu">
+              <!-- / Display menu -->
+              <ul id="menu-header-menu" class="menu"><li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-116 current_page_item menu-item-161"><a href="https://thomas.duebendorfer.ch/" aria-current="page">Home</a></li>
+<li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://thomas.duebendorfer.ch/contact/">Contact</a></li>
+</ul>            </nav>
+
+          </div>
+          <!-- / c-navigation -->
+
+        </div>
+        <!-- col -->
+
+        <div class="col-md-4">
+          
+
+	<ul class="c-social-btns">
+
+		
+			<li>
+
+									
+					<a href="https://www.linkedin.com/in/duebendorfer/" class="icon-ln">
+            <span class="u-hidden-visually">h</span>
+          </a>
+
+				
+			</li>
+
+		
+	</ul>
+
+        </div>
+
+      </div>
+      <!-- row -->
+
+    </div>
+    <!-- / container -->
+
+  </header>
+  <!-- / c-header -->
+	
+					<section id="section-intro" class="c-intro">
+		
+			<div class="container">
+
+				<div class="row justify-content-center justify-content-lg-start no-gutters intro">
+
+					<div class="col-lg-7 col-xl-6">
+
+													<h2>Thomas<br />
+Dübendorfer</h2>
+						
+						
+													<div class="desc"><h4>Startups</h4>
+<p>I have co-founded these eight Swiss startups: <a href="https://www.9tlabs.com/">9T Labs</a>, <a href="https://agrinorm.ai/">Agrinorm</a>, <a href="https://www.contovista.com/">Contovista</a>, <a href="https://www.frontify.com/">Frontify</a>, <a href="https://www.prepared.app/">precisionED</a>, <a href="https://www.spontacts.com/">Spontacts</a>, <a href="https://threatray.com/">threatray</a> and <a href="https://yes.com/">yes.com</a>.</p>
+<h4>Angel Investor</h4>
+<p>I am an active angel investor and the president and co-founder of <a href="https://www.sictic.ch/">Swiss ICT Investor Club (SICTIC)</a>, the largest angel investor club in Switzerland. I invest into startups with my Datartis Ventures AG.</p>
+<h4>Jury, Panel, Board Member and Speaker</h4>
+<p>As jury, panel, and board member I add value with my management strategy, technology startup, computer science and cyber security expertise. I also teach at universities and give talks.</p>
+</div>
+						
+					</div>
+					<!-- col -->
+				</div>
+				<!-- row -->
+
+			</div>
+			<!-- container -->
+
+		</section>
+		<!-- c-intro -->
+
+	
+	
+					<section id="section-personal" class="c-personal c-section-w-intro">
+		
+			<div class="container px-lg-0">
+
+									<div class="row no-gutters justify-content-center intro">
+						<div class="col-lg-8">
+							<h3>Personal</h3>
+<p>Welcome to my virtual home! Here you can learn about my startup portfolio, myself, and <a href="https://thomas.duebendorfer.ch/contact/">how to engage with me</a>. You can watch a video of me or read some posts.</p>
+						</div>
+						<!-- col -->
+					</div>
+					<!-- row -->
+				
+				<div class="clearfix c-personal__layout">
+
+					
+						<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_01-1.jpg" alt="" class="image">
+						<!-- col -->
+					
+											<div class="desc"><p>Thomas Dübendorfer holds a Ph.D. in Computer Science from ETH Zurich. He is president and co-founder of Swiss ICT Investor Club (SICTIC), the largest angel investor club in Switzerland with a focus on Swiss early-stage technology product startups. He has worked in Silicon Valley and at Google in Zurich as tech lead and security software engineer. He is an angel investor, co-founder and board member in several startups, and has had several successful startup exits. He is CEO of Datartis AG and Datartis Ventures AG.</p>
+</div>
+					
+					
+						<div class="quote">
+							<div class="clearfix quote-content">
+																	<span class="video-holder">
+
+										
+											<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/04/Screenshot-2020-04-13-at-16.01.30-414x276.png" alt="" />
+
+										
+																					<a class="play-btn popup-video" href="https://thomas.duebendorfer.ch/wp-content/uploads/2020/04/20200303-website-video-Thomas.mp4">Play the video</a>
+										
+									</span>
+								
+																	<div class="desc"><p>I invest my time, network and money into passionate tech startup founders to create the future together.</p>
+</div>
+															</div>
+						</div>
+						<!-- video -->
+
+									</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+
+		</section>
+		<!-- c-personal -->
+
+	
+
+	
+					<section id="section-startups" class="c-startups c-section-w-intro bg-colored">
+		
+			<div class="container px-xl-0">
+
+									<div class="row no-gutters justify-content-center intro">
+						<div class="col-lg-8">
+							<h3>Startups</h3>
+<p>Highlights as Serial Entrepreneur and Angel Investor</p>
+						</div>
+						<!-- col -->
+					</div>
+					<!-- row -->
+				
+				
+					<div class="row no-gutters startups">
+
+						<div class="col-12">
+
+							<nav>
+						  	<div class="nav nav-tabs justify-content-center" role="tablist">
+									
+																					<a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">STARTUPS CO-FOUNDED</a>
+										
+
+						    		
+									
+																					<a class="nav-item nav-link " id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="true">STARTUP INVESTMENTS</a>
+										
+
+						    		
+																	</div>
+								<!-- nav -->
+							</nav>
+
+							<div class="tab-content">
+
+								
+								
+								  <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+
+										
+											<div class="row ml-xl-0 mr-xl-0 ml-xxl-1 mr-xxl-1">
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/9tlogo-black-small-1.png" alt="9T Labs" />
+
+															
+																															<h5><a href="https://www.9Tlabs.com/">9T Labs</a></h5>
+<p>All-in-one 3D printing solution for digital carbon fiber composite production.</p>
+<h1 id="yui_3_17_2_1_1589029765937_137"></h1>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/2018-contovista-logo-small.png" alt="Contovista" />
+
+															
+																															<h5><a href="https://www.contovista.com/">Contovista</a></h5>
+<p>Data-driven banking with data analytics and white label finance management solutions.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/frontify-logo-wide-white-background-small.png" alt="Frontify" />
+
+															
+																															<h5><a href="https://www.frontify.com/">Frontify</a></h5>
+<p>All-in-one brand management platform.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_brand_02.jpg" alt="" />
+
+															
+																															<h5><a href="https://www.spontacts.com/">Spontacs AG</a></h5>
+<p>Discover leisure activities nearby and meet new people just around the corner. Exit to Scout24 Group and then to Jochen Schweizer®.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/threatray_typo_black-small.png" alt="threatray" />
+
+															
+																															<h5><a href="https://www.threatray.com/">threatray AG</a></h5>
+<p>Code-based threat intelligence and analytics at scale.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_brand_03.jpg" alt="www.sictic.ch" />
+
+															
+																															<h5><a href="https://www.yes.com/">yes.com</a></h5>
+<p>Open banking ecosystem.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+											</div>
+											<!-- row -->
+
+										
+								  </div>
+								  <!-- tab-pane -->
+
+							  	
+								
+								  <div class="tab-pane fade " id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+
+										
+											<div class="row ml-xl-0 mr-xl-0 ml-xxl-1 mr-xxl-1">
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_brand_05.jpg" alt="" />
+
+															
+																															<h5><a href="https://www.adjoint.io/">Adjoint</a></h5>
+<p>Real-time payments and settlement platform for corporate treasury.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/beekeeper-e1589055718104.png" alt="" />
+
+															
+																															<h5><a href="https://www.beekeeper.io/">Beekeeper</a></h5>
+<p>Team communication platform and essential tool for frontline workers.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.00.34.png" alt="" />
+
+															
+																															<h5><a href="https://www.carbon-delta.com/">Carbon Delta</a></h5>
+<p>Climate solutions for investment professionals and assessments of climate related risks and opportunities in investment portfolios. Exit to MSCI Inc.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_brand_07.jpg" alt="" />
+
+															
+																															<h5><a href="https://www.legartis.ai/">Legartis</a></h5>
+<p>Contract intelligence AI solution for legal counsels.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_brand_08.jpg" alt="" />
+
+															
+																															<h5><a href="https://www.locatee.ch/en/">Locatee</a></h5>
+<p>Workplace analytics solution for fact-based decisions to increase workplace experience and utilisation of office buildings.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/2020-nexoya-logo-small.png" alt="nexoya" />
+
+															
+																															<h5><a href="https://www.nexoya.com/">nexoya</a></h5>
+<p>Marketing intelligence and online advertising campaign optimisation solution.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_brand_06.jpg" alt="" />
+
+															
+																															<h5><a href="https://procsea.com/en/">Procsea</a></h5>
+<p>Online B2B fish market.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+													<div class="col-md-6 col-lg-4 col-xl-3">
+														<div class="c-startup not-sold">
+
+															
+																<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-11.54.54.png" alt="" />
+
+															
+																															<h5><a href="https://www.veezoo.com/">Veezoo</a></h5>
+<p>Artificial intelligence solution for sales teams in insurance companies.</p>
+															
+														</div>
+													</div>
+													<!-- col -->
+
+												
+											</div>
+											<!-- row -->
+
+										
+								  </div>
+								  <!-- tab-pane -->
+
+							  	
+								
+							</div>
+							<!-- tab-content -->
+
+						</div>
+						<!-- col -->
+
+					</div>
+					<!-- row -->
+
+				
+				
+			</div>
+			<!-- container -->
+
+		</section>
+		<!-- c-startups -->
+
+	
+
+	
+					<section id="section-news" class="c-media c-section-w-intro">
+		
+			<div class="container px-lg-0">
+
+									<div class="row mx-lg-0 ml-xxl-1 mr-xxl-1 justify-content-center intro">
+						<div class="col-lg-8">
+							<h3>Media</h3>
+<p>Press mentions, articles and video resources. <!--block-->See my <a href="https://www.linkedin.com/in/duebendorfer/detail/recent-activity/shares/">LinkedIn Posts</a> for recent updates.</p>
+<p>&nbsp;</p>
+						</div>
+						<!-- col -->
+					</div>
+					<!-- row -->
+				
+				
+					<div class="row mx-lg-0 ml-xxl-1 mr-xxl-1 c-slider js-media-slider">
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Article</span>
+									
+																			<h5 class="title"><a href="https://www.startupticker.ch/en/news?publish_slug=june-2021&#038;slug=riskwolf-raises-chf750k-to-turbocharge-its-b2b-insurance-platform" target="">Riskwolf raises CHF750K to turbocharge its B2B insurance platform</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2021/06/Screenshot-2021-06-05-at-08.56.41-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>June 4th, 2021, I led the pre-seed round of <a href="https://www.riskwolf.com/">Riskwolf</a>. Zurich-based InsurTech Riskwolf enables insurers to offer connectivity insurance. Read the article <a href="https://www.startupticker.ch/en/news?publish_slug=june-2021&amp;slug=riskwolf-raises-chf750k-to-turbocharge-its-b2b-insurance-platform">here</a>.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.startupticker.ch/en/news?publish_slug=june-2021&#038;slug=riskwolf-raises-chf750k-to-turbocharge-its-b2b-insurance-platform" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Article</span>
+									
+																			<h5 class="title"><a href="https://www.startupticker.ch/en/news/may-2021/1-4-millionen-franken-fur-ki-marketing-startup-nexoya" target="">1,4 Millionen für KI-Marketing Startup nexoya</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2021/05/Screenshot-2021-05-20-at-08.53.41-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>May 18th, 2021, I led the investment round of my portfolio startup <a href="https://www.nexoya.com/">nexoya</a>. Nexoya optimizes marketing campaigns with the help of machine learning and artificial intelligence. Read the article <a href="https://www.startupticker.ch/en/news/may-2021/1-4-millionen-franken-fur-ki-marketing-startup-nexoya">here</a> (in German).</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.startupticker.ch/en/news/may-2021/1-4-millionen-franken-fur-ki-marketing-startup-nexoya" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Podcast</span>
+									
+																			<h5 class="title"><a href="https://swisspreneur.org/podcast/thomas-dubendorfer-ep135/" target="">Swisspreneur Podcast Episode #135</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2021/02/swisspreneur_v5-468x252.jpg" alt="" />
+
+									
+																			<div class="excerpt"><p>February 25th, 2021, I have been a guest at the <a href="https://swisspreneur.org/">Swisspreneur</a> podcast EP #135 – Thomas Dübendorfer: The Business Angels of Switzerland. Listen <a href="https://swisspreneur.org/podcast/thomas-dubendorfer-ep135/">here</a> to the episode.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://swisspreneur.org/podcast/thomas-dubendorfer-ep135/" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Podcast</span>
+									
+																			<h5 class="title"><a href="https://swisspreneur.org/podcast/thomas-dubendorfer-ep133/" target="">Swisspreneur Podcast Episode #133</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2021/02/swisspreneur_v5-468x252.jpg" alt="" />
+
+									
+																			<div class="excerpt"><p>February 18th, 2021, I have been a guest at the <a href="https://swisspreneur.org/">Swisspreneur</a> podcast EP #133 – Thomas Dübendorfer: Leaving Google For The Startup World. Listen <a href="https://swisspreneur.org/podcast/thomas-dubendorfer-ep133/">here</a> to the episode.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://swisspreneur.org/podcast/thomas-dubendorfer-ep133/" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Panel Discussion</span>
+									
+																			<h5 class="title"><a href="https://player.vimeo.com/video/466282574" target="">Panel on Diversity @Swiss Startup DAYS 2020</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/10/Screenshot-2020-10-30-at-09.33.23-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>October 6th, 2020, I have been part of a panel on diversity @<a href="https://startupdays.ch/">Swiss Startup DAYS</a>, Berne.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://player.vimeo.com/video/466282574" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Portrait</span>
+									
+																			<h5 class="title"><a href="https://www.handelszeitung.ch/people/thomas-dubendorfer-0" target="">Top 100 Digital Shapers of Switzerland</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/10/Screenshot-2020-10-02-at-18.16.52-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>October 1st, 2020, I feel very honored having been selected by <a href="https://www.handelszeitung.ch/bilanz">BILANZ</a> as Investor as one of &#8220;<a href="https://www.handelszeitung.ch/bilanz/digital-shapers-2020-diese-schweizer-treiben-die-digitalisierung-voran">Top 100 Digital Shapers of Switzerland</a>&#8221; for the third time! Portrait in German.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.handelszeitung.ch/people/thomas-dubendorfer-0" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Video Panel</span>
+									
+																			<h5 class="title"><a href="https://www.youtube.com/watch?v=8UhmuyET5UI&#038;feature=youtu.be" target="">Why invest in AI now</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/09/Screenshot-2020-09-23-at-13.31.43-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>September 17th, 2020, I moderated the panel &#8220;Why invest in AI now&#8221; as part of the conference &#8220;shake-down test of AI investments&#8221; by <a href="https://swisscognitive.ch/">SwissCognitive</a>.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.youtube.com/watch?v=8UhmuyET5UI&#038;feature=youtu.be" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Article</span>
+									
+																			<h5 class="title"><a href="https://thomas.duebendorfer.ch/wp-content/uploads/2020/08/Startup-Finanzierung-Handelszeitung-20200820.pdf" target="">Geld für die eigene Firma</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/08/Screenshot-2020-08-21-at-18.46.35.png" alt="" />
+
+									
+																			<div class="excerpt"><p>August 20th, 2020, I contributed with an interview to an article on startup funding to raise awareness on how startups find investors (published in <a href="https://www.handelszeitung.ch/">Handelszeitung</a>). Article in German.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://thomas.duebendorfer.ch/wp-content/uploads/2020/08/Startup-Finanzierung-Handelszeitung-20200820.pdf" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Interview</span>
+									
+																			<h5 class="title"><a href="https://startupdate.ch/insider-einblicke-in-den-swiss-ict-investor-club-2/" target="">Insider-Einblicke in den Swiss ICT Investor Club</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/06/Screenshot-2020-06-04-at-17.49.44.png" alt="" />
+
+									
+																			<div class="excerpt"><p>June 3rd, 2020, I gave an interview to <a href="http://STARTUPDATE.ch">STARTUPDATE.ch</a> on how <a href="https://www.sictic.ch/">Swiss ICT Investor Club (SICTIC)</a> works and what we look for in startups that apply for funding. Interview in German.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://startupdate.ch/insider-einblicke-in-den-swiss-ict-investor-club-2/" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Book Chapter</span>
+									
+																			<h5 class="title"><a href="https://www.dbp.one/ventureboard" target="">After a Financing Round is before a Financing Round</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/04/Screenshot-2020-04-16-at-13.48.52.png" alt="" />
+
+									
+																			<div class="excerpt"><p>April 6th, 2020, I wrote the chapter &#8220;After a Financing Round is before a Financing Round – The Role of the Investor in Venture Governance&#8221; for the book &#8220;<a href="https://www.dbp.one/ventureboard">Governance of Ventures</a>&#8220;. In this chapter you learn which financing option is the right one for your startup situation and how to always know the the point of no return.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.dbp.one/ventureboard" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Video Interview</span>
+									
+																			<h5 class="title"><a href="https://www.youtube.com/watch?v=IJ7dxkll1kM&#038;t=52s" target="">The Right Kind of Support in ICT with SICTIC</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/11/cedric-bollag-interview-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>November 3rd, 2019, Interview Global Tech Box &#8211; Startups, Tech &amp; Innovation: Thomas Dübendorfer, president and co-founder of SICTIC on angel investing and how to differentiate it from venture capital and some advice on what it really means to invest in startups.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.youtube.com/watch?v=IJ7dxkll1kM&#038;t=52s" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Interview</span>
+									
+																			<h5 class="title"><a href="https://www.netzwoche.ch/news/2019-05-07/bei-sictic-erhalten-start-ups-eine-anschubfinanzierung-von-05-bis-15-millionen" target="">&quot;Bei SICTIC erhalten Start-ups eine Anschubfinanzierung von 0,5 bis 1,5 Millionen Franken&quot;</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.26.55.png" alt="" />
+
+									
+																			<div class="excerpt"><p>May 7th, 2019, Interview Netzwoche: &#8220;Der Swiss ICT Investor Club (SICTIC) ist auch 2019 wieder Scouting Partner des Digital Economy Awards für die Kategorie &#8220;Next Global Hot Thing&#8221;. SICTIC-Präsident Thomas Dübendorfer sucht in dieser Kategorie gemeinsam mit den weiteren Scouting Partnern diejenigen Tech-Start-ups, die das Zeug dazu haben, die Welt zu verändern. Was es dazu braucht, erklärt er im Interview.&#8221;</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.netzwoche.ch/news/2019-05-07/bei-sictic-erhalten-start-ups-eine-anschubfinanzierung-von-05-bis-15-millionen" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Presentation</span>
+									
+																			<h5 class="title"><a href="https://vimeo.com/330419292" target="">Angel Investing: An introduction for aspiring tech startup investors. </a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.44.25-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>March 27, 2019, Presentation at Google Zurich: &#8220;Angel Investing in Switzerland, an introduction for aspiring tech startup investors&#8221;.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://vimeo.com/330419292" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Article</span>
+									
+																			<h5 class="title"><a href="https://schweizermonat.ch/risikoaversion-kapital-fuer-pioniere-nein-danke/#" target="">Risikoaversion: Kapital für Pioniere, nein danke?</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-13.05.34.png" alt="" />
+
+									
+																			<div class="excerpt"><p>March, 2019, Article in Schweizer Monat: &#8220;Risikoaversion: Kapital für Pioniere, nein danke? Warum die Infrastruktur der Zukunft «Made in Switzerland» sein könnte.&#8221;</p>
+</div>
+									
+																			<a class="c-link-more" href="https://schweizermonat.ch/risikoaversion-kapital-fuer-pioniere-nein-danke/#" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Panel Discussion </span>
+									
+																			<h5 class="title"><a href="https://www.youtube.com/watch?v=4aFtQIK_GcI" target="">Opportunities and risks of crowdfunding</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.12.40-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>March 20, 2019, Panel Discussion at 1. Funders-Award: Opportunities and risks of crowdfunding. <span style="font-size: 15px">Panel: Beat Hodel (LUKB-Geschäftsleitungsmitglied), Dr. Thomas Dübendorfer (Investor and President, SICTIC), Johannes Hartmann (Regisseur von Mad Heidi) und Patrycja Pielaszek (HelloNina.com).</span></p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.youtube.com/watch?v=4aFtQIK_GcI" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Article </span>
+									
+																			<h5 class="title"><a href="https://www.nzz.ch/finanzen/business-angels-sind-kapitalisten-in-reinform-ld.1420818" target="">Business-Angels sind Kapitalisten in Reinform</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.36.58.png" alt="" />
+
+									
+																			<div class="excerpt"><p>September 18th, 2018, Article NZZ: &#8220;Immer nah an der Innovation, den Totalverlust riskierend: Risikokapital für Startups bereitzustellen, ist eine Jagd für nervenstarke Investoren.&#8221;</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.nzz.ch/finanzen/business-angels-sind-kapitalisten-in-reinform-ld.1420818" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Key Note</span>
+									
+																			<h5 class="title"><a href="https://vimeo.com/243813973" target="">Contovista: An insider&#039;s view on the journey from incorporation to exit in 4 years</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-29-um-10.50.11-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>November 15, 2017, Keynote on Contovista&#8217;s startup journey given at Swiss Fintech Investor Day 2017.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://vimeo.com/243813973" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Press Mention</span>
+									
+																			<h5 class="title"><a href="https://www.nzz.ch/zuerich/aktuell/googles-ausbau-in-zuerich-harter-kampf-um-zuerichs-fachkraefte-ld.1287416" target="">«Verzweifelte Firmen versuchen, Doktorierende abzuwerben»</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.36.58.png" alt="" />
+
+									
+																			<div class="excerpt"><p>April 20th, 2017, Press Mention NZZ: &#8220;Nehmen IT-Giganten wie Google der ETH und kleinen Firmen in Zürich die besten Leute weg? Sicher ist: Der Konkurrenzdruck auf dem Zürcher Arbeitsmarkt verschärft sich.&#8221;</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.nzz.ch/zuerich/aktuell/googles-ausbau-in-zuerich-harter-kampf-um-zuerichs-fachkraefte-ld.1287416" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Guest Commentary</span>
+									
+																			<h5 class="title"><a href="https://www.nzz.ch/meinung/patientendaten-und-forschung-in-der-schweiz-paradoxe-beim-datenschutz-ld.152604" target="">Paradoxe beim Datenschutz</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.36.58.png" alt="" />
+
+									
+																			<div class="excerpt"><p>March 22, 2017, Guest Commentary in NZZ: &#8220;Im Extremfall könnten Gesetze, welche die Menschen in ihrer Privatsphäre schützen sollen, sogar Menschenleben kosten.&#8221;</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.nzz.ch/meinung/patientendaten-und-forschung-in-der-schweiz-paradoxe-beim-datenschutz-ld.152604" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-lg-3">
+								<div class="c-news">
+
+																			<span class="category">Video Interview</span>
+									
+																			<h5 class="title"><a href="https://www.youtube.com/watch?v=saKVTA7d7nw" target="">Mindcast - Folge 16: SICTIC</a></h5>
+									
+									
+										<img class="thumb" src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-22-um-12.43.45-468x252.png" alt="" />
+
+									
+																			<div class="excerpt"><p>September 22nd, 2016, Video Interview of Thomas Dübendorfer on SICTIC in Mindcast.</p>
+</div>
+									
+																			<a class="c-link-more" href="https://www.youtube.com/watch?v=saKVTA7d7nw" target="">Link</a>
+									
+								</div>
+
+							</div>
+							<!-- col -->
+
+						
+					</div>
+					<!-- row -->
+
+				
+			</div>
+			<!-- container -->
+
+		</section>
+		<!-- c-media -->
+
+	
+
+	
+					<section id="section-testimonials" class="c-testimonials c-section-w-intro">
+		
+			<div class="container px-0">
+
+									<div class="row no-gutters justify-content-center intro">
+						<div class="col-lg-8">
+							<h4>Testimonials</h4>
+<p>How I work with startups.</p>
+</>
+						</div>
+						<!-- col -->
+					</div>
+					<!-- row -->
+				
+				
+					<div class="row no-gutters justify-content-center">
+
+						
+						
+							<div class="col-lg-12">
+
+								<div class="c-slider js-testimonials-slider">
+
+									
+										<div>
+
+																							<div class="photo" style="background-image: url('https://thomas.duebendorfer.ch/wp-content/uploads/2020/03/Screenshot-2020-03-03-at-15.31.11.png');"></div>
+											
+											
+												<div class="testimonial">
+
+																											<p><span style="font-weight: 400">SICTIC investors were fast to make decisions, from finding a lead investor to conduct due diligence and preparing the term sheet. Furthermore, many are highly involved in helping our company grow.</span></p>
+													
+													<div class="author">
+
+														
+															<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/03/Screenshot-2020-03-03-at-15.37.15.png" alt="" />
+
+														
+																													<span class="name">Renaud Enjalbert</span>
+														
+																													<div class="title"><p><span style="font-weight: 400">CEO and Co-Founder, </span><span style="font-weight: 400">Procsea SA</span></p>
+</div>
+														
+													</div>
+													<!-- author -->
+												</div>
+												<!-- testimonial -->
+
+											
+										</div>
+										<!-- slide -->
+
+									
+										<div>
+
+																							<div class="photo" style="background-image: url('https://thomas.duebendorfer.ch/wp-content/uploads/2020/03/Screenshot-2020-03-03-at-15.30.53.png');"></div>
+											
+											
+												<div class="testimonial">
+
+																											<p><span style="font-weight: 400">Thomas took the meaning of “smart” money literally and wasn’t afraid to get his hands dirty. He didn’t scare off to dive deeply into various important business topics with us. Specifically, we got great support for building up a top notch software engineering team, get the security of our SaaS solution enterprise ready and we got useful advice on legal topics.</span></p>
+													
+													<div class="author">
+
+														
+															<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/beekeeper-logo.png" alt="Beekeeper" />
+
+														
+																													<span class="name">Flavio Pfaffhauser</span>
+														
+																													<div class="title"><p>CTO and Co-Founder, Beekeeper</p>
+</div>
+														
+													</div>
+													<!-- author -->
+												</div>
+												<!-- testimonial -->
+
+											
+										</div>
+										<!-- slide -->
+
+									
+										<div>
+
+																							<div class="photo" style="background-image: url('https://thomas.duebendorfer.ch/wp-content/uploads/2020/03/Screenshot-2020-03-03-at-15.31.04.png');"></div>
+											
+											
+												<div class="testimonial">
+
+																											<p>Thomas helped us extensively with his know-how and business contacts in the ramp-up phase of Contovista. This support was at least as valuable as the in financial investment.</p>
+													
+													<div class="author">
+
+														
+															<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/2018-contovista-logo.png" alt="contovista" />
+
+														
+																													<span class="name">Gian Reto à Porta</span>
+														
+																													<div class="title"><p>CEO and Co-founder, Contovista AG</p>
+</div>
+														
+													</div>
+													<!-- author -->
+												</div>
+												<!-- testimonial -->
+
+											
+										</div>
+										<!-- slide -->
+
+									
+								</div>
+								<!-- c-slider -->
+							</div>
+							<!-- col -->
+
+						</div>
+						<!-- row -->
+
+					
+				
+			</div>
+			<!-- container -->
+
+		</section>
+		<!-- c-testimonials -->
+
+	
+
+	
+					<section id="section-mandates" class="c-boards c-section-w-intro bg-colored">
+		
+			<div class="container px-lg-0">
+
+									<div class="row justify-content-center intro">
+						<div class="col-lg-8">
+							<h4>Mandates</h4>
+<p>A selection of my board of directors and advisory board mandates.</p>
+						</div>
+						<!-- col -->
+					</div>
+					<!-- row -->
+				
+				
+					<div class="row justify-content-center justify-content-lg-start boards">
+
+						
+							<div class="col-sm-6 col-lg-4">
+								<div class="c-board">
+
+																			<div class="head"><p>BOARD MANDATE</p></div>
+									
+									
+										<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_board_01.jpg" alt="Locatee AG" />
+
+									
+																			<p>Locatee AG </p>
+									
+																			<a class="c-link-more" href="https://www.locatee.ch/en/" target="">VIEW WEBSITE</a>
+									
+								</div>
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-sm-6 col-lg-4">
+								<div class="c-board">
+
+																			<div class="head"><p>BOARD MANDATE</p></div>
+									
+									
+										<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/07/Logo_SICTIC-e1564399994755.png" alt="Swiss ICT Investor Club (SICTIC)" />
+
+									
+																			<p>Swiss ICT Investor Club (SICTIC)</p>
+									
+																			<a class="c-link-more" href="http://www.sictic.ch" target="">VIEW WEBSITE</a>
+									
+								</div>
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-sm-6 col-lg-4">
+								<div class="c-board">
+
+																			<div class="head"><p>BOARD MANDATE</p></div>
+									
+									
+										<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/frontify-logo-wide-white-background.png" alt="Frontify" />
+
+									
+																			<p>Frontify AG</p>
+									
+																			<a class="c-link-more" href="https://www.frontify.com/" target="">VIEW WEBSITE</a>
+									
+								</div>
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-sm-6 col-lg-4">
+								<div class="c-board">
+
+																			<div class="head"><p>BOARD MANDATE</p></div>
+									
+									
+										<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2020/05/legartis-logo.png" alt="Legartis Technology" />
+
+									
+																			<p>Legartis Technology AG</p>
+									
+																			<a class="c-link-more" href="https://www.legartis.ai/" target="">VIEW WEBSITE</a>
+									
+								</div>
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-sm-6 col-lg-4">
+								<div class="c-board">
+
+																			<div class="head"><p>ADVISORY MANDATE</p></div>
+									
+									
+										<img src="https://thomas.duebendorfer.ch/wp-content/uploads/2019/06/pic_board_04.jpg" alt="" />
+
+									
+																			<p>Fonds National de la Recherche (FNR) Luxembourg</p>
+									
+																			<a class="c-link-more" href="https://www.fnr.lu/" target="">VIEW WEBSITE</a>
+									
+								</div>
+							</div>
+							<!-- col -->
+
+						
+					</div>
+					<!-- row -->
+
+				
+			</div>
+			<!-- container -->
+
+		</section>
+		<!-- c-mandates -->
+
+	
+
+	
+					<section id="section-background" class="c-background c-section-w-intro">
+		
+			<div class="container px-lg-0">
+
+									<div class="row mx-lg-0 justify-content-center intro">
+						<div class="col-lg-8">
+							<h4>Background</h4>
+<p>Highlights in academia and my professional life.</p>
+						</div>
+						<!-- col -->
+					</div>
+					<!-- row -->
+				
+				
+					<div class="row mx-lg-0 justify-content-center justify-content-lg-start details">
+
+						
+							<div class="col-md-10 col-lg-6">
+								<div class="info">
+
+																			<h5>Achievements</h5>
+									
+																			<div class="desc"><ul>
+<li>ETH Medal (2001)</li>
+<li>Willi Studer Prize (2001)</li>
+<li>3 Google OC/EMG Awards for impactful engineering contributions (2006-2013)</li>
+<li>Research Paper <a href="https://www.researchgate.net/publication/230751208_Understanding_the_Web_browser_threat_Examination_of_vulnerable_online_Web_browser_populations_and_the_insecurity_iceberg">Understanding the Web browser threat: Examination of vulnerable online Web browser populations and the &#8220;insecurity iceberg&#8221;</a> (&gt;100&#8217;000 downloads in year 2008)</li>
+<li>US Patents with Google (Security) and HP (IoT)</li>
+<li>Top 100 Digital Shapers of Switzerland (2016 &amp; 2018)</li>
+<li>Top 200 Most Prominent Personalities (2019, Who Is Who in Zurich)</li>
+</ul>
+</div>
+									
+								</div>
+								<!-- info -->
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-md-10 col-lg-6">
+								<div class="info">
+
+																			<h5>Domain Expertise</h5>
+									
+																			<div class="desc"><ul>
+<li>Angel investing</li>
+<li>Scaling up Swiss software startups internationally</li>
+<li>Digital transformation</li>
+<li>Information security</li>
+</ul>
+</div>
+									
+								</div>
+								<!-- info -->
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-md-10 col-lg-6">
+								<div class="info">
+
+																			<h5>Scaling Experience</h5>
+									
+																			<div class="desc"><ul>
+<li><strong>President &#8211; Swiss ICT Investor Club</strong><br />
+Grew member base from 0 to more than 400 members in five years.</li>
+<li><strong>President &#8211; Information Security Society Switzerland (ISSS)</strong><br />
+Doubled member base to over 1000 members.</li>
+<li><strong>Tech Lead &#8211; Google</strong><br />
+Experienced growth of Zurich office from around 40 (2006) to 1400 Googlers (2013).</li>
+</ul>
+</div>
+									
+								</div>
+								<!-- info -->
+							</div>
+							<!-- col -->
+
+						
+							<div class="col-md-10 col-lg-6">
+								<div class="info">
+
+																			<h5>Academia &amp; Corporates</h5>
+									
+																			<div class="desc"><ul>
+<li><strong>ETH Zurich</strong><br />
+PhD, Computer Science (Cyber Security)</li>
+<li><strong>ETH Zurich</strong><br />
+Lecturer, Network Security (10 years)</li>
+<li><strong>University of Zurich, University of Liechtenstein, Lucerne University of Applied Sciences and Arts (HSLU), University of Applied Sciences and Arts Northwestern Switzerland (FHNW)</strong><br />
+Guest Lecturer, Angel Investing &amp; Venture Capital</li>
+<li><strong>HP</strong><br />
+Computer Science Research on Internet of Things IoT (Silicon Valley)</li>
+<li><strong>Google</strong><br />
+Software Engineer &amp; Tech Lead (Zurich and Silicon Valley)</li>
+</ul>
+</div>
+									
+								</div>
+								<!-- info -->
+							</div>
+							<!-- col -->
+
+						
+					</div>
+					<!-- row -->
+
+				
+			</div>
+			<!-- container -->
+
+		</section>
+		<!-- c-background -->
+
+	
+
+<footer class="c-footer">
+
+	<div class="container px-lg-0">
+
+		<div class="row mx-lg-0 justify-content-center justify-content-md-between">
+
+			<div class="col-lg-5">
+									<p class="copyright">© 2021 THOMAS DÜBENDORFER</p>
+							</div>
+			<!-- col -->
+
+			<div class="col-lg-5">
+				<nav class="secondary-nav">
+					<!-- / Display menu -->
+		      <ul id="menu-footer-menu" class="nav justify-content-center justify-content-md-right"><li class="nav-item"><a href="https://thomas.duebendorfer.ch/contact/" class="menu__link">CONTACT</a></li>
+<li class="nav-item"><a href="https://ch.linkedin.com/in/duebendorfer" class="menu__link">LINKEDIN</a></li>
+<li class="nav-item"><a href="https://thomas.duebendorfer.ch/privacy-policy-2/" class="menu__link">IMPRINT & PRIVACY POLICY</a></li>
+</ul>				</nav>
+				<!-- secondary-nav -->
+			</div>
+			<!-- col -->
+
+		</div>
+		<!-- row -->
+
+	</div>
+	<!-- container -->
+
+</footer>
+<!-- c-footer -->
+
+<script type='text/javascript' id='safe-svg-block-script-js-extra'>
+/* <![CDATA[ */
+var safe_svg_personalizer_params = {"ajax_url":"https:\/\/thomas.duebendorfer.ch\/wp-admin\/admin-ajax.php","ajax_nonce":"fd0cbd5b02"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thomas.duebendorfer.ch/wp-content/plugins/safe-svg/dist/safe-svg-block-frontend.js?ver=556b801b5c62d7bda047' id='safe-svg-block-script-js'></script>
+<script type='text/javascript' defer="defer" src='https://thomas.duebendorfer.ch/wp-content/themes/x5/js/vendor.js?ver=12122018' id='x5-plugins-js'></script>
+<script type='text/javascript' defer="defer" src='https://thomas.duebendorfer.ch/wp-content/themes/x5/js/app.bundle.js?ver=12122018' id='x5-js-js'></script>
+<script type='text/javascript' src='https://thomas.duebendorfer.ch/wp-includes/js/wp-embed.min.js?ver=5.7.8' id='wp-embed-js'></script>
+
+</body>
+</html>
+
+<!-- Page generated by LiteSpeed Cache 5.3.3 on 2023-04-01 00:53:13 -->

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en"  class="role-banner-active" class="">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script data-cfasync="false" data-no-defer="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='max-image-preview:large' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v14.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://frogcapital.com/companies/" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Companies - Frog Capital" />
+	<meta property="og:url" content="https://frogcapital.com/companies/" />
+	<meta property="og:site_name" content="Frog Capital" />
+	<meta property="article:modified_time" content="2023-01-31T11:23:16+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://frogcapital.com/#website","url":"https://frogcapital.com/","name":"Frog Capital","description":"Scale-Up Investors","potentialAction":[{"@type":"SearchAction","target":"https://frogcapital.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://frogcapital.com/companies/#webpage","url":"https://frogcapital.com/companies/","name":"Companies - Frog Capital","isPartOf":{"@id":"https://frogcapital.com/#website"},"datePublished":"2019-06-11T09:22:21+00:00","dateModified":"2023-01-31T11:23:16+00:00","inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://frogcapital.com/companies/"]}]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/frogcapital.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.5"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://frogcapital.com/wp-includes/css/dist/block-library/style.min.css?ver=5.9.5' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='bundle-css'  href='https://frogcapital.com/wp-content/themes/frog-capital/dist/app.css?ver=5.9.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://frogcapital.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/dist/app.bundle.js' id='bundle-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js?ver=5.9.5' id='scroll-magic-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js?ver=5.9.5' id='scroll-magic-tween-max-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js?ver=5.9.5' id='scroll-magic-gsap-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js?ver=5.9.5' id='images-loaded-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.5/infinite-scroll.pkgd.min.js?ver=5.9.5' id='infinite-scroll-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/assets/js/tweetie.min.js?ver=5.9.5' id='twitter-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/assets/js/javascript.js?ver=5.9.5' id='theme-js-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/assets/forms/js/jquery.customSelect.js?ver=5.9.5' id='custom-selects-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/assets/forms/js/datepicker.min.js?ver=5.9.5' id='datepicker-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/assets/forms/js/jquery.validate.min.js?ver=5.9.5' id='validate-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/assets/forms/js/additional-methods.min.js?ver=5.9.5' id='validate-additional-js'></script>
+<script type='text/javascript' src='https://frogcapital.com/wp-content/themes/frog-capital/assets/forms/js/forms.js?ver=5.9.5' id='forms-js-js'></script>
+<link rel="https://api.w.org/" href="https://frogcapital.com/wp-json/" /><link rel="alternate" type="application/json" href="https://frogcapital.com/wp-json/wp/v2/pages/7" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://frogcapital.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://frogcapital.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.5" />
+<link rel='shortlink' href='https://frogcapital.com/?p=7' />
+<link rel="alternate" type="application/json+oembed" href="https://frogcapital.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrogcapital.com%2Fcompanies%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://frogcapital.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrogcapital.com%2Fcompanies%2F&#038;format=xml" />
+   	<title>Companies - Frog Capital</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+    <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="h2oId6pIx" ></script>
+	<link rel="apple-touch-icon" sizes="60x60" href="https://frogcapital.com/wp-content/themes/frog-capital/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://frogcapital.com/wp-content/themes/frog-capital/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://frogcapital.com/wp-content/themes/frog-capital/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="https://frogcapital.com/wp-content/themes/frog-capital/assets/favicons/site.webmanifest">
+	<link rel="mask-icon" href="https://frogcapital.com/wp-content/themes/frog-capital/assets/favicons/safari-pinned-tab.svg" color="#294057">
+	<link rel="shortcut icon" href="https://frogcapital.com/wp-content/themes/frog-capital/assets/favicons/favicon.ico">
+
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/4a9e270e-1e29-4d09-9a10-46069df38f84.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WRNRK39');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Hotjar Tracking Code for https://frogcapital.com/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2050842,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <script type='text/javascript'>
+        piAId = '948992';
+        piCId = '40965';
+        piHostname = 'go.frogcapital.com';
+
+        (function() {
+            function async_load(){
+                var s = document.createElement('script'); s.type = 'text/javascript';
+                s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+                var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+            }
+            if(window.attachEvent) { window.attachEvent('onload', async_load); }
+            else { window.addEventListener('load', async_load, false); }
+        })();
+    </script>
+
+
+    <!--  ACT ON Tracking  -->
+    <script>/*<![CDATA[*/(function(w,a,b,d,s){w[a]=w[a]||{};w[a][b]=w[a][b]||{q:[],track:function(r,e,t){this.q.push({r:r,e:e,t:t||+new Date});}};var e=d.createElement(s);var f=d.getElementsByTagName(s)[0];e.async=1;e.src='//a43733.actonservice.com/cdnr/forpci2/acton/bn/tracker/43733';f.parentNode.insertBefore(e,f);})(window,'ActOn','Beacon',document,'script');ActOn.Beacon.track();/*]]>*/</script>
+
+</head>
+<body class="page-template-default page page-id-7 companies" data-theme-path="https://frogcapital.com/wp-content/themes/frog-capital">
+<script data-cfasync="false" data-no-defer="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRNRK39" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+	<!-- Lead Forensics -->
+	<script type="text/javascript" src="https://secure.hiss3lark.com/js/176305.js" ></script>
+	<noscript><img alt="" src="https://secure.hiss3lark.com/176305.png" style="display:none;" /></noscript>
+
+    <div id="page-wrap" class="has-banner">
+<!--		Header-->
+		<header id="header">
+			<div class="wrapper">
+				<a id="main-logo" href="https://frogcapital.com"><img src="https://frogcapital.com/wp-content/themes/frog-capital/src/images/frog-capital-logo.svg" alt="Frog Capital" /></a>
+
+                                            <nav class="nav--main | js-nav-main">
+                            <ul class="nav--main__inner">
+                                                                    <li class="">
+                                                                                    <a href="https://frogcapital.com/companies/">Companies</a>
+                                                                            </li>
+                                                                    <li class="has-subnav">
+                                          <a class="btn--subnav hide-mob" href="https://frogcapital.com/scale-up-methodology/">Scale-Up</a>
+                                            <button type="button" class="hide-desk hide-tab btn--subnav js-sub-nav-toggle">Scale-Up</button>
+                                            <div class="subnav | | js-subnav">
+                                                                                                    <div class="subnav--inner bg--subnav">
+                                                        <div class="subnav--padding">
+                                                            <p class="likeh4">My Scale-Up</p>
+                                                                                                                            <p class="content">Find tailored content dedicated to your role: 
+CEO, CFO, CTO, etc.</p>
+                                                                                                                        <a class="btn btn--primary btn--primary__white" href="https://frogcapital.com/my-scale-up/">My Scale-Up</a>
+                                                        </div>
+                                                    </div>
+                                                                                                                                                    <div class="subnav--inner">
+                                                        <div class="subnav--padding">
+                                                            <p class="likeh4">Our Methodology</p>
+                                                                                                                            <ul class="subnav--list">
+                                                                                                                                            <li>
+                                                                            <a href="https://frogcapital.com/scale-up-methodology/">Overview</a>
+                                                                        </li>
+                                                                                                                                            <li>
+                                                                            <a href="https://frogcapital.com/scale-up-methodology/execution/">Execution</a>
+                                                                        </li>
+                                                                                                                                            <li>
+                                                                            <a href="https://frogcapital.com/scale-up-methodology/planning/">Planning</a>
+                                                                        </li>
+                                                                                                                                            <li>
+                                                                            <a href="https://frogcapital.com/scale-up-methodology/sustainability/">Sustainability</a>
+                                                                        </li>
+                                                                                                                                    </ul>
+                                                                                                                    </div>
+                                                    </div>
+                                                                                                                                                    <div class="subnav--inner bg--subnav">
+                                                        <div class="subnav--padding">
+                                                            <p class="likeh4">Insights</p>
+                                                                                                                            <p class="content">Find toolkits and thought leadership from our experienced team.</p>
+                                                                                                                        <a class="btn btn--primary btn--primary__white" href="https://frogcapital.com/scale-up/">Explore insights</a>
+                                                        </div>
+                                                    </div>
+                                                                                            </div>
+                                                                            </li>
+                                                                    <li class="">
+                                                                                    <a href="https://frogcapital.com/positive-growth-equity/">Positive Growth</a>
+                                                                            </li>
+                                                                    <li class="">
+                                                                                    <a href="https://frogcapital.com/team/">Team</a>
+                                                                            </li>
+                                                                    <li class="">
+                                                                                    <a href="/think-frog/frog-news/">Frog News</a>
+                                                                            </li>
+                                                                    <li class="">
+                                                                                    <a href="https://frogcapital.com/contact/">Contact</a>
+                                                                            </li>
+                                                            </ul>
+                        </nav>
+                        <button type="button" class="hide-desk hide-tab nav-toggle | js-nav-toggle">
+                            <span class="nav-hamburger"></span>
+                        </button>
+                    			</div>
+		</header>
+<!--		Banner-->
+		<div class="hero--outer">
+    
+        
+                    <div class="hero">
+                <div class="hero--inner">
+                                            <div class="hero-overlay hero-overlay-3">
+                        </div>
+                                        <div class="site-wide">
+                        <div class="hero-content">
+                            <h1>Companies</h1><h2 class="sub">Frog partners with a select group of European software leaders. Our in-house operating partners offer experienced support to add real additional value.</h2>                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!--		Content-->
+		<div id="content">
+<!--			--><!--				<div class="wrapper">-->
+<!--			-->			<main id="main">
+<div class="filter-alt-container">
+    <div class="site-wide">
+                    <form action="" class="filter-container__inner | js-portfolio-filter js-filters">
+                <ul class="filter">
+                    <li>
+                        <div class="custom-radio">
+                            <input type="radio" id="all" name="portfolio-filter" value="all" checked>
+                            <label for="all">All</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custom-radio">
+                            <input type="radio" id="current" name="portfolio-filter" value="current">
+                            <label for="current">Current</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custom-radio">
+                            <input type="radio" id="exited" name="portfolio-filter" value="acquired">
+                            <label for="exited">Exited</label>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+            </div>
+</div><section class="layout-section portfolio--listing-container">
+    <div class="portfolio--listing | js-bg-section js-listing">
+        <div class="team-bg-parallax">
+            <div class="bg-parallax | js-bg-parallax" style="--y:0px;">
+                <div class="bg-parallax__inner"></div>
+            </div>
+        </div>
+        <div class="site-wide">
+                                    <div class="portfolio--section js-filterable-container">
+                <div class="grid-container flex-container grid--gutter-20">
+                                                    <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-5668 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/housfy/" style="--border-color: #2395e0">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Housfy" data-src-img="https://frogcapital.com/wp-content/uploads/Housfy_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Housfy_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Housfy_colour@2x.png" alt="Housfy" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Spain's leading digital property platform</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-5334 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/genasys/" style="--border-color: #3c455e">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Genasys" data-src-img="https://frogcapital.com/wp-content/uploads/Genasys_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Genasys_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Genasys_colour@2x.png" alt="Genasys" /></noscript>
+            </div>
+    <div class="details">
+        <h3>The leading digital platform for insurance companies</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-5201 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/clue-software/" style="--border-color: #201647">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Clue Software" data-src-img="https://frogcapital.com/wp-content/uploads/Clue_Wordmark_Purple_RGB.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Clue_Wordmark_Purple_RGB.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Clue_Wordmark_Purple_RGB.png" alt="Clue Software" /></noscript>
+            </div>
+    <div class="details">
+        <h3>World leading investigation and intelligence software</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-4885 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/caspar/" style="--border-color: #3ec2c5">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Caspar" data-src-img="https://frogcapital.com/wp-content/uploads/Caspar_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Caspar_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Caspar_colour@2x.png" alt="Caspar" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Germany's leading digital aftercare platform</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-3582 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/winningtemp/" style="--border-color: #9824e5">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Winningtemp" data-src-img="https://frogcapital.com/wp-content/uploads/Winningtemp_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Winningtemp_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Winningtemp_colour@2x.png" alt="Winningtemp" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Leader in AI based employee engagement software</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-2654 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/evotix/" style="--border-color: #000000">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Evotix" data-src-img="https://frogcapital.com/wp-content/uploads/Evotik_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Evotik_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Evotik_colour@2x.png" alt="Evotix" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Leading health and safety software provider</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-842 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/sofatutor/" style="--border-color: #669900">
+    <div class="portfolio-block__image" style="background-color: #669900">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="sofatutor" data-src-img="https://frogcapital.com/wp-content/uploads/Sofatutor_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Sofatutor_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Sofatutor_white@2x.png" alt="sofatutor" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Germany's leading digital education platform</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-802 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/mcmakler/" style="--border-color: #044c54">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="McMakler" data-src-img="https://frogcapital.com/wp-content/uploads/MCM_Logo_Petrolgreen.png" data-src-webp="https://frogcapital.com/wp-content/uploads/MCM_Logo_Petrolgreen.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/MCM_Logo_Petrolgreen.png" alt="McMakler" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Germany's fastest growing online estate agent</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-850 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/modulr/" style="--border-color: #fedf3a">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Modulr" data-src-img="https://frogcapital.com/wp-content/uploads/Modulr_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Modulr_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Modulr_colour@2x.png" alt="Modulr" /></noscript>
+            </div>
+    <div class="details">
+        <h3>The leading Payments as a Service API platform for digital businesses</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-794 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/vulog/" style="--border-color: #3093c7">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Vulog" data-src-img="https://frogcapital.com/wp-content/uploads/Vulog_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Vulog_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Vulog_colour@2x.png" alt="Vulog" /></noscript>
+            </div>
+    <div class="details">
+        <h3>The global leader in shared mobility technologies</h3>
+            </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-806 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/azimo/" style="--border-color: #1ed3c6">
+    <div class="portfolio-block__image" style="background-color: #1ed3c6">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Azimo" data-src-img="https://frogcapital.com/wp-content/uploads/Azimo_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Azimo_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Azimo_white@2x.png" alt="Azimo" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Leading digital money transfer service</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-1494 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/sellics/" style="--border-color: #2878bf">
+    <div class="portfolio-block__image" style="background-color: #2878bf">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Sellics" data-src-img="https://frogcapital.com/wp-content/uploads/Sellics_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Sellics_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Sellics_white@2x.png" alt="Sellics" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Sellics is the leading Global Amazon merchant software</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-846 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/opensignal/" style="--border-color: #03abdf">
+    <div class="portfolio-block__image" style="background-color: #03abdf">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Opensignal" data-src-img="https://frogcapital.com/wp-content/uploads/OpenSignal_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/OpenSignal_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/OpenSignal_white@2x.png" alt="Opensignal" /></noscript>
+            </div>
+    <div class="details">
+        <h3>The global standard for measuring quality of service for the wireless industry</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-818 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/skimlinks/" style="--border-color: #1ba9c4">
+    <div class="portfolio-block__image" style="background-color: #1ba9c4">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Skimlinks" data-src-img="https://frogcapital.com/wp-content/uploads/Skimlinks_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Skimlinks_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Skimlinks_white@2x.png" alt="Skimlinks" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Content monetization platform for digital publishers</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="current">
+                                    
+<a class="portfolio-block post-826 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/rated-people/" style="--border-color: #84b818">
+    <div class="portfolio-block__image" >
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Rated People" data-src-img="https://frogcapital.com/wp-content/uploads/Rated_People_colour@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Rated_People_colour@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Rated_People_colour@2x.png" alt="Rated People" /></noscript>
+            </div>
+    <div class="details">
+        <h3>UK's leader in helping homeowners find quality, local tradesmen</h3>
+            </div>
+</a>                                </div>
+                                        </div>
+                <div class="block-promo | js-overlap js-block-promo">
+                    <div class="block-promo--inner">
+                        <div class="block-promo__content">
+                            <div class="content-block">
+                                                                    <h2 class="title--small">
+                                        Are you raising Growth Capital                                    </h2>
+                                                                    <h3 class="title--main likeh2">
+                                        We invest in purpose-led European Software Scale-Ups who have reached product-market fit and €3m ARR                                    </h3>
+                                                            </div>
+                        </div>
+                        <div class="block-promo__content">
+                            <div class="content-block">
+                                                                    <a href="https://frogcapital.com/team/" class="btn btn--primary btn--primary__white" style="--button-bg-color: ">
+                                        Team                                    </a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio--section">
+                <div class="grid-container flex-container grid--gutter-20 js-filtered-container" style="display: none">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio--listing | js-bg-section js-listing js-filterable-container">
+        <div class="team-bg-parallax">
+            <div class="bg-parallax | js-bg-parallax" style="--y:0px;">
+                <div class="bg-parallax__inner"></div>
+            </div>
+        </div>
+
+        <div class="site-wide">
+            <div class="portfolio--section js-filterable-container">
+                <div class="grid-container flex-container grid--gutter-20">
+                                                    <div class="grid-item mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block featured-portfolio post-822 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/mediatonic/">
+    <div class="grid-container flex-container grid--gutter-0">
+        <div class="grid-item desk-w-1-3 tab-w-1-2">
+            <div class="details--container">
+                <div class="details" style="background-color: #f79c27">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Mediatonic" data-src-img="https://frogcapital.com/wp-content/uploads/Mediatonic_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Mediatonic_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Mediatonic_white@2x.png" alt="Mediatonic" /></noscript>
+                                        <h3 class="text--white">Leader in the digital games space</h3>
+                    <p>Exited</p>                </div>
+            </div>
+        </div>
+        <div class="grid-item desk-w-2-3 tab-w-1-2">
+            <div class="portfolio-block__image">
+                <div class="image-fill-container">
+                    <img class="image-fill ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Mediatonic" data-src-img="https://frogcapital.com/wp-content/uploads/Mediatonic_hero.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Mediatonic_hero.jpg.webp" data-eio="j" /><noscript><img class="image-fill" src="https://frogcapital.com/wp-content/uploads/Mediatonic_hero.jpg" alt="Mediatonic" /></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</a>                                </div>
+                                                            <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-830 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/edited/" style="--border-color: #5ac7ed">
+    <div class="portfolio-block__image" style="background-color: #5ac7ed">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="EDITED" data-src-img="https://frogcapital.com/wp-content/uploads/Edited_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Edited_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Edited_white@2x.png" alt="EDITED" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Disruptive leader in real-time market analytics for fashion</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-810 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/gb-group/" style="--border-color: #b0093e">
+    <div class="portfolio-block__image" style="background-color: #b0093e">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="GB Group" data-src-img="https://frogcapital.com/wp-content/uploads/GBG_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/GBG_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/GBG_white@2x.png" alt="GB Group" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Leading international identity intelligence business</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                                        <div class="grid-item desk-w-1-3 tab-w-1-2 mb-20 js-filterable-item" data-type="acquired">
+                                    
+<a class="portfolio-block post-798 company-post type-company-post status-publish hentry" href="https://frogcapital.com/company/dealflo/" style="--border-color: #5e9f1b">
+    <div class="portfolio-block__image" style="background-color: #5e9f1b">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Dealflo" data-src-img="https://frogcapital.com/wp-content/uploads/Dealflo_white@2x.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Dealflo_white@2x.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Dealflo_white@2x.png" alt="Dealflo" /></noscript>
+            </div>
+    <div class="details">
+        <h3>Leading provider of end-to-end financial agreement automation services</h3>
+        <p>Exited</p>    </div>
+</a>                                </div>
+                                        </div>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="layout-section news--container bg--grey | js-bg-section">
+    <div class="team-bg-parallax">
+        <div class="bg-parallax | js-bg-parallax" style="--y:0px;">
+            <div class="bg-parallax__inner"></div>
+        </div>
+    </div>
+    <div class="news--module ">
+        <div class="carousel--container">
+            <div class="site-wide">
+                <div class="news--section">
+                    <h2 class="likeh1alt">Scale-Up insights</h2>
+                    <div class="carousel--news article-list | js-post-carousel">
+                                                    <div class="carousel--item">
+                                
+<div class="post-4020 post type-post status-publish format-standard hentry category-scale-up">
+    <article>
+		<a class="wrap " href="https://frogcapital.com/scale-up/purpose-and-performance/">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Purpose and performance" data-src-img="https://frogcapital.com/wp-content/uploads/Untitled-1-01-4-400x320.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Untitled-1-01-4-400x320.jpg.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Untitled-1-01-4-400x320.jpg" alt="Purpose and performance" /></noscript>
+			<div class="details">
+                                    <p class="article-type">Article</p>
+                			    <h2>Purpose and performance</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                                    <div class="carousel--item">
+                                
+<div class="post-2002 post type-post status-publish format-standard hentry category-scale-up tag-toolkit">
+    <article>
+		<a class="wrap  toolkit" href="https://frogcapital.com/scale-up/building-a-quality-board-pack/">
+            <img src="https://frogcapital.com/wp-content/uploads/Why-a-quality-board-pack-will-make-your-life-easier2.png" alt="Building a quality board pack" />
+			<div class="details">
+                                    <p class="article-type">Toolkit</p>
+                			    <h2>Building a quality board pack</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                                    <div class="carousel--item">
+                                
+<div class="post-4263 post type-post status-publish format-standard hentry category-scale-up tag-toolkit">
+    <article>
+		<a class="wrap  toolkit" href="https://frogcapital.com/scale-up/building-a-b2b-growth-engine/">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Building a B2B Growth Engine" data-src-img="https://frogcapital.com/wp-content/uploads/Why-a-quality-board-pack-will-make-your-life-easier.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Why-a-quality-board-pack-will-make-your-life-easier.jpg.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Why-a-quality-board-pack-will-make-your-life-easier.jpg" alt="Building a B2B Growth Engine" /></noscript>
+			<div class="details">
+                                    <p class="article-type">Toolkit</p>
+                			    <h2>Building a B2B Growth Engine</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                                    <div class="carousel--item">
+                                
+<div class="post-4018 post type-post status-publish format-standard hentry category-scale-up tag-toolkit">
+    <article>
+		<a class="wrap  toolkit" href="https://frogcapital.com/scale-up/sustainable-unit-economics/">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Sustainable unit economics" data-src-img="https://frogcapital.com/wp-content/uploads/pexels-lukas-590022-400x320.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/pexels-lukas-590022-400x320.jpg.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/pexels-lukas-590022-400x320.jpg" alt="Sustainable unit economics" /></noscript>
+			<div class="details">
+                                    <p class="article-type">Toolkit</p>
+                			    <h2>Sustainable unit economics</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                                    <div class="carousel--item">
+                                
+<div class="post-1984 post type-post status-publish format-standard hentry category-scale-up tag-toolkit">
+    <article>
+		<a class="wrap  toolkit" href="https://frogcapital.com/scale-up/know-all-your-funding-options/">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Know all your funding options" data-src-img="https://frogcapital.com/wp-content/uploads/Knowing-all-your-Funding-Options.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Knowing-all-your-Funding-Options.jpg.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Knowing-all-your-Funding-Options.jpg" alt="Know all your funding options" /></noscript>
+			<div class="details">
+                                    <p class="article-type">Toolkit</p>
+                			    <h2>Know all your funding options</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                                    <div class="carousel--item">
+                                
+<div class="post-1975 post type-post status-publish format-standard hentry category-scale-up tag-toolkit">
+    <article>
+		<a class="wrap  toolkit" href="https://frogcapital.com/scale-up/building-sustainability-increase-your-chances-of-success-by-understanding-why-businesses-fail/">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Building sustainability: Increase your chances of success by understanding why businesses fail" data-src-img="https://frogcapital.com/wp-content/uploads/Building-Sustainability-Increase-Your-Chance-of-Success.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Building-Sustainability-Increase-Your-Chance-of-Success.jpg.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Building-Sustainability-Increase-Your-Chance-of-Success.jpg" alt="Building sustainability: Increase your chances of success by understanding why businesses fail" /></noscript>
+			<div class="details">
+                                    <p class="article-type">Toolkit</p>
+                			    <h2>Building sustainability: Increase your chances of success by understanding why businesses fail</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                                    <div class="carousel--item">
+                                
+<div class="post-3680 post type-post status-publish format-standard hentry category-scale-up tag-toolkit">
+    <article>
+		<a class="wrap  toolkit" href="https://frogcapital.com/scale-up/expanding-to-the-us/">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Expanding to the US" data-src-img="https://frogcapital.com/wp-content/uploads/US-Expansion.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/US-Expansion.jpg.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/US-Expansion.jpg" alt="Expanding to the US" /></noscript>
+			<div class="details">
+                                    <p class="article-type">Toolkit</p>
+                			    <h2>Expanding to the US</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                                    <div class="carousel--item">
+                                
+<div class="post-3501 post type-post status-publish format-standard hentry category-think-frog category-frog-news category-scale-up">
+    <article>
+		<a class="wrap " href="https://frogcapital.com/think-frog/a-conversation-with-frog-operating-partner-david-williams/">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="A conversation with Frog Operating Partner, David Williams" data-src-img="https://frogcapital.com/wp-content/uploads/Screen-Shot-2020-10-08-at-09.35-400x320.png" data-src-webp="https://frogcapital.com/wp-content/uploads/Screen-Shot-2020-10-08-at-09.35-400x320.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://frogcapital.com/wp-content/uploads/Screen-Shot-2020-10-08-at-09.35-400x320.png" alt="A conversation with Frog Operating Partner, David Williams" /></noscript>
+			<div class="details">
+                                    <p class="article-type">Article</p>
+                			    <h2>A conversation with Frog Operating Partner, David Williams</h2>
+			</div>
+
+		</a>
+	</article>
+</div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+            <div class="post-carousel-buttons"></div>
+        </div>
+    </div>
+</section>
+<section class="layout-section team--container bg--dark">
+    <div class="team--module">
+        <div class="carousel--container">
+            <div class="site-wide">
+                <div class="team--module--section">
+                    <h2 class="likeh1alt">Speak to our Investment team</h2>
+                    <div class="carousel--team article-list | js-post-carousel">
+                                                    <div class="carousel--item">
+                                <a class="team-block post-742 profile-post type-profile-post status-publish hentry" href="https://frogcapital.com/profile/jens-dueing/">
+    <div class="team-block__image">
+        <div class="image-fill-container">
+            <img class="image-fill ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Jens Düing" data-src-img="https://frogcapital.com/wp-content/uploads/Jens-Duing-1.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Jens-Duing-1.jpg.webp" data-eio="j" /><noscript><img class="image-fill" src="https://frogcapital.com/wp-content/uploads/Jens-Duing-1.jpg" alt="Jens Düing" /></noscript>
+        </div>
+    </div>
+
+    <div class="details">
+        <h3>Jens Düing</h3>
+        <p>Senior Partner</p>
+    </div>
+</a>
+
+                            </div>
+                                                    <div class="carousel--item">
+                                <a class="team-block post-734 profile-post type-profile-post status-publish hentry" href="https://frogcapital.com/profile/mike-reid/">
+    <div class="team-block__image">
+        <div class="image-fill-container">
+            <img class="image-fill ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Mike Reid" data-src-img="https://frogcapital.com/wp-content/uploads/Mike-Reid-2-1.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Mike-Reid-2-1.jpg.webp" data-eio="j" /><noscript><img class="image-fill" src="https://frogcapital.com/wp-content/uploads/Mike-Reid-2-1.jpg" alt="Mike Reid" /></noscript>
+        </div>
+    </div>
+
+    <div class="details">
+        <h3>Mike Reid</h3>
+        <p>Senior Partner</p>
+    </div>
+</a>
+
+                            </div>
+                                                    <div class="carousel--item">
+                                <a class="team-block post-5422 profile-post type-profile-post status-publish hentry" href="https://frogcapital.com/profile/konstantin-koenig/">
+    <div class="team-block__image">
+        <div class="image-fill-container">
+            <img class="image-fill ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Konstantin Koenig" data-src-img="https://frogcapital.com/wp-content/uploads/Konstantin-Koenig.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Konstantin-Koenig.jpg.webp" data-eio="j" /><noscript><img class="image-fill" src="https://frogcapital.com/wp-content/uploads/Konstantin-Koenig.jpg" alt="Konstantin Koenig" /></noscript>
+        </div>
+    </div>
+
+    <div class="details">
+        <h3>Konstantin Koenig</h3>
+        <p>Principal</p>
+    </div>
+</a>
+
+                            </div>
+                                                    <div class="carousel--item">
+                                <a class="team-block post-4068 profile-post type-profile-post status-publish hentry" href="https://frogcapital.com/profile/oscar-chen/">
+    <div class="team-block__image">
+        <div class="image-fill-container">
+            <img class="image-fill ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Oscar Chen" data-src-img="https://frogcapital.com/wp-content/uploads/Oscar-Chen-1.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Oscar-Chen-1.jpg.webp" data-eio="j" /><noscript><img class="image-fill" src="https://frogcapital.com/wp-content/uploads/Oscar-Chen-1.jpg" alt="Oscar Chen" /></noscript>
+        </div>
+    </div>
+
+    <div class="details">
+        <h3>Oscar Chen</h3>
+        <p>Frog Network</p>
+    </div>
+</a>
+
+                            </div>
+                                                    <div class="carousel--item">
+                                <a class="team-block post-6562 profile-post type-profile-post status-publish hentry" href="https://frogcapital.com/profile/sabina-pasha/">
+    <div class="team-block__image">
+        <div class="image-fill-container">
+            <img class="image-fill ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Sabina Pasha" data-src-img="https://frogcapital.com/wp-content/uploads/Sabina-profile.jpg" data-src-webp="https://frogcapital.com/wp-content/uploads/Sabina-profile.jpg.webp" data-eio="j" /><noscript><img class="image-fill" src="https://frogcapital.com/wp-content/uploads/Sabina-profile.jpg" alt="Sabina Pasha" /></noscript>
+        </div>
+    </div>
+
+    <div class="details">
+        <h3>Sabina Pasha</h3>
+        <p>Investor</p>
+    </div>
+</a>
+
+                            </div>
+                                            </div>
+                </div>
+            </div>
+            <div class="post-carousel-buttons"></div>
+        </div>
+    </div>
+</section>
+				</main>
+
+                
+<!--		END Content-->
+		</div>
+        <footer id="footer">
+			<div class="site-wide">
+				<div class="cols-wrap">
+					<div class="col col-1">
+						<div class="social">
+							<ul class="links">
+								<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/frog-capital">Join us on LinkedIn</a></li><li class="twitter"><a target="_blank" href="https://twitter.com/frogcapital">Follow Us On Twitter</a></li>							</ul>
+							<div class="tweets"></div>
+						</div>
+					</div>
+				
+					<div class="col col-2">
+					
+						                            <nav class="nav--main nav--footer">
+                            <ul class="nav--main__inner">
+                                                                    <li>
+                                        <a href="https://frogcapital.com/companies/">Companies</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up-methodology/">Scale-Up</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/positive-growth-equity/">Positive Growth</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/team/">Team</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/think-frog/frog-news/">Frog News</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/contact/">Contact</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                                                                            <nav class="nav--main nav--footer nav--footer__secondary">
+                                <ul class="nav--main__inner">
+                                                                            <li>
+                                            <a href="https://frogcapital.com/positive-growth-equity/">Positive Growth Equity</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://frogcapital.com/legal/">Legal</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://frogcapital.com/terms-conditions/">Terms & Conditions</a>
+                                        </li>
+                                                                    </ul>
+                            </nav>
+                        						<p class="copy">&copy; 2023 Frog Capital. Frog Capital Ltd. is authorised and regulated by the Financial Conduct Authority<br/> FCA Register Number 509967 . Company Number 6812490</p>					
+					</div>
+				
+				</div>
+
+			</div>
+		</footer>
+		
+<!--	END Page Wrap-->
+	</div>
+
+            <!-- Roles overlay -->
+        <div class="overlay--customise">
+            <div class="customise-container | js-customise-wrap">
+    <div class="site-wide">
+        <div class="grid-container">
+            <div class="grid-item grid-item--middle desk-w-5-12 tab-w-5-12 mob-mb-50">
+                <div class="content-block">
+                                            <h2 class="title--small">
+                            My Scale-Up                        </h2>
+                                            <h3 class="title--main likeh1">
+                            Our methodology. Your Scale-Up                        </h3>
+                                            <p class="content--inner">
+                            Find thought leadership, videos and toolkits dedicated to your role. Whatever your focus area in the leadership team of a software scale-up we have advice and expertise that can support you as your company grows. Search by your leadership role or focus on the sections of our Scale-Up Methodology.                        </p>
+                                            <a href="https://frogcapital.com/scale-up-methodology/" class="btn btn--primary btn--primary__white">
+                            Scale-up methodology                        </a>
+                                    </div>
+            </div>
+            <div class="grid-item grid-item--middle desk-w-7-12 tab-w-7-12">
+                <div class="tab-container | js-tabs-container">
+                    <ul class="nav-tabs list-reset">
+                        <li class="tab-button | js-tab-button">Leadership</li>
+                        <li class="tab-button | js-tab-button">Focus</li>
+                    </ul>
+                    <div class="tab-content | js-tab-content">
+                                                    <h2>Choose content for your role</h2>
+                                                    <p>Find thought leadership, videos and toolkits dedicated to your role to help you scale faster, whatever your focus area in the leadership team of a software scale-up.</p>
+                                                    <ul class="list-roles">
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=Toolkits">Toolkits</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=Podcasts">Podcasts</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=CEO">CEO</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=CTO">CTO</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=CFO">CFO</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=COO">COO</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=CMO">CMO</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=CHRO">CHRO</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://frogcapital.com/scale-up/?role=CRO">CRO</a>
+                                    </li>
+                                                            </ul>
+                                            </div>
+                    <div class="tab-content | js-tab-content">
+                                                    <h2>Select your focus areas</h2>
+                                                    <p>Choose the areas most relevant for you to find focused thought leadership, videos and toolkits. Whatever your focus area we have tools and expertise that help you scale faster.</p>
+                                                    <form class="grid-container grid--gutter-1">
+                                                                    <div class="grid-item desk-w-1-3 tab-w-1-3">
+                                        <div class="checkbox-container | js-checkbox-container">
+                                            <button class="btn btn--select-all js-select-all" type="button" data-state="off">Execution</button>
+                                                                                                <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="applied-analysis-focus" name="applied-analysis" value="applied-analysis">
+                                                        <label for="applied-analysis-focus">Applied Analysis</label>
+                                                    </div>
+                                                                                                    <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="delivery-focus" name="delivery" value="delivery">
+                                                        <label for="delivery-focus">Delivery</label>
+                                                    </div>
+                                                                                                    <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="customer-acquisition-focus" name="customer-acquisition" value="customer-acquisition">
+                                                        <label for="customer-acquisition-focus">Customer Acquisition</label>
+                                                    </div>
+                                                                                        </div>
+                                    </div>
+
+                                                                    <div class="grid-item desk-w-1-3 tab-w-1-3">
+                                        <div class="checkbox-container | js-checkbox-container">
+                                            <button class="btn btn--select-all js-select-all" type="button" data-state="off">Planning</button>
+                                                                                                <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="strategy-focus" name="strategy" value="strategy">
+                                                        <label for="strategy-focus">Strategy</label>
+                                                    </div>
+                                                                                                    <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="talent-focus" name="talent" value="talent">
+                                                        <label for="talent-focus">Talent</label>
+                                                    </div>
+                                                                                                    <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="organisation-focus" name="organisation" value="organisation">
+                                                        <label for="organisation-focus">Organisation</label>
+                                                    </div>
+                                                                                        </div>
+                                    </div>
+
+                                                                    <div class="grid-item desk-w-1-3 tab-w-1-3">
+                                        <div class="checkbox-container | js-checkbox-container">
+                                            <button class="btn btn--select-all js-select-all" type="button" data-state="off">Sustainability</button>
+                                                                                                <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="purpose-focus" name="purpose" value="purpose">
+                                                        <label for="purpose-focus">Purpose</label>
+                                                    </div>
+                                                                                                    <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="resilience-focus" name="resilience" value="resilience">
+                                                        <label for="resilience-focus">Resilience</label>
+                                                    </div>
+                                                                                                    <div class="custom-checkbox">
+                                                        <input class="js-focus-type" type="checkbox" id="value-focus" name="value" value="value">
+                                                        <label for="value-focus">Value</label>
+                                                    </div>
+                                                                                        </div>
+                                    </div>
+
+                                                                <div class="grid-item">
+                                    <a class="btn btn--primary float-right mt-30 | js-focus-page-link" href="#" data-href="https://frogcapital.com/scale-up-methodology/focus-page/">Select focus</a>
+                                </div>
+                            </form>
+
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            <div class="role-banner">
+                <p>
+                    Select content based on leadership focus, CEO, CFO, CTO etc.                </p>
+                <button type="button" class="btn btn--primary btn--primary__white | js-toggle-roles"><span class="active-text">Hide My Scale-Up</span><span class="default-text">My Scale-Up</span></button>
+            </div>
+        </div>
+
+
+    
+	
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d0b8ca78a3b49ad"></script>
+
+	<script> 
+	var $buoop = {required:{e:-4,f:-3,o:-3,s:-1,c:-3},insecure:true,api:2019.06 }; 
+	function $buo_f(){ 
+	 var e = document.createElement("script"); 
+	 e.src = "//browser-update.org/update.min.js"; 
+	 document.body.appendChild(e);
+	};
+	try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+	catch(e){window.attachEvent("onload", $buo_f)}
+	</script>
+	
+</body>
+</html>

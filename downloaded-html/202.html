@@ -1,0 +1,466 @@
+
+<template x-for="company in portfolio">
+  <li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title"></h3>
+      <p class="portfolio_item_description" x-text="company.description"></p>
+                </a>
+  </li>
+</template><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://9fin.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/9fin/5b48d14262-1662382217/9fin.svg" alt="9Fin">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">9Fin</h3>
+      <p class="portfolio_item_description" x-text="company.description">Debt capital markets data, news &amp; predictive analytics</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://axiom.co" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/axiom/69ee14fb8f-1662382238/axiom.svg" alt="Axiom">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Axiom</h3>
+      <p class="portfolio_item_description" x-text="company.description">Cloud native observability platform</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://betterorigin.co.uk/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/better-origin/19c6b1dfe3-1662385135/better-origin.png" alt="Better Origin">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Better Origin</h3>
+      <p class="portfolio_item_description" x-text="company.description">Modular insect protein bioconversion</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="http://bloomsbury.ai/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/bloomsbury/af502ebf88-1662385103/bloomsbury.png" alt="Bloomsbury">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Bloomsbury</h3>
+      <p class="portfolio_item_description" x-text="company.description">NLP powered knowledge base (acq. by Meta)</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://candis.io/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/candis/c6e11b0283-1668410761/candis_new.svg" alt="Candis">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Candis</h3>
+      <p class="portfolio_item_description" x-text="company.description">Accounting automation</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.carbmee.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/carbmee/71d6e5e9c1-1662385058/carbmee.png" alt="Carbmee">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Carbmee</h3>
+      <p class="portfolio_item_description" x-text="company.description">Supply chain carbon footprint analytics</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://chatterbug.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/chatterbug/af0046ea27-1662382301/chatterbug.svg" alt="Chatterbug">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Chatterbug</h3>
+      <p class="portfolio_item_description" x-text="company.description">Adaptive language learning platform</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.claimsforce.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/claimsforce/f9c04ffd19-1662382313/claimsforce.svg" alt="Claimsforce">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Claimsforce</h3>
+      <p class="portfolio_item_description" x-text="company.description">Automating insurance claims management</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://cordless.systems/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/cordless/cc2cafe999-1662534034/cordless-with-text.png" alt="Cordless">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Cordless</h3>
+      <p class="portfolio_item_description" x-text="company.description">Modern voice-based customer service</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.corrily.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/corrily/74598cc9d8-1662382332/corrily.svg" alt="Corrily">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Corrily</h3>
+      <p class="portfolio_item_description" x-text="company.description">Pricing engine for subscription based products</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://evidentlyai.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/evidently-ai/ca5739a7f5-1662385161/evidently.png" alt="Evidently AI">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Evidently AI</h3>
+      <p class="portfolio_item_description" x-text="company.description">Open source production monitoring of AI models</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.fernride.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/fernride/8ac2b18977-1662385184/fernride.png" alt="Fernride">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Fernride</h3>
+      <p class="portfolio_item_description" x-text="company.description">Autonomous electric yard-trucking</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://fusebox.energy/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/fusebox/c43c2c776a-1662385206/fusebox.png" alt="Fusebox">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Fusebox</h3>
+      <p class="portfolio_item_description" x-text="company.description">Demand response based Virtual Power Plant</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://garden.io/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/garden/2bce8b8470-1662383168/garden.png" alt="Garden">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Garden</h3>
+      <p class="portfolio_item_description" x-text="company.description">Development platform for microservices</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.genlots.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/genlots/dfcc9005ee-1662382391/genlots.svg" alt="GenLots">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">GenLots</h3>
+      <p class="portfolio_item_description" x-text="company.description">Automating procurement</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.gitbook.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/gitbook/d8f9ef350a-1662385327/gitbook.png" alt="GitBook">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">GitBook</h3>
+      <p class="portfolio_item_description" x-text="company.description">Publishing toolchain for developer docs</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.gitguardian.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/gitguardian/0453b94873-1662385347/gitguardian.png" alt="GitGuardian">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">GitGuardian</h3>
+      <p class="portfolio_item_description" x-text="company.description">Automated secrets detection &amp; remediation</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="http://im-vitro.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/imvitro/50d71cf4cc-1662383348/imvitro.png" alt="ImVitro">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">ImVitro</h3>
+      <p class="portfolio_item_description" x-text="company.description">CV supported embryo selection for IVF</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://inato.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/inato/c19904f67b-1662383111/inato.png" alt="Inato">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Inato</h3>
+      <p class="portfolio_item_description" x-text="company.description">Clinical trials platform</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://infinyon.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/infinyon/0d95c31fa5-1662383328/infinyon.png" alt="InfinyOn">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">InfinyOn</h3>
+      <p class="portfolio_item_description" x-text="company.description">Programmable platform for data in motion</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.insify.nl/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/insify/3937ff4dc8-1662385371/insify.png" alt="Insify">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Insify</h3>
+      <p class="portfolio_item_description" x-text="company.description">Small business insurance</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://lakera.ai" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/lakera/564468d160-1662385389/lakera.png" alt="Lakera">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Lakera</h3>
+      <p class="portfolio_item_description" x-text="company.description">AI safety engineering</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://metaview.ai" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/metaview/62346c38fc-1662382497/metaview.svg" alt="Metaview">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Metaview</h3>
+      <p class="portfolio_item_description" x-text="company.description">AI generated interview notes</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://ophelos.io/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/ophelos/efce2a8492-1662385520/ophelos.png" alt="Ophelos">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Ophelos</h3>
+      <p class="portfolio_item_description" x-text="company.description">AI supported debt collection</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://orbitalmaterials.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/orbital-materials/e45d986860-1674577518/orbital-materials.png" alt="Orbital Materials">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Orbital Materials</h3>
+      <p class="portfolio_item_description" x-text="company.description">AI powered material discovery</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.palisade.co/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/palisade/e510f10218-1662450325/cordless.png" alt="Palisade">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Palisade</h3>
+      <p class="portfolio_item_description" x-text="company.description">Digital asset custody-as-a-service</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.pearbio.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/pear-bio/7068cebba2-1662385533/pearbio.png" alt="Pear Bio">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Pear Bio</h3>
+      <p class="portfolio_item_description" x-text="company.description">Organ-on-a-chip cancer drug testing</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://phycoworks.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/phycoworks/26b5167d1b-1662385549/phycoworks.png" alt="Phycoworks">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Phycoworks</h3>
+      <p class="portfolio_item_description" x-text="company.description">Genetically engineered industrial algae</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://flypyka.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/pyka/5452511905-1662383188/pyka.png" alt="Pyka">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Pyka</h3>
+      <p class="portfolio_item_description" x-text="company.description">Autonomous electric planes</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.remberg.io/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/remberg/42e3611262-1662385582/remberg.png" alt="Remberg">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Remberg</h3>
+      <p class="portfolio_item_description" x-text="company.description">Vertical CRM for industrial companies</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://salv.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/salv/7c3346b0cd-1662385606/salv.png" alt="Salv">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Salv</h3>
+      <p class="portfolio_item_description" x-text="company.description">AML &amp; intelligence sharing platform</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="" class="visible dead">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/scape/77ffefc746-1662385624/scape.png" alt="Scape">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Scape</h3>
+      <p class="portfolio_item_description" x-text="company.description">AR localization &amp; mapping (acq. by Meta)</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.softwaredefinedautomation.io/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/sda/8ab8c6a084-1662385641/sda.png" alt="SDA">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">SDA</h3>
+      <p class="portfolio_item_description" x-text="company.description">Cloud platform to control and optimize industrial PLCs</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://semalytix.com" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/semalytix/f4933ab97f-1662383213/semalytix.png" alt="Semalytix">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Semalytix</h3>
+      <p class="portfolio_item_description" x-text="company.description">AI powered real-world evidence for pharma</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://www.side.co/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/side/07677a299f-1662382633/side.svg" alt="Side">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Side</h3>
+      <p class="portfolio_item_description" x-text="company.description">Automated temp working (acq. by Randstad)</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://stateful.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/stateful/a9f9b61f82-1662383239/stateful.png" alt="Stateful">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Stateful</h3>
+      <p class="portfolio_item_description" x-text="company.description">Performance insights for developers</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://teamsurfboard.com/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/surfboard/e1c394dd4f-1662385662/surfboard.png" alt="Surfboard">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Surfboard</h3>
+      <p class="portfolio_item_description" x-text="company.description">Team planning software</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="http://thynk.cloud/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/thynk/292487cdeb-1662382663/thynk.svg" alt="Thynk">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Thynk</h3>
+      <p class="portfolio_item_description" x-text="company.description">Enterprise grade SalesOS for the hospitality market</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://tradelink.co/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/tradelink/e06f6c7bfc-1662383258/tradelink.png" alt="TradeLink">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">TradeLink</h3>
+      <p class="portfolio_item_description" x-text="company.description">Supply chain collaboration for warehouses</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://unikraft.io/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/unikraft/e40ae3392f-1670421305/unikraft.svg" alt="Unikraft">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Unikraft</h3>
+      <p class="portfolio_item_description" x-text="company.description">Ultra-lightweight VMs for the cloud</p>
+                </a>
+  </li><li class="portfolio_item">
+    <a target="_blank" :href="company.link" x-data="{ visible: false}" x-intersect="visible = true" :class="{
+      'visible' : visible,
+      'dead' : company.link == ''
+      }" href="https://wayve.ai/" class="visible">
+      <div class="portfolio_item_logo">
+        <img :src="company.logo" :alt="company.title" src="https://fly.vc/media/pages/portfolio/wayve/488fb2ddad-1678108105/wayve.png" alt="Wayve">
+      </div>
+      <h3 class="portfolio_item_title" x-text="company.title">Wayve</h3>
+      <p class="portfolio_item_description" x-text="company.description">Autonomous driving with end-to-end Machine Learning</p>
+                </a>
+  </li>

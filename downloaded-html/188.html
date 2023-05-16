@@ -1,0 +1,4210 @@
+
+  
+  
+    
+    
+
+
+  
+
+
+<section data-test="page-section" data-section-theme="black" class="page-section 
+    
+layout-engine-section
+
+background-width--full-bleed
+
+section-height--medium
+
+
+content-width--medium
+
+horizontal-alignment--left
+vertical-alignment--bottom
+
+ has-background
+
+
+black" data-section-id="61589a48fb8e6d5b6fa39086" data-controller="SectionWrapperController" data-current-styles="{
+&quot;backgroundImage&quot;: {
+&quot;id&quot;: &quot;61589a48fb8e6d5b6fa39084&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1580247088315,
+&quot;updatedOn&quot;: 1589913825100,
+&quot;starred&quot;: false,
+&quot;passthrough&quot;: false,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1580247088315,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1589847769565-EI9ZCTP3U9V7KOFYKAGL&quot;,
+&quot;systemDataVariants&quot;: &quot;2500x1667,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Aro Ha_0010.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5,
+&quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+&quot;topLeftAverage&quot;: &quot;cbd9e1&quot;,
+&quot;topRightAverage&quot;: &quot;dadee1&quot;,
+&quot;bottomLeftAverage&quot;: &quot;b5b9b4&quot;,
+&quot;bottomRightAverage&quot;: &quot;534f3d&quot;,
+&quot;centerAverage&quot;: &quot;65532b&quot;,
+&quot;suggestedBgColor&quot;: &quot;c7d6dd&quot;
+},
+&quot;urlId&quot;: &quot;5q3a1qt6sztuj9nl90gphzga3jundr-ekndk&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+&quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+&quot;firstName&quot;: &quot;Ramsay&quot;,
+&quot;lastName&quot;: &quot;Siegal&quot;,
+&quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+&quot;bio&quot;: &quot;&quot;,
+&quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;2500x1667&quot;
+},
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+&quot;customSectionHeight&quot;: 85,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--left&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--bottom&quot;,
+&quot;contentWidth&quot;: &quot;content-width--medium&quot;,
+&quot;sectionTheme&quot;: &quot;black&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;
+}" data-current-context="{
+&quot;video&quot;: {
+&quot;playbackSpeed&quot;: 0.5,
+&quot;filter&quot;: 1,
+&quot;filterStrength&quot;: 0,
+&quot;zoom&quot;: 0,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;divider&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="none" style="padding-top: 98.4167px;" data-controllers-bound="SectionWrapperController" data-active="true">
+<div class="section-border">
+<div class="section-background">
+
+
+  
+  
+    
+        
+
+
+
+
+
+<script>
+"use strict";
+
+var positionImage = function positionImage(imageEl) {
+var imageDimensions = imageEl.dataset.imageDimensions.split('x');
+var originalWidth = imageDimensions[0];
+var originalHeight = imageDimensions[1];
+var focalPoint = imageEl.dataset.imageFocalPoint.split(',');
+var focalPointX = focalPoint[0];
+var focalPointY = focalPoint[1];
+var parentNode = imageEl.parentNode;
+
+var scale = function () {
+var imageRatio = originalWidth / originalHeight;
+var parentClientSize = {
+  height: parentNode.clientHeight,
+  width: parentNode.clientWidth
+};
+var parentRatio = parentClientSize.width / parentClientSize.height;
+
+if (imageRatio > parentRatio) {
+  return parentClientSize.height / originalHeight;
+}
+
+return parentClientSize.width / originalWidth;
+}();
+
+var getRelativeOffset = function getRelativeOffset() {
+var targetWidth = Math.ceil(originalWidth * scale);
+var targetHeight = Math.ceil(originalHeight * scale);
+var parentDimensionWidth = parentNode.offsetWidth;
+var parentDimensionHeight = parentNode.offsetHeight;
+var overflowWidth = targetWidth - parentDimensionWidth;
+var overflowHeight = targetHeight - parentDimensionHeight;
+var valueX;
+
+if (overflowWidth === 0) {
+  valueX = focalPointX;
+} else {
+  valueX = Math.max(Math.min(targetWidth * focalPointX - parentDimensionWidth * 0.5, overflowWidth), 0) / overflowWidth;
+}
+
+var valueY;
+
+if (overflowHeight === 0) {
+  valueY = focalPointY;
+} else {
+  valueY = Math.max(Math.min(targetHeight * focalPointY - parentDimensionHeight * 0.5, overflowHeight), 0) / overflowHeight;
+}
+
+return {
+  valueX: valueX,
+  valueY: valueY
+};
+};
+
+var relativeOffset = getRelativeOffset();
+var valueX = relativeOffset.valueX;
+var valueY = relativeOffset.valueY;
+imageEl.style.objectPosition = "".concat(valueX * 100, "% ").concat(valueY * 100, "%");
+Object.assign(imageEl.style, {
+height: '100%',
+width: '100%',
+objectFit: 'cover',
+});
+};
+</script>
+
+
+
+
+
+
+
+<img alt="" data-src="https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg" data-image-dimensions="2500x1667" data-image-focal-point="0.5,0.5" data-load="false" srcset="https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg?format=100w 100w,https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg?format=300w 300w,https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg?format=500w 500w,https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg?format=750w 750w,https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg?format=1000w 1000w,https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg?format=1500w 1500w,https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847769565-EI9ZCTP3U9V7KOFYKAGL/Aro+Ha_0010.jpg?format=2500w 2500w" sizes="(max-width: 799px) 200vw, 100vw" onload="positionImage(this); this.classList.add('loaded');" loading="lazy" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="2.1" class="loaded" data-image-resolution="2500w">
+
+
+
+
+      
+  
+  <div class="section-background-overlay" style="opacity: 0.15;"></div>
+
+
+</div>
+</div>
+<div class="content-wrapper" style="
+
+  
+
+">
+<div class="content">
+
+
+
+
+
+
+<div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-61589a48fb8e6d5b6fa39086"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-d072f68152810ea3ded4"><div class="sqs-block-content">
+
+<h2 style="white-space:pre-wrap;">We put founders at the center of our work</h2><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p>
+
+
+</div></div></div></div></div>
+</div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section data-test="page-section" data-section-theme="white" class="page-section 
+
+layout-engine-section
+
+background-width--full-bleed
+
+section-height--small
+
+
+content-width--wide
+
+horizontal-alignment--left
+vertical-alignment--middle
+
+
+
+
+white" data-section-id="61c1839ebe0aac63d146cf71" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--small&quot;,
+&quot;customSectionHeight&quot;: 85,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--left&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;
+}" data-current-context="{
+&quot;video&quot;: {
+&quot;playbackSpeed&quot;: 0.5,
+&quot;filter&quot;: 1,
+&quot;filterStrength&quot;: 0,
+&quot;zoom&quot;: 0,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;divider&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="none" data-controllers-bound="SectionWrapperController" data-active="true">
+<div class="section-border">
+<div class="section-background">
+
+
+
+</div>
+</div>
+<div class="content-wrapper" style="
+
+  
+
+">
+<div class="content">
+
+
+
+
+
+
+<div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-61c1839ebe0aac63d146cf71"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-89fa8d3c6d0634c322d2"><div class="sqs-block-content">
+
+<h2 style="white-space:pre-wrap;"><strong>Our Portfolio</strong></h2>
+
+
+</div></div></div></div></div>
+</div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section data-test="page-section" data-section-theme="white" class="page-section 
+
+user-items-list-section
+full-bleed-section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+white" data-section-id="62731825ae18234516679072" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+}" data-current-context="{
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: {
+&quot;type&quot;: &quot;none&quot;
+},
+&quot;divider&quot;: {
+&quot;enabled&quot;: false
+},
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="" data-json-schema-section="" data-controllers-bound="SectionWrapperController" data-active="true">
+<div class="section-border">
+<div class="section-background">
+
+
+
+</div>
+</div>
+<div class="content-wrapper" style="
+
+  
+
+">
+<div class="content">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="user-items-list" style="
+min-height: 100px;
+padding-top: 6.6vmax;
+padding-bottom: 6.6vmax;
+" data-card-theme="" data-section-id="user-items-list" data-section-title-enabled="false" data-space-below-section-title-value="120" data-space-below-section-title-unit="px" data-layout-width="inset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.user-items-list-item-container[data-section-id="62731825ae18234516679072"] .list-item-content__title {
+font-size: 1.2rem;
+}
+.user-items-list-item-container[data-section-id="62731825ae18234516679072"] .list-item-content__description {
+font-size: 0.9rem;
+}
+.user-items-list-item-container[data-section-id="62731825ae18234516679072"] .list-item-content__button {
+font-size: 0.8rem;
+}
+
+@supports (--test-custom-property: true) {
+.user-items-list-item-container[data-section-id="62731825ae18234516679072"] {
+--title-font-size-value: 1.2;
+--body-font-size-value: 0.9;
+--button-font-size-value: 0.8;
+}
+}
+</style>
+
+
+<ul class="
+user-items-list-item-container
+user-items-list-simple
+" style="
+grid-gap: 20px 20px;
+" data-controller="UserItemsListSimple" data-num-columns="4" data-content-order="media-first" data-alignment-vertical="top" data-section-id="62731825ae18234516679072" data-current-context="{
+&quot;userItems&quot;: [ {
+&quot;title&quot;: &quot;Planet FWD&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>The leading carbon management platform for consumer brands. <\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.planetfwd.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;
+},
+&quot;imageId&quot;: &quot;627318bfb8162b0e221d44eb&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;627318bfb8162b0e221d44eb&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651710143832,
+&quot;updatedOn&quot;: 1651710146768,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651710143832,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651710144564-5SXJJGSSMSNJJ9WV3FU7&quot;,
+&quot;systemDataVariants&quot;: &quot;1400x1400,100w,300w,500w,750w,1000w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;7.+Julia+Collins+2.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;cdb097&quot;,
+  &quot;topRightAverage&quot;: &quot;c0a991&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;c8bbb3&quot;,
+  &quot;bottomRightAverage&quot;: &quot;a99183&quot;,
+  &quot;centerAverage&quot;: &quot;a16c53&quot;,
+  &quot;suggestedBgColor&quot;: &quot;88786a&quot;
+},
+&quot;urlId&quot;: &quot;awa9av4xesedahjrbmumm2hw39voxo&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710144564-5SXJJGSSMSNJJ9WV3FU7/7.%2BJulia%2BCollins%2B2.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;1400x1400&quot;
+}
+}, {
+&quot;title&quot;: &quot;Lilac Solutions&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Dramatically reducing the cost and environmental impact of harvesting lithium.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;http://lilacsolutions.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;6273196cc740271273fc4393&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;6273196cc740271273fc4393&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651710316227,
+&quot;updatedOn&quot;: 1651710323700,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651710316227,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651710316865-EBDME7SEOCVAYHT84XKG&quot;,
+&quot;systemDataVariants&quot;: &quot;1800x826,100w,300w,500w,750w,1000w,1500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;8. David Lilac.jpeg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;241509&quot;,
+  &quot;topRightAverage&quot;: &quot;241610&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;880202&quot;,
+  &quot;bottomRightAverage&quot;: &quot;8a0f06&quot;,
+  &quot;centerAverage&quot;: &quot;a38d83&quot;,
+  &quot;suggestedBgColor&quot;: &quot;53221e&quot;
+},
+&quot;urlId&quot;: &quot;7cx8obqacswyk0r87bs6cpaiv6pv4d&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710316865-EBDME7SEOCVAYHT84XKG/8.+David+Lilac.jpeg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;1800x826&quot;
+}
+}, {
+&quot;title&quot;: &quot;Vibrant Planet&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Creating the efficient operating system for reducing wildfire risk and improving forestry planning.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.vibrantplanet.net\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;62732920cbadb936765c738b&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62732920cbadb936765c738b&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651714336709,
+&quot;updatedOn&quot;: 1651714342963,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651714336709,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651714337690-DPSJ28L2RFEX1TKB2W6Z&quot;,
+&quot;systemDataVariants&quot;: &quot;1332x1332,100w,300w,500w,750w,1000w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Nick%25252BHigman%25252B-%25252Bvibrant_planet-7754.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;816526&quot;,
+  &quot;topRightAverage&quot;: &quot;8c760e&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;463a1c&quot;,
+  &quot;bottomRightAverage&quot;: &quot;ae9657&quot;,
+  &quot;centerAverage&quot;: &quot;98612e&quot;,
+  &quot;suggestedBgColor&quot;: &quot;7e6a30&quot;
+},
+&quot;urlId&quot;: &quot;3usb8svikpd3hk46t9rta3l8uv0r35&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651714337690-DPSJ28L2RFEX1TKB2W6Z/Nick%2525252BHigman%2525252B-%2525252Bvibrant_planet-7754.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;1332x1332&quot;
+}
+}, {
+&quot;title&quot;: &quot;Mitra Chem&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Accelerating the battery R&amp;amp;D lifecycle through machine learning.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://mitrachem.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;62731aa4d6bad30cfc84c85b&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62731aa4d6bad30cfc84c85b&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651710628219,
+&quot;updatedOn&quot;: 1651710643863,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651710628219,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651710640042-QCO1F3AO8O4WM65UL895&quot;,
+&quot;systemDataVariants&quot;: &quot;4032x3024,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;11. Vivas Kumar.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;3d4f39&quot;,
+  &quot;topRightAverage&quot;: &quot;6b8672&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;43452b&quot;,
+  &quot;bottomRightAverage&quot;: &quot;282925&quot;,
+  &quot;centerAverage&quot;: &quot;55603d&quot;,
+  &quot;suggestedBgColor&quot;: &quot;56645e&quot;
+},
+&quot;urlId&quot;: &quot;w9hx940afq4wi5xeoh99czvjyvhnoe&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710640042-QCO1F3AO8O4WM65UL895/11.+Vivas+Kumar.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;4032x3024&quot;
+}
+} ],
+&quot;styles&quot;: {
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+},
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageFocalPoint&quot;: null,
+&quot;backgroundImageId&quot;: null,
+&quot;options&quot;: {
+&quot;maxColumns&quot;: 4,
+&quot;isCardEnabled&quot;: true,
+&quot;isMediaEnabled&quot;: true,
+&quot;isTitleEnabled&quot;: true,
+&quot;isBodyEnabled&quot;: true,
+&quot;isButtonEnabled&quot;: false,
+&quot;mediaAspectRatio&quot;: &quot;circle&quot;,
+&quot;layoutWidth&quot;: &quot;inset&quot;,
+&quot;mediaWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;mediaAlignment&quot;: &quot;center&quot;,
+&quot;contentWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleAlignment&quot;: &quot;center&quot;,
+&quot;bodyAlignment&quot;: &quot;center&quot;,
+&quot;buttonAlignment&quot;: &quot;center&quot;,
+&quot;titlePlacement&quot;: &quot;center&quot;,
+&quot;bodyPlacement&quot;: &quot;center&quot;,
+&quot;buttonPlacement&quot;: &quot;center&quot;,
+&quot;cardVerticalAlignment&quot;: &quot;top&quot;,
+&quot;contentOrder&quot;: &quot;media-first&quot;,
+&quot;verticalPaddingTop&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;verticalPaddingBottom&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;spaceBetweenColumns&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenRows&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenContentAndMedia&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowTitle&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowBody&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingTop&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingRight&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingBottom&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingLeft&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleFontSize&quot;: &quot;heading-2&quot;,
+&quot;bodyFontSize&quot;: &quot;paragraph-2&quot;,
+&quot;buttonFontSize&quot;: &quot;button-medium&quot;,
+&quot;customOptions&quot;: {
+&quot;customTitleFontSize&quot;: {
+  &quot;value&quot;: 1.2,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customBodyFontSize&quot;: {
+  &quot;value&quot;: 0.9,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customButtonFontSize&quot;: {
+  &quot;value&quot;: 0.8,
+  &quot;unit&quot;: &quot;rem&quot;
+}
+}
+},
+&quot;layout&quot;: &quot;simple&quot;,
+&quot;isSectionTitleEnabled&quot;: false,
+&quot;sectionTitle&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Make it stand out.<\/p>&quot;,
+&quot;spaceBelowSectionTitle&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;sectionTitleAlignment&quot;: &quot;center&quot;,
+&quot;isSectionButtonEnabled&quot;: false,
+&quot;sectionButton&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;,
+&quot;buttonNewWindow&quot;: false
+},
+&quot;sectionButtonSize&quot;: &quot;medium&quot;,
+&quot;sectionButtonAlignment&quot;: &quot;center&quot;,
+&quot;spaceAboveSectionButton&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+}
+}" data-media-alignment="center" data-title-alignment="center" data-body-alignment="center" data-button-alignment="center" data-title-placement="center" data-body-placement="center" data-button-placement="center" data-layout-width="inset" data-title-font-unit="rem" data-description-font-unit="rem" data-button-font-unit="rem" data-space-between-rows="20px" data-space-between-columns="20px" data-vertical-padding-top-value="6.6" data-vertical-padding-bottom-value="6.6" data-vertical-padding-top-unit="vmax" data-vertical-padding-bottom-unit="vmax" data-controllers-bound="UserItemsListSimple">
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710144564-5SXJJGSSMSNJJ9WV3FU7/7.%2BJulia%2BCollins%2B2.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710144564-5SXJJGSSMSNJJ9WV3FU7/7.%2BJulia%2BCollins%2B2.jpg" data-image-dimensions="1400x1400" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710144564-5SXJJGSSMSNJJ9WV3FU7/7.%2BJulia%2BCollins%2B2.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Planet FWD</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">The leading carbon management platform for consumer brands. </p><p class="" style="white-space:pre-wrap;"><a href="https://www.planetfwd.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710316865-EBDME7SEOCVAYHT84XKG/8.+David+Lilac.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710316865-EBDME7SEOCVAYHT84XKG/8.+David+Lilac.jpeg" data-image-dimensions="1800x826" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="500w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710316865-EBDME7SEOCVAYHT84XKG/8.+David+Lilac.jpeg?format=500w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Lilac Solutions</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Dramatically reducing the cost and environmental impact of harvesting lithium.</p><p class="" style="white-space:pre-wrap;"><a href="http://lilacsolutions.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651714337690-DPSJ28L2RFEX1TKB2W6Z/Nick%2525252BHigman%2525252B-%2525252Bvibrant_planet-7754.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651714337690-DPSJ28L2RFEX1TKB2W6Z/Nick%2525252BHigman%2525252B-%2525252Bvibrant_planet-7754.jpg" data-image-dimensions="1332x1332" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651714337690-DPSJ28L2RFEX1TKB2W6Z/Nick%2525252BHigman%2525252B-%2525252Bvibrant_planet-7754.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Vibrant Planet</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Creating the efficient operating system for reducing wildfire risk and improving forestry planning.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.vibrantplanet.net">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710640042-QCO1F3AO8O4WM65UL895/11.+Vivas+Kumar.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710640042-QCO1F3AO8O4WM65UL895/11.+Vivas+Kumar.jpg" data-image-dimensions="4032x3024" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="500w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710640042-QCO1F3AO8O4WM65UL895/11.+Vivas+Kumar.jpg?format=500w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Mitra Chem</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Accelerating the battery R&amp;D lifecycle through machine learning.</p><p class="" style="white-space:pre-wrap;"><a href="https://mitrachem.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+</ul>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section data-test="page-section" data-section-theme="white" class="page-section 
+
+user-items-list-section
+full-bleed-section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+white" data-section-id="62731b1bd6bad30cfc84d5aa" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+}" data-current-context="{
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: {
+&quot;type&quot;: &quot;none&quot;
+},
+&quot;divider&quot;: {
+&quot;enabled&quot;: false
+},
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="" data-json-schema-section="" data-controllers-bound="SectionWrapperController" data-active="true">
+<div class="section-border">
+<div class="section-background">
+
+
+
+</div>
+</div>
+<div class="content-wrapper" style="
+
+  
+
+">
+<div class="content">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="user-items-list" style="
+min-height: 100px;
+padding-top: 6.6vmax;
+padding-bottom: 6.6vmax;
+" data-card-theme="" data-section-id="user-items-list" data-section-title-enabled="false" data-space-below-section-title-value="120" data-space-below-section-title-unit="px" data-layout-width="inset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.user-items-list-item-container[data-section-id="62731b1bd6bad30cfc84d5aa"] .list-item-content__title {
+font-size: 1.2rem;
+}
+.user-items-list-item-container[data-section-id="62731b1bd6bad30cfc84d5aa"] .list-item-content__description {
+font-size: 0.9rem;
+}
+.user-items-list-item-container[data-section-id="62731b1bd6bad30cfc84d5aa"] .list-item-content__button {
+font-size: 0.8rem;
+}
+
+@supports (--test-custom-property: true) {
+.user-items-list-item-container[data-section-id="62731b1bd6bad30cfc84d5aa"] {
+--title-font-size-value: 1.2;
+--body-font-size-value: 0.9;
+--button-font-size-value: 0.8;
+}
+}
+</style>
+
+
+<ul class="
+user-items-list-item-container
+user-items-list-simple
+" style="
+grid-gap: 20px 20px;
+" data-controller="UserItemsListSimple" data-num-columns="4" data-content-order="media-first" data-alignment-vertical="top" data-section-id="62731b1bd6bad30cfc84d5aa" data-current-context="{
+&quot;userItems&quot;: [ {
+&quot;title&quot;: &quot;Kanin Energy&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Streamlining decarbonization opportunities for the industrial sector.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://kaninenergy.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;
+},
+&quot;imageId&quot;: &quot;62731bd84c8e165228376329&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62731bd84c8e165228376329&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651710936877,
+&quot;updatedOn&quot;: 1655360633582,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651710936877,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651710937117-VQJGNI4WM7PFB3Z5HU99&quot;,
+&quot;systemDataVariants&quot;: &quot;725x689,100w,300w,500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Screen%2BShot%2B2022-05-04%2Bat%2B2.34.28%2BPM.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;7f8690&quot;,
+  &quot;topRightAverage&quot;: &quot;747a86&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;6d717a&quot;,
+  &quot;bottomRightAverage&quot;: &quot;737782&quot;,
+  &quot;centerAverage&quot;: &quot;777d88&quot;,
+  &quot;suggestedBgColor&quot;: &quot;838288&quot;
+},
+&quot;urlId&quot;: &quot;ahemqlm5dvg0xomn6v6s22ua6q5ja5&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710937117-VQJGNI4WM7PFB3Z5HU99/Screen%252BShot%252B2022-05-04%252Bat%252B2.34.28%252BPM.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;725x689&quot;
+}
+}, {
+&quot;title&quot;: &quot;Kobold Metals&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Discovering materials critical for the electric vehicle and renewable energy revolution.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.koboldmetals.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;62731c7abf5c6c3c4e20b46d&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62731c7abf5c6c3c4e20b46d&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651711098305,
+&quot;updatedOn&quot;: 1655360633595,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651711098305,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651711099092-NXOENG5V8BW77L5WP1N1&quot;,
+&quot;systemDataVariants&quot;: &quot;1772x1772,100w,300w,500w,750w,1000w,1500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;IMG_9232.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;dde9ea&quot;,
+  &quot;topRightAverage&quot;: &quot;dfe8ed&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;353538&quot;,
+  &quot;bottomRightAverage&quot;: &quot;656569&quot;,
+  &quot;centerAverage&quot;: &quot;c07f74&quot;,
+  &quot;suggestedBgColor&quot;: &quot;918c8c&quot;
+},
+&quot;urlId&quot;: &quot;5v6lpsahbync2d1vy7j6m7vgfhlzgu&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711099092-NXOENG5V8BW77L5WP1N1/IMG_9232.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;1772x1772&quot;
+}
+}, {
+&quot;title&quot;: &quot;Shimmer Industries&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Digitizing the lighting industry by bringing each lightbulb into the cloud.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.shimmerindustries.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;62731d2e918feb4bef7f0195&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62731d2e918feb4bef7f0195&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651711278410,
+&quot;updatedOn&quot;: 1655360633606,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651711278410,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651711278491-OPWRIY09O6XDBOI4666K&quot;,
+&quot;systemDataVariants&quot;: &quot;276x276,100w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;10.+Jean.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;c5c1b5&quot;,
+  &quot;topRightAverage&quot;: &quot;d2cdc3&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;a49f93&quot;,
+  &quot;bottomRightAverage&quot;: &quot;747568&quot;,
+  &quot;centerAverage&quot;: &quot;e6aa8a&quot;,
+  &quot;suggestedBgColor&quot;: &quot;8f7d72&quot;
+},
+&quot;urlId&quot;: &quot;ji6l2c2y18ua4r09gezefpz2awsbck&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711278491-OPWRIY09O6XDBOI4666K/10.%2BJean.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;276x276&quot;
+}
+}, {
+&quot;title&quot;: &quot;Mootral&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Reducing greenhouse gas emission and improving animal health in the agricultural sector.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://mootral.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;62731ef34c8e16522837be84&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62731ef34c8e16522837be84&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1651711731746,
+&quot;updatedOn&quot;: 1655360633615,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1651711731746,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1651711731758-MGIQE4W2F1HSNAL5JVMO&quot;,
+&quot;systemDataVariants&quot;: &quot;257x257,100w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Thomas+Mootral.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;ba966b&quot;,
+  &quot;topRightAverage&quot;: &quot;eabd8e&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;839c43&quot;,
+  &quot;bottomRightAverage&quot;: &quot;364812&quot;,
+  &quot;centerAverage&quot;: &quot;6e84b3&quot;,
+  &quot;suggestedBgColor&quot;: &quot;7c7b5c&quot;
+},
+&quot;urlId&quot;: &quot;vbjpzxe2hjis7qtkavme02azay7cuz&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711731758-MGIQE4W2F1HSNAL5JVMO/Thomas%2BMootral.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;257x257&quot;
+}
+} ],
+&quot;styles&quot;: {
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+},
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageFocalPoint&quot;: null,
+&quot;backgroundImageId&quot;: null,
+&quot;options&quot;: {
+&quot;maxColumns&quot;: 4,
+&quot;isCardEnabled&quot;: true,
+&quot;isMediaEnabled&quot;: true,
+&quot;isTitleEnabled&quot;: true,
+&quot;isBodyEnabled&quot;: true,
+&quot;isButtonEnabled&quot;: false,
+&quot;mediaAspectRatio&quot;: &quot;circle&quot;,
+&quot;layoutWidth&quot;: &quot;inset&quot;,
+&quot;mediaWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;mediaAlignment&quot;: &quot;center&quot;,
+&quot;contentWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleAlignment&quot;: &quot;center&quot;,
+&quot;bodyAlignment&quot;: &quot;center&quot;,
+&quot;buttonAlignment&quot;: &quot;center&quot;,
+&quot;titlePlacement&quot;: &quot;center&quot;,
+&quot;bodyPlacement&quot;: &quot;center&quot;,
+&quot;buttonPlacement&quot;: &quot;center&quot;,
+&quot;cardVerticalAlignment&quot;: &quot;top&quot;,
+&quot;contentOrder&quot;: &quot;media-first&quot;,
+&quot;verticalPaddingTop&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;verticalPaddingBottom&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;spaceBetweenColumns&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenRows&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenContentAndMedia&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowTitle&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowBody&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingTop&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingRight&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingBottom&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingLeft&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleFontSize&quot;: &quot;heading-2&quot;,
+&quot;bodyFontSize&quot;: &quot;paragraph-2&quot;,
+&quot;buttonFontSize&quot;: &quot;button-medium&quot;,
+&quot;customOptions&quot;: {
+&quot;customTitleFontSize&quot;: {
+  &quot;value&quot;: 1.2,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customBodyFontSize&quot;: {
+  &quot;value&quot;: 0.9,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customButtonFontSize&quot;: {
+  &quot;value&quot;: 0.8,
+  &quot;unit&quot;: &quot;rem&quot;
+}
+}
+},
+&quot;layout&quot;: &quot;simple&quot;,
+&quot;isSectionTitleEnabled&quot;: false,
+&quot;sectionTitle&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Make it stand out.<\/p>&quot;,
+&quot;spaceBelowSectionTitle&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;sectionTitleAlignment&quot;: &quot;center&quot;,
+&quot;isSectionButtonEnabled&quot;: false,
+&quot;sectionButton&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;,
+&quot;buttonNewWindow&quot;: false
+},
+&quot;sectionButtonSize&quot;: &quot;medium&quot;,
+&quot;sectionButtonAlignment&quot;: &quot;center&quot;,
+&quot;spaceAboveSectionButton&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+}
+}" data-media-alignment="center" data-title-alignment="center" data-body-alignment="center" data-button-alignment="center" data-title-placement="center" data-body-placement="center" data-button-placement="center" data-layout-width="inset" data-title-font-unit="rem" data-description-font-unit="rem" data-button-font-unit="rem" data-space-between-rows="20px" data-space-between-columns="20px" data-vertical-padding-top-value="6.6" data-vertical-padding-bottom-value="6.6" data-vertical-padding-top-unit="vmax" data-vertical-padding-bottom-unit="vmax" data-controllers-bound="UserItemsListSimple">
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710937117-VQJGNI4WM7PFB3Z5HU99/Screen%252BShot%252B2022-05-04%252Bat%252B2.34.28%252BPM.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710937117-VQJGNI4WM7PFB3Z5HU99/Screen%252BShot%252B2022-05-04%252Bat%252B2.34.28%252BPM.jpg" data-image-dimensions="725x689" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651710937117-VQJGNI4WM7PFB3Z5HU99/Screen%252BShot%252B2022-05-04%252Bat%252B2.34.28%252BPM.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Kanin Energy</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Streamlining decarbonization opportunities for the industrial sector.</p><p class="" style="white-space:pre-wrap;"><a href="https://kaninenergy.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711099092-NXOENG5V8BW77L5WP1N1/IMG_9232.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711099092-NXOENG5V8BW77L5WP1N1/IMG_9232.jpg" data-image-dimensions="1772x1772" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711099092-NXOENG5V8BW77L5WP1N1/IMG_9232.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Kobold Metals</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Discovering materials critical for the electric vehicle and renewable energy revolution.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.koboldmetals.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711278491-OPWRIY09O6XDBOI4666K/10.%2BJean.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711278491-OPWRIY09O6XDBOI4666K/10.%2BJean.jpg" data-image-dimensions="276x276" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711278491-OPWRIY09O6XDBOI4666K/10.%2BJean.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Shimmer Industries</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Digitizing the lighting industry by bringing each lightbulb into the cloud.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.shimmerindustries.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711731758-MGIQE4W2F1HSNAL5JVMO/Thomas%2BMootral.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711731758-MGIQE4W2F1HSNAL5JVMO/Thomas%2BMootral.jpg" data-image-dimensions="257x257" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1651711731758-MGIQE4W2F1HSNAL5JVMO/Thomas%2BMootral.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Mootral</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Reducing greenhouse gas emission and improving animal health in the agricultural sector.</p><p class="" style="white-space:pre-wrap;"><a href="https://mootral.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+</ul>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section data-test="page-section" data-section-theme="white" class="page-section 
+
+user-items-list-section
+full-bleed-section
+
+
+
+
+
+
+
+
+
+
+
+
+white" data-section-id="62aacc7994e9e92f05edb74e" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;generative&quot;,
+&quot;backgroundImage&quot;: null
+}" data-current-context="{
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: {
+&quot;type&quot;: &quot;none&quot;
+},
+&quot;divider&quot;: {
+&quot;enabled&quot;: false
+},
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="" data-json-schema-section="" data-controllers-bound="SectionWrapperController" data-active="true">
+<div class="section-border">
+<div class="section-background">
+
+
+
+</div>
+</div>
+<div class="content-wrapper" style="
+
+  
+
+">
+<div class="content">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="user-items-list" style="
+min-height: 100px;
+padding-top: 6.6vmax;
+padding-bottom: 6.6vmax;
+" data-card-theme="" data-section-id="user-items-list" data-section-title-enabled="false" data-space-below-section-title-value="120" data-space-below-section-title-unit="px" data-layout-width="inset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.user-items-list-item-container[data-section-id="62aacc7994e9e92f05edb74e"] .list-item-content__title {
+font-size: 1.2rem;
+}
+.user-items-list-item-container[data-section-id="62aacc7994e9e92f05edb74e"] .list-item-content__description {
+font-size: 0.9rem;
+}
+.user-items-list-item-container[data-section-id="62aacc7994e9e92f05edb74e"] .list-item-content__button {
+font-size: 0.8rem;
+}
+
+@supports (--test-custom-property: true) {
+.user-items-list-item-container[data-section-id="62aacc7994e9e92f05edb74e"] {
+--title-font-size-value: 1.2;
+--body-font-size-value: 0.9;
+--button-font-size-value: 0.8;
+}
+}
+</style>
+
+
+<ul class="
+user-items-list-item-container
+user-items-list-simple
+" style="
+grid-gap: 20px 20px;
+" data-controller="UserItemsListSimple" data-num-columns="4" data-content-order="media-first" data-alignment-vertical="top" data-section-id="62aacc7994e9e92f05edb74e" data-current-context="{
+&quot;userItems&quot;: [ {
+&quot;title&quot;: &quot;Halo Car&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Halo is creating the world’s most delightful all-electric rental car and ride hail experience.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.halo.car\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageId&quot;: &quot;62aacf33d6e60269a56ae862&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62aacf33d6e60269a56ae862&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1655361331875,
+&quot;updatedOn&quot;: 1660842486835,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1655361331875,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1655361332953-IYH5XTQJQ2UOAMYOTLD1&quot;,
+&quot;systemDataVariants&quot;: &quot;658x675,100w,300w,500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Screen+Shot+2022-06-15+at+8.34.13+PM.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;d2d8d7&quot;,
+  &quot;topRightAverage&quot;: &quot;c8dff4&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;c7c6d1&quot;,
+  &quot;bottomRightAverage&quot;: &quot;c9c8d6&quot;,
+  &quot;centerAverage&quot;: &quot;92846f&quot;,
+  &quot;suggestedBgColor&quot;: &quot;aca6a4&quot;
+},
+&quot;urlId&quot;: &quot;v6sx5cqy52kajhqrgrxpcvxpzn7fmp&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361332953-IYH5XTQJQ2UOAMYOTLD1/Screen%2BShot%2B2022-06-15%2Bat%2B8.34.13%2BPM.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;658x675&quot;
+}
+}, {
+&quot;title&quot;: &quot;MicroByre&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Converting unrefined biomass into commodity chemicals at vastly improved efficiencies through synthetic biology.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://microbyre.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;
+},
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageId&quot;: &quot;62aacf4e8d1cb076070f7d72&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62aacf4e8d1cb076070f7d72&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1655361358498,
+&quot;updatedOn&quot;: 1660842486844,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1655361358498,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1655361370888-B2QE0SBEHQSD68TLUOVF&quot;,
+&quot;systemDataVariants&quot;: &quot;2500x2500,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Sarah+Richardson+headshot.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;484d52&quot;,
+  &quot;topRightAverage&quot;: &quot;4f5457&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;36393d&quot;,
+  &quot;bottomRightAverage&quot;: &quot;161c27&quot;,
+  &quot;centerAverage&quot;: &quot;c48b76&quot;,
+  &quot;suggestedBgColor&quot;: &quot;4d4443&quot;
+},
+&quot;urlId&quot;: &quot;jdckxe4e4r0wb06utds7bj5cnk7li2&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361370888-B2QE0SBEHQSD68TLUOVF/Sarah%2BRichardson%2Bheadshot.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;2500x2500&quot;
+}
+}, {
+&quot;title&quot;: &quot;Noteworthy.ai&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Noteworthy provides vehicle-mounted computer vision technology that identifies visual defects in grid assets like utility poles.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.noteworthy.ai\&quot; target=\&quot;_blank\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageId&quot;: &quot;62aad0def6622c33ad4c45d6&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;62aad0def6622c33ad4c45d6&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1655361758452,
+&quot;updatedOn&quot;: 1660842486854,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1655361758452,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1655361758885-S51HZMZB1GMT6R0UH5WT&quot;,
+&quot;systemDataVariants&quot;: &quot;681x681,100w,300w,500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Chris+Noteworthy.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;2a3242&quot;,
+  &quot;topRightAverage&quot;: &quot;262626&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;1f3766&quot;,
+  &quot;bottomRightAverage&quot;: &quot;172a4f&quot;,
+  &quot;centerAverage&quot;: &quot;d19588&quot;,
+  &quot;suggestedBgColor&quot;: &quot;534b53&quot;
+},
+&quot;urlId&quot;: &quot;uf71mytwph87qma0ccqt16m8ver1m3&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361758885-S51HZMZB1GMT6R0UH5WT/Chris%2BNoteworthy.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;681x681&quot;
+}
+}, {
+&quot;title&quot;: &quot;Toucan Protocol&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Toucan Protocol merges Web3 with the carbon market, bringing carbon on-chain.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://toucan.earth\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;6406ce58886208218ba3bbd6&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;6406ce58886208218ba3bbd6&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1678167640434,
+&quot;updatedOn&quot;: 1678167640526,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1678167640434,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;e23b9144-f24b-4ba6-97c1-da6e90dfc49c&quot;,
+&quot;systemDataVariants&quot;: &quot;350x350,100w,300w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Raphael Toucan Headshot.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;e6e7ec&quot;,
+  &quot;topRightAverage&quot;: &quot;eceef4&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;e6e9ee&quot;,
+  &quot;bottomRightAverage&quot;: &quot;f0f5f9&quot;,
+  &quot;centerAverage&quot;: &quot;d69d88&quot;,
+  &quot;suggestedBgColor&quot;: &quot;d8c9c4&quot;
+},
+&quot;urlId&quot;: &quot;41oejw3hdqcsw6h5te159wi6qrhedh&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e23b9144-f24b-4ba6-97c1-da6e90dfc49c/Raphael+Toucan+Headshot.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;350x350&quot;
+}
+} ],
+&quot;styles&quot;: {
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;generative&quot;,
+&quot;backgroundImage&quot;: null
+},
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageFocalPoint&quot;: null,
+&quot;backgroundImageId&quot;: null,
+&quot;options&quot;: {
+&quot;maxColumns&quot;: 4,
+&quot;isCardEnabled&quot;: true,
+&quot;isMediaEnabled&quot;: true,
+&quot;isTitleEnabled&quot;: true,
+&quot;isBodyEnabled&quot;: true,
+&quot;isButtonEnabled&quot;: false,
+&quot;mediaAspectRatio&quot;: &quot;circle&quot;,
+&quot;layoutWidth&quot;: &quot;inset&quot;,
+&quot;mediaWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;mediaAlignment&quot;: &quot;center&quot;,
+&quot;contentWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleAlignment&quot;: &quot;center&quot;,
+&quot;bodyAlignment&quot;: &quot;center&quot;,
+&quot;buttonAlignment&quot;: &quot;center&quot;,
+&quot;titlePlacement&quot;: &quot;center&quot;,
+&quot;bodyPlacement&quot;: &quot;center&quot;,
+&quot;buttonPlacement&quot;: &quot;center&quot;,
+&quot;cardVerticalAlignment&quot;: &quot;top&quot;,
+&quot;contentOrder&quot;: &quot;media-first&quot;,
+&quot;verticalPaddingTop&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;verticalPaddingBottom&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;spaceBetweenColumns&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenRows&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenContentAndMedia&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowTitle&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowBody&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingTop&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingRight&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingBottom&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingLeft&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleFontSize&quot;: &quot;heading-2&quot;,
+&quot;bodyFontSize&quot;: &quot;paragraph-2&quot;,
+&quot;buttonFontSize&quot;: &quot;button-medium&quot;,
+&quot;customOptions&quot;: {
+&quot;customTitleFontSize&quot;: {
+  &quot;value&quot;: 1.2,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customBodyFontSize&quot;: {
+  &quot;value&quot;: 0.9,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customButtonFontSize&quot;: {
+  &quot;value&quot;: 0.8,
+  &quot;unit&quot;: &quot;rem&quot;
+}
+}
+},
+&quot;layout&quot;: &quot;simple&quot;,
+&quot;isSectionTitleEnabled&quot;: false,
+&quot;sectionTitle&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Make it stand out.<\/p>&quot;,
+&quot;spaceBelowSectionTitle&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;sectionTitleAlignment&quot;: &quot;center&quot;,
+&quot;isSectionButtonEnabled&quot;: false,
+&quot;sectionButton&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;,
+&quot;buttonNewWindow&quot;: false
+},
+&quot;sectionButtonSize&quot;: &quot;medium&quot;,
+&quot;sectionButtonAlignment&quot;: &quot;center&quot;,
+&quot;spaceAboveSectionButton&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+}
+}" data-media-alignment="center" data-title-alignment="center" data-body-alignment="center" data-button-alignment="center" data-title-placement="center" data-body-placement="center" data-button-placement="center" data-layout-width="inset" data-title-font-unit="rem" data-description-font-unit="rem" data-button-font-unit="rem" data-space-between-rows="20px" data-space-between-columns="20px" data-vertical-padding-top-value="6.6" data-vertical-padding-bottom-value="6.6" data-vertical-padding-top-unit="vmax" data-vertical-padding-bottom-unit="vmax" data-controllers-bound="UserItemsListSimple">
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361332953-IYH5XTQJQ2UOAMYOTLD1/Screen%2BShot%2B2022-06-15%2Bat%2B8.34.13%2BPM.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361332953-IYH5XTQJQ2UOAMYOTLD1/Screen%2BShot%2B2022-06-15%2Bat%2B8.34.13%2BPM.jpg" data-image-dimensions="658x675" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361332953-IYH5XTQJQ2UOAMYOTLD1/Screen%2BShot%2B2022-06-15%2Bat%2B8.34.13%2BPM.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Halo Car</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Halo is creating the world’s most delightful all-electric rental car and ride hail experience.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.halo.car">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361370888-B2QE0SBEHQSD68TLUOVF/Sarah%2BRichardson%2Bheadshot.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361370888-B2QE0SBEHQSD68TLUOVF/Sarah%2BRichardson%2Bheadshot.jpg" data-image-dimensions="2500x2500" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361370888-B2QE0SBEHQSD68TLUOVF/Sarah%2BRichardson%2Bheadshot.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">MicroByre</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Converting unrefined biomass into commodity chemicals at vastly improved efficiencies through synthetic biology.</p><p class="" style="white-space:pre-wrap;"><a href="https://microbyre.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361758885-S51HZMZB1GMT6R0UH5WT/Chris%2BNoteworthy.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361758885-S51HZMZB1GMT6R0UH5WT/Chris%2BNoteworthy.jpg" data-image-dimensions="681x681" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1655361758885-S51HZMZB1GMT6R0UH5WT/Chris%2BNoteworthy.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Noteworthy.ai</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Noteworthy provides vehicle-mounted computer vision technology that identifies visual defects in grid assets like utility poles.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.noteworthy.ai" target="_blank">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="NaN,NaN" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e23b9144-f24b-4ba6-97c1-da6e90dfc49c/Raphael+Toucan+Headshot.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e23b9144-f24b-4ba6-97c1-da6e90dfc49c/Raphael+Toucan+Headshot.jpg" data-image-dimensions="350x350" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e23b9144-f24b-4ba6-97c1-da6e90dfc49c/Raphael+Toucan+Headshot.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Toucan Protocol</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Toucan Protocol merges Web3 with the carbon market, bringing carbon on-chain.</p><p class="" style="white-space:pre-wrap;"><a href="https://toucan.earth">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+</ul>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+<button class="background-pause-button" aria-label="Pause Background"></button>
+<button class="background-pause-button paused" aria-label="Play Background"></button>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section data-test="page-section" data-section-theme="white" class="page-section 
+
+user-items-list-section
+full-bleed-section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+white" data-section-id="62fe71f6f0f7a753e4d97150" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+}" data-current-context="{
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: {
+&quot;type&quot;: &quot;none&quot;
+},
+&quot;divider&quot;: {
+&quot;enabled&quot;: false
+},
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="" data-json-schema-section="" data-controllers-bound="SectionWrapperController" data-active="true">
+<div class="section-border">
+<div class="section-background">
+
+
+
+</div>
+</div>
+<div class="content-wrapper" style="
+
+  
+
+">
+<div class="content">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="user-items-list" style="
+min-height: 100px;
+padding-top: 6.6vmax;
+padding-bottom: 6.6vmax;
+" data-card-theme="" data-section-id="user-items-list" data-section-title-enabled="false" data-space-below-section-title-value="120" data-space-below-section-title-unit="px" data-layout-width="inset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.user-items-list-item-container[data-section-id="62fe71f6f0f7a753e4d97150"] .list-item-content__title {
+font-size: 1.2rem;
+}
+.user-items-list-item-container[data-section-id="62fe71f6f0f7a753e4d97150"] .list-item-content__description {
+font-size: 0.9rem;
+}
+.user-items-list-item-container[data-section-id="62fe71f6f0f7a753e4d97150"] .list-item-content__button {
+font-size: 0.8rem;
+}
+
+@supports (--test-custom-property: true) {
+.user-items-list-item-container[data-section-id="62fe71f6f0f7a753e4d97150"] {
+--title-font-size-value: 1.2;
+--body-font-size-value: 0.9;
+--button-font-size-value: 0.8;
+}
+}
+</style>
+
+
+<ul class="
+user-items-list-item-container
+user-items-list-simple
+" style="
+grid-gap: 20px 20px;
+" data-controller="UserItemsListSimple" data-num-columns="4" data-content-order="media-first" data-alignment-vertical="top" data-section-id="62fe71f6f0f7a753e4d97150" data-current-context="{
+&quot;userItems&quot;: [ {
+&quot;title&quot;: &quot;Tread&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Tread is a streamlined operating system for construction material logistics.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.tread.io\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageId&quot;: &quot;631129ce0e506c6da335708a&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;631129ce0e506c6da335708a&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1662069198730,
+&quot;updatedOn&quot;: 1674508546628,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1662069198730,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1662069204110-OHBGV14YPUKVKWSY50YO&quot;,
+&quot;systemDataVariants&quot;: &quot;2499x2499,100w,300w,500w,750w,1000w,1500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;TREAD+%28Dolgoy%2C+Noah%29+Headshot.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;404e55&quot;,
+  &quot;topRightAverage&quot;: &quot;4d5a62&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;434f57&quot;,
+  &quot;bottomRightAverage&quot;: &quot;4b5860&quot;,
+  &quot;centerAverage&quot;: &quot;c9a092&quot;,
+  &quot;suggestedBgColor&quot;: &quot;6f6c6d&quot;
+},
+&quot;urlId&quot;: &quot;eupawk2fc2214fc76o8pl49oyvobz5&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1662069204110-OHBGV14YPUKVKWSY50YO/TREAD%2B%2528Dolgoy%252C%2BNoah%2529%2BHeadshot.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;2499x2499&quot;
+}
+}, {
+&quot;title&quot;: &quot;Derapi&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Derapi (DER - API) connects distributed energy resources through plug-and-play APIs.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://derapi.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Click Here&quot;,
+&quot;buttonLink&quot;: &quot;/&quot;
+},
+&quot;imageId&quot;: &quot;6406cea6d3daa3704b4bc2e6&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;6406cea6d3daa3704b4bc2e6&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1678167718176,
+&quot;updatedOn&quot;: 1678167718298,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1678167718176,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;e78afcba-276f-4ec7-b13c-810ad172b298&quot;,
+&quot;systemDataVariants&quot;: &quot;450x450,100w,300w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Jake Masters Headshot.jpeg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;e2eae2&quot;,
+  &quot;topRightAverage&quot;: &quot;e5ebe4&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;535b54&quot;,
+  &quot;bottomRightAverage&quot;: &quot;3e433d&quot;,
+  &quot;centerAverage&quot;: &quot;876950&quot;,
+  &quot;suggestedBgColor&quot;: &quot;b4b5a9&quot;
+},
+&quot;urlId&quot;: &quot;9g5tt3q4eb3ie335mvn1d3s910o8zx&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e78afcba-276f-4ec7-b13c-810ad172b298/Jake+Masters+Headshot.jpeg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;450x450&quot;
+}
+}, {
+&quot;title&quot;: &quot;Aquabyte&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Computer vision based SaaS for aquaculture, leading to higher yields and healthier fish.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://aquabyte.ai\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Click Here&quot;,
+&quot;buttonLink&quot;: &quot;/&quot;
+},
+&quot;imageId&quot;: &quot;6328e22414deab05b4db4f85&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;image&quot;: {
+&quot;id&quot;: &quot;6328e22414deab05b4db4f85&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1663623716891,
+&quot;updatedOn&quot;: 1674508546637,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1663623716891,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1663623716913-UVAPNVOKG643WHOH1121&quot;,
+&quot;systemDataVariants&quot;: &quot;388x388,100w,300w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Aquabyte.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;9ac1e2&quot;,
+  &quot;topRightAverage&quot;: &quot;a1c1df&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;0a1118&quot;,
+  &quot;bottomRightAverage&quot;: &quot;547290&quot;,
+  &quot;centerAverage&quot;: &quot;b48770&quot;,
+  &quot;suggestedBgColor&quot;: &quot;687b91&quot;
+},
+&quot;urlId&quot;: &quot;p7se4ziu3xgb0eokpmwmvbkjjyhaze&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1663623716913-UVAPNVOKG643WHOH1121/Aquabyte.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;388x388&quot;
+}
+}, {
+&quot;title&quot;: &quot;Pattern Ag&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Pattern Ag offers advanced soil analysis to optimize crop protection and fertility plans.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.pattern.ag\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Click Here&quot;,
+&quot;buttonLink&quot;: &quot;/&quot;
+},
+&quot;imageId&quot;: &quot;6392698bec79ca6e51dab91b&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;6392698bec79ca6e51dab91b&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1670539659753,
+&quot;updatedOn&quot;: 1674508546642,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1670539659753,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;054c267a-b24b-4699-9697-95131a084bfd&quot;,
+&quot;systemDataVariants&quot;: &quot;800x800,100w,300w,500w,750w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Rob Pattern Ag Headshot.jpeg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;707070&quot;,
+  &quot;topRightAverage&quot;: &quot;717171&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;adadad&quot;,
+  &quot;bottomRightAverage&quot;: &quot;727272&quot;,
+  &quot;centerAverage&quot;: &quot;9c9c9c&quot;,
+  &quot;suggestedBgColor&quot;: &quot;828282&quot;
+},
+&quot;urlId&quot;: &quot;h5y3wedvxyxq88lhnm5rpze20lol8i&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/054c267a-b24b-4699-9697-95131a084bfd/Rob+Pattern+Ag+Headshot.jpeg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;800x800&quot;
+}
+} ],
+&quot;styles&quot;: {
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+},
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageFocalPoint&quot;: null,
+&quot;backgroundImageId&quot;: null,
+&quot;options&quot;: {
+&quot;maxColumns&quot;: 4,
+&quot;isCardEnabled&quot;: true,
+&quot;isMediaEnabled&quot;: true,
+&quot;isTitleEnabled&quot;: true,
+&quot;isBodyEnabled&quot;: true,
+&quot;isButtonEnabled&quot;: false,
+&quot;mediaAspectRatio&quot;: &quot;circle&quot;,
+&quot;layoutWidth&quot;: &quot;inset&quot;,
+&quot;mediaWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;mediaAlignment&quot;: &quot;center&quot;,
+&quot;contentWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleAlignment&quot;: &quot;center&quot;,
+&quot;bodyAlignment&quot;: &quot;center&quot;,
+&quot;buttonAlignment&quot;: &quot;center&quot;,
+&quot;titlePlacement&quot;: &quot;center&quot;,
+&quot;bodyPlacement&quot;: &quot;center&quot;,
+&quot;buttonPlacement&quot;: &quot;center&quot;,
+&quot;cardVerticalAlignment&quot;: &quot;top&quot;,
+&quot;contentOrder&quot;: &quot;media-first&quot;,
+&quot;verticalPaddingTop&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;verticalPaddingBottom&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;spaceBetweenColumns&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenRows&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenContentAndMedia&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowTitle&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowBody&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingTop&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingRight&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingBottom&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingLeft&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleFontSize&quot;: &quot;heading-2&quot;,
+&quot;bodyFontSize&quot;: &quot;paragraph-2&quot;,
+&quot;buttonFontSize&quot;: &quot;button-medium&quot;,
+&quot;customOptions&quot;: {
+&quot;customTitleFontSize&quot;: {
+  &quot;value&quot;: 1.2,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customBodyFontSize&quot;: {
+  &quot;value&quot;: 0.9,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customButtonFontSize&quot;: {
+  &quot;value&quot;: 0.8,
+  &quot;unit&quot;: &quot;rem&quot;
+}
+}
+},
+&quot;layout&quot;: &quot;simple&quot;,
+&quot;isSectionTitleEnabled&quot;: false,
+&quot;sectionTitle&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Make it stand out.<\/p>&quot;,
+&quot;spaceBelowSectionTitle&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;sectionTitleAlignment&quot;: &quot;center&quot;,
+&quot;isSectionButtonEnabled&quot;: false,
+&quot;sectionButton&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;,
+&quot;buttonNewWindow&quot;: false
+},
+&quot;sectionButtonSize&quot;: &quot;medium&quot;,
+&quot;sectionButtonAlignment&quot;: &quot;center&quot;,
+&quot;spaceAboveSectionButton&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+}
+}" data-media-alignment="center" data-title-alignment="center" data-body-alignment="center" data-button-alignment="center" data-title-placement="center" data-body-placement="center" data-button-placement="center" data-layout-width="inset" data-title-font-unit="rem" data-description-font-unit="rem" data-button-font-unit="rem" data-space-between-rows="20px" data-space-between-columns="20px" data-vertical-padding-top-value="6.6" data-vertical-padding-bottom-value="6.6" data-vertical-padding-top-unit="vmax" data-vertical-padding-bottom-unit="vmax" data-controllers-bound="UserItemsListSimple">
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1662069204110-OHBGV14YPUKVKWSY50YO/TREAD%2B%2528Dolgoy%252C%2BNoah%2529%2BHeadshot.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1662069204110-OHBGV14YPUKVKWSY50YO/TREAD%2B%2528Dolgoy%252C%2BNoah%2529%2BHeadshot.jpg" data-image-dimensions="2499x2499" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1662069204110-OHBGV14YPUKVKWSY50YO/TREAD%2B%2528Dolgoy%252C%2BNoah%2529%2BHeadshot.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Tread</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Tread is a streamlined operating system for construction material logistics.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.tread.io">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="NaN,NaN" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e78afcba-276f-4ec7-b13c-810ad172b298/Jake+Masters+Headshot.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e78afcba-276f-4ec7-b13c-810ad172b298/Jake+Masters+Headshot.jpeg" data-image-dimensions="450x450" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/e78afcba-276f-4ec7-b13c-810ad172b298/Jake+Masters+Headshot.jpeg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Derapi</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Derapi (DER - API) connects distributed energy resources through plug-and-play APIs.</p><p class="" style="white-space:pre-wrap;"><a href="https://derapi.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="0.5,0.5" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1663623716913-UVAPNVOKG643WHOH1121/Aquabyte.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1663623716913-UVAPNVOKG643WHOH1121/Aquabyte.jpg" data-image-dimensions="388x388" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1663623716913-UVAPNVOKG643WHOH1121/Aquabyte.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Aquabyte</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Computer vision based SaaS for aquaculture, leading to higher yields and healthier fish.</p><p class="" style="white-space:pre-wrap;"><a href="https://aquabyte.ai">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="NaN,NaN" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/054c267a-b24b-4699-9697-95131a084bfd/Rob+Pattern+Ag+Headshot.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/054c267a-b24b-4699-9697-95131a084bfd/Rob+Pattern+Ag+Headshot.jpeg" data-image-dimensions="800x800" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/054c267a-b24b-4699-9697-95131a084bfd/Rob+Pattern+Ag+Headshot.jpeg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Pattern Ag</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Pattern Ag offers advanced soil analysis to optimize crop protection and fertility plans.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.pattern.ag">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+</ul>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section data-test="page-section" data-section-theme="white" class="page-section 
+
+user-items-list-section
+full-bleed-section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+white" data-section-id="63cef902b9479512886b0b5a" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+}" data-current-context="{
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: {
+&quot;type&quot;: &quot;none&quot;
+},
+&quot;divider&quot;: {
+&quot;enabled&quot;: false
+},
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="" data-json-schema-section="" data-controllers-bound="SectionWrapperController" data-active="true">
+<div class="section-border">
+<div class="section-background">
+
+
+
+</div>
+</div>
+<div class="content-wrapper" style="
+
+  
+
+">
+<div class="content">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="user-items-list" style="
+min-height: 100px;
+padding-top: 6.6vmax;
+padding-bottom: 6.6vmax;
+" data-card-theme="" data-section-id="user-items-list" data-section-title-enabled="false" data-space-below-section-title-value="120" data-space-below-section-title-unit="px" data-layout-width="inset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.user-items-list-item-container[data-section-id="63cef902b9479512886b0b5a"] .list-item-content__title {
+font-size: 1.2rem;
+}
+.user-items-list-item-container[data-section-id="63cef902b9479512886b0b5a"] .list-item-content__description {
+font-size: 0.9rem;
+}
+.user-items-list-item-container[data-section-id="63cef902b9479512886b0b5a"] .list-item-content__button {
+font-size: 0.8rem;
+}
+
+@supports (--test-custom-property: true) {
+.user-items-list-item-container[data-section-id="63cef902b9479512886b0b5a"] {
+--title-font-size-value: 1.2;
+--body-font-size-value: 0.9;
+--button-font-size-value: 0.8;
+}
+}
+</style>
+
+
+<ul class="
+user-items-list-item-container
+user-items-list-simple
+" style="
+grid-gap: 20px 20px;
+" data-controller="UserItemsListSimple" data-num-columns="4" data-content-order="media-first" data-alignment-vertical="top" data-section-id="63cef902b9479512886b0b5a" data-current-context="{
+&quot;userItems&quot;: [ {
+&quot;title&quot;: &quot;Sunstone Credit&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Sunstone’s loan products enable solar developers to access more of the market and grow their commercial business​ by offering flexible financing solutions.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.sunstonecredit.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;
+},
+&quot;imageId&quot;: &quot;63cef94c63cfb5380ff4040b&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;63cef94c63cfb5380ff4040b&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1674508620050,
+&quot;updatedOn&quot;: 1674508620128,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1674508620050,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;1e2a387a-23a4-4c35-b378-947a08409346&quot;,
+&quot;systemDataVariants&quot;: &quot;1500x1500,100w,300w,500w,750w,1000w,1500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Josh Sunstone Headshot.jpeg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;3f4448&quot;,
+  &quot;topRightAverage&quot;: &quot;3d4246&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;131e2a&quot;,
+  &quot;bottomRightAverage&quot;: &quot;262b2e&quot;,
+  &quot;centerAverage&quot;: &quot;8e685a&quot;,
+  &quot;suggestedBgColor&quot;: &quot;57575a&quot;
+},
+&quot;urlId&quot;: &quot;iavem36oqdtfwzirx8jlj4sy63re6c&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1e2a387a-23a4-4c35-b378-947a08409346/Josh+Sunstone+Headshot.jpeg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;1500x1500&quot;
+}
+}, {
+&quot;title&quot;: &quot;Get Weatherized&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Get Weatherized is building SaaS tools that help insulation and efficiency contractors seamlessly manage their business operations and customer communications.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://www.getweatherized.com\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Click Here&quot;,
+&quot;buttonLink&quot;: &quot;/&quot;
+},
+&quot;imageId&quot;: &quot;63cefab7422b580af8db75fc&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;63cefab7422b580af8db75fc&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1674508983404,
+&quot;updatedOn&quot;: 1674508983482,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1674508983404,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;f39714ab-9797-4cbf-aab1-e50793bb592e&quot;,
+&quot;systemDataVariants&quot;: &quot;2499x2786,100w,300w,500w,750w,1000w,1500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Evan Headshot.jpg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;eae7de&quot;,
+  &quot;topRightAverage&quot;: &quot;e9e6dd&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;171c1c&quot;,
+  &quot;bottomRightAverage&quot;: &quot;262c2e&quot;,
+  &quot;centerAverage&quot;: &quot;b5b2a6&quot;,
+  &quot;suggestedBgColor&quot;: &quot;8f8f89&quot;
+},
+&quot;urlId&quot;: &quot;2i7ygt0nxxypbajondauk3iyljkvhc&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/f39714ab-9797-4cbf-aab1-e50793bb592e/Evan+Headshot.jpg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;2499x2786&quot;
+}
+}, {
+&quot;title&quot;: &quot;SuperCircle&quot;,
+&quot;description&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>SuperCircle powers consumer circularity for large retail brands. They do this while increasing brand loyalty and enabling the logistics backend.<\/p><p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;><a href=\&quot;https://supercircle.world\&quot;>Learn more<\/a><\/p>&quot;,
+&quot;button&quot;: {
+&quot;buttonText&quot;: &quot;Click Here&quot;,
+&quot;buttonLink&quot;: &quot;/&quot;
+},
+&quot;imageId&quot;: &quot;63eea36738ed5d2a4014d161&quot;,
+&quot;image&quot;: {
+&quot;id&quot;: &quot;63eea36738ed5d2a4014d161&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1676583783191,
+&quot;updatedOn&quot;: 1676583783454,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1676583783191,
+&quot;authorId&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+&quot;systemDataId&quot;: &quot;61f50b76-e538-4311-bf25-d29ac2c96962&quot;,
+&quot;systemDataVariants&quot;: &quot;233x233,100w&quot;,
+&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+&quot;filename&quot;: &quot;Chloe.jpeg&quot;,
+&quot;mediaFocalPoint&quot;: {
+  &quot;x&quot;: 0.5,
+  &quot;y&quot;: 0.5,
+  &quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+  &quot;topLeftAverage&quot;: &quot;28231d&quot;,
+  &quot;topRightAverage&quot;: &quot;727674&quot;,
+  &quot;bottomLeftAverage&quot;: &quot;362d2c&quot;,
+  &quot;bottomRightAverage&quot;: &quot;9fa5a7&quot;,
+  &quot;centerAverage&quot;: &quot;e4b9a2&quot;,
+  &quot;suggestedBgColor&quot;: &quot;565145&quot;
+},
+&quot;urlId&quot;: &quot;ed23oe5uypindzbxd6a4e34943d1cs&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+  &quot;id&quot;: &quot;613b042ad9cd421ce20fcc0f&quot;,
+  &quot;displayName&quot;: &quot;Ramsay Siegal&quot;,
+  &quot;firstName&quot;: &quot;Ramsay&quot;,
+  &quot;lastName&quot;: &quot;Siegal&quot;,
+  &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;,
+  &quot;bio&quot;: &quot;&quot;,
+  &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/613b042b67750b42b47b91da&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/61f50b76-e538-4311-bf25-d29ac2c96962/Chloe.jpeg&quot;,
+&quot;contentType&quot;: &quot;image/jpeg&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;233x233&quot;
+}
+} ],
+&quot;styles&quot;: {
+&quot;imageFocalPoint&quot;: {
+&quot;x&quot;: 0.5,
+&quot;y&quot;: 0.5
+},
+&quot;imageOverlayOpacity&quot;: 0.3,
+&quot;backgroundColor&quot;: &quot;white&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;imageEffect&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;backgroundImage&quot;: null
+},
+&quot;video&quot;: {
+&quot;filter&quot;: 1,
+&quot;videoFallbackContentItem&quot;: null,
+&quot;nativeVideoContentItem&quot;: null,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageFocalPoint&quot;: null,
+&quot;backgroundImageId&quot;: null,
+&quot;options&quot;: {
+&quot;maxColumns&quot;: 4,
+&quot;isCardEnabled&quot;: true,
+&quot;isMediaEnabled&quot;: true,
+&quot;isTitleEnabled&quot;: true,
+&quot;isBodyEnabled&quot;: true,
+&quot;isButtonEnabled&quot;: false,
+&quot;mediaAspectRatio&quot;: &quot;circle&quot;,
+&quot;layoutWidth&quot;: &quot;inset&quot;,
+&quot;mediaWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;mediaAlignment&quot;: &quot;center&quot;,
+&quot;contentWidth&quot;: {
+&quot;value&quot;: 100,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleAlignment&quot;: &quot;center&quot;,
+&quot;bodyAlignment&quot;: &quot;center&quot;,
+&quot;buttonAlignment&quot;: &quot;center&quot;,
+&quot;titlePlacement&quot;: &quot;center&quot;,
+&quot;bodyPlacement&quot;: &quot;center&quot;,
+&quot;buttonPlacement&quot;: &quot;center&quot;,
+&quot;cardVerticalAlignment&quot;: &quot;top&quot;,
+&quot;contentOrder&quot;: &quot;media-first&quot;,
+&quot;verticalPaddingTop&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;verticalPaddingBottom&quot;: {
+&quot;value&quot;: 6.6,
+&quot;unit&quot;: &quot;vmax&quot;
+},
+&quot;spaceBetweenColumns&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenRows&quot;: {
+&quot;value&quot;: 20,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;spaceBetweenContentAndMedia&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowTitle&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;spaceBelowBody&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingTop&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingRight&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingBottom&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;cardPaddingLeft&quot;: {
+&quot;value&quot;: 10,
+&quot;unit&quot;: &quot;%&quot;
+},
+&quot;titleFontSize&quot;: &quot;heading-2&quot;,
+&quot;bodyFontSize&quot;: &quot;paragraph-2&quot;,
+&quot;buttonFontSize&quot;: &quot;button-medium&quot;,
+&quot;customOptions&quot;: {
+&quot;customTitleFontSize&quot;: {
+  &quot;value&quot;: 1.2,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customBodyFontSize&quot;: {
+  &quot;value&quot;: 0.9,
+  &quot;unit&quot;: &quot;rem&quot;
+},
+&quot;customButtonFontSize&quot;: {
+  &quot;value&quot;: 0.8,
+  &quot;unit&quot;: &quot;rem&quot;
+}
+}
+},
+&quot;layout&quot;: &quot;simple&quot;,
+&quot;isSectionTitleEnabled&quot;: false,
+&quot;sectionTitle&quot;: &quot;<p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;>Make it stand out.<\/p>&quot;,
+&quot;spaceBelowSectionTitle&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+},
+&quot;sectionTitleAlignment&quot;: &quot;center&quot;,
+&quot;isSectionButtonEnabled&quot;: false,
+&quot;sectionButton&quot;: {
+&quot;buttonText&quot;: &quot;Make It&quot;,
+&quot;buttonLink&quot;: &quot;#&quot;,
+&quot;buttonNewWindow&quot;: false
+},
+&quot;sectionButtonSize&quot;: &quot;medium&quot;,
+&quot;sectionButtonAlignment&quot;: &quot;center&quot;,
+&quot;spaceAboveSectionButton&quot;: {
+&quot;value&quot;: 120,
+&quot;unit&quot;: &quot;px&quot;
+}
+}" data-media-alignment="center" data-title-alignment="center" data-body-alignment="center" data-button-alignment="center" data-title-placement="center" data-body-placement="center" data-button-placement="center" data-layout-width="inset" data-title-font-unit="rem" data-description-font-unit="rem" data-button-font-unit="rem" data-space-between-rows="20px" data-space-between-columns="20px" data-vertical-padding-top-value="6.6" data-vertical-padding-bottom-value="6.6" data-vertical-padding-top-unit="vmax" data-vertical-padding-bottom-unit="vmax" data-controllers-bound="UserItemsListSimple">
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="NaN,NaN" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1e2a387a-23a4-4c35-b378-947a08409346/Josh+Sunstone+Headshot.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1e2a387a-23a4-4c35-b378-947a08409346/Josh+Sunstone+Headshot.jpeg" data-image-dimensions="1500x1500" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/1e2a387a-23a4-4c35-b378-947a08409346/Josh+Sunstone+Headshot.jpeg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Sunstone Credit</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Sunstone’s loan products enable solar developers to access more of the market and grow their commercial business​ by offering flexible financing solutions.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.sunstonecredit.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="NaN,NaN" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/f39714ab-9797-4cbf-aab1-e50793bb592e/Evan+Headshot.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/f39714ab-9797-4cbf-aab1-e50793bb592e/Evan+Headshot.jpg" data-image-dimensions="2499x2786" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/f39714ab-9797-4cbf-aab1-e50793bb592e/Evan+Headshot.jpg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">Get Weatherized</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">Get Weatherized is building SaaS tools that help insulation and efficiency contractors seamlessly manage their business operations and customer communications.</p><p class="" style="white-space:pre-wrap;"><a href="https://www.getweatherized.com">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+
+<li class="
+  list-item
+  
+    list-item-basic-animation
+  
+" style="
+  
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  
+" data-is-card-enabled="true">
+
+
+
+  
+
+<div class="list-item-media" style="
+    
+      margin-bottom: 10%;
+    
+    width: 100%;
+  ">
+  <div class="list-item-media-inner" data-aspect-ratio="circle" data-animation-role="image">
+    <img data-image-focal-point="NaN,NaN" alt="" data-src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/61f50b76-e538-4311-bf25-d29ac2c96962/Chloe.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/61f50b76-e538-4311-bf25-d29ac2c96962/Chloe.jpeg" data-image-dimensions="233x233" class="list-image" data-load="false" data-mode="cover" data-use-advanced-positioning="true" style="width: 100%; height: 100%; object-fit: cover;" data-parent-ratio="1.0" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5f2f708f36c46573f820f0cc/61f50b76-e538-4311-bf25-d29ac2c96962/Chloe.jpeg?format=300w" data-loaded="true">
+  </div>
+</div>
+
+
+
+  <div class="list-item-content">
+
+
+<div class="list-item-content__text-wrapper">
+
+
+  <h2 class="list-item-content__title" style="max-width: 100%;">SuperCircle</h2>
+
+
+
+  <div class="list-item-content__description
+    
+    " style="
+      margin-top: 10%;
+      max-width: 100%;
+    ">
+    <p class="" style="white-space:pre-wrap;">SuperCircle powers consumer circularity for large retail brands. They do this while increasing brand loyalty and enabling the logistics backend.</p><p class="" style="white-space:pre-wrap;"><a href="https://supercircle.world">Learn more</a></p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</li>
+
+</ul>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+</section>
+
+
